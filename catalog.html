@@ -6,8 +6,9 @@
   </head>
 
   <body>
+    <!--header with logged in user-->
     <header>
-      <span><a href="">DEVICE</a></span>
+      <span><a href="index.html">DEVICE</a></span>
       <h1>Главная</h1>
       <input type="search" value="Поиск по сайту">
       <a href="">Валентин Петухов</a>
@@ -17,15 +18,18 @@
         <li>Корзина</li>
       </ul>
 
-      <a href=''>Каталог товаров</a>
-      <ul>
-        <li><a>Виртуальная реальность</a></li>
-        <li><a>Монопод для селфи</a></li>
-        <li><a>Экшн-камеры</a></li>
-        <li><a>Фитнес-браслеты</a></li>
-        <li><a>Умные часы</a></li>
-        <li><a>Квадрокоптеры</a></li>
-      </ul>
+      <div> Каталог товаров
+        <div>
+          <ul>
+            <li><a>Виртуальная реальность</a></li>
+            <li><a>Монопод для селфи</a></li>
+            <li><a>Экшн-камеры</a></li>
+            <li><a>Фитнес-браслеты</a></li>
+            <li><a>Умные часы</a></li>
+            <li><a>Квадрокоптеры</a></li>
+          </ul>
+        </div>
+      </div>
 
       <ul>
         <li><a href="">Доставка</a></li>
@@ -34,14 +38,12 @@
 
       <a href="">Контакты</a>
     </header>
-
+    <!--catalog-->
     <main>
 
         <h1>Моноподы для селфи</h1>
-
-
+      <!--text pagination - ok -->
       <section>
-
         <ul>
           <li>
             <a href="index.html">
@@ -59,18 +61,10 @@
             </a>
           </li>
         </ul>
-
+      </section>
+      <!--секция с фильтрами - ok-->
+      <section>
         <h2>Фильтр:</h2>
-      </section>
-      <section>
-        <h2>Сортировка</h2>
-        <button type="button" name="button">По цене</button>
-        <button type="button" name="button">По типу</button>
-        <button type="button" name="button">По популярности</button>
-        <button type="button" name="button">От меньшего к большему</button>
-        <button type="button" name="button">От большего к меньшему</button>
-      </section>
-      <section>
         <form method="post">
           <input type="range" min="0" max="10000" step="1" value="5000">
           <h3>Цвет</h3>
@@ -92,63 +86,96 @@
           <button type="submit" name="button">Показать</button>
         </form>
       </section>
+      <!--секция с методом сортировки -ok-->
+      <section>
+        <h2>Сортировка</h2>
+        <button type="button" name="button">По цене</button>
+        <button type="button" name="button">По типу</button>
+        <button type="button" name="button">По популярности</button>
+        <button type="button" name="button">От меньшего к большему</button>
+        <button type="button" name="button">От большего к меньшему</button>
+      </section>
       <section>
         <ul>
+          <!--любительская селфи-палка -ok-->
           <li>
-            <a href="">
+            <div>
               <img src="" alt="Любительская селфи-палка">
-              <form  method="post">
-                <button type="button" name="button">В корзину</button>
-                <button type="button" name="button">Добавить к сравнению</button>
-              </form>
-            </a>
-            <h4>Любительская селфи-палка</h4>
-            <p> 500 руб.</p>
-
+              <div>
+                <form  method="post">
+                  <button type="button" name="button">В корзину</button>
+                  <button type="button" name="button">Добавить к сравнению</button>
+                </form>
+              </div>
+            </div>
+            <div>
+              <a href=''>
+                <h4>Любительская селфи-палка</h4>
+              </a>
+              <p> 500 руб.</p>
+            </div>
           </li>
+          <!--Профессиональная селфи-палка -ok -->
           <li>
-            <a href="">
+            <div>
               <img src="" alt="Профессиональная селфи-палка">
-              <form  method="post">
-                <button type="button" name="button">В корзину</button>
-                <button type="button" name="button">Добавить к сравнению</button>
-              </form>
-            </a>
-              <h4>
-                Профессиональная <br>
-                селфи-палка
-              </h4>
-              <p>1 500 руб.</p>
-
+              <div>
+                <form  method="post">
+                  <button type="button" name="button">В корзину</button>
+                  <button type="button" name="button">Добавить к сравнению</button>
+                </form>
+              </div>
+            </div>
+            <div>
+              <a href="">
+                <h4>
+                  Профессиональная <br>
+                  селфи-палка
+                </h4>
+              </a>
+                <p>1 500 руб.</p>
+            </div>
           </li>
+          <!--непотопляемая селфи-палка - ok-->
           <li>
-            <a href="">
+            <div>
               <img src="" alt="Непотопляемая селфи-палка">
-              <form  method="post">
-                <button type="button" name="button">В корзину</button>
-                <button type="button" name="button">Добавить к сравнению</button>
-              </form>
-            </a>
-              <h4>Непотопляемая селфи-палка</h4>
-              <p>2 500 руб.</p>
-
+              <div>
+                <form  method="post">
+                  <button type="button" name="button">В корзину</button>
+                  <button type="button" name="button">Добавить к сравнению</button>
+                </form>
+              </div>
+            </div>
+            <div>
+              <a href="">
+                <h4>Непотопляемая селфи-палка</h4>
+              </a>
+                <p>2 500 руб.</p>
+            </div>
           </li>
+          <!--селфи-палка следуй за мной -ok -->
           <li>
-            <a href="">
+            <div>
               <img src="" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
-              <form  method="post">
-                <button type="button" name="button">В корзину</button>
-                <button type="button" name="button">Добавить к сравнению</button>
-              </form>
-            </a>
-              <h4>Селфи-палка &laquo;Следуй за мной&raquo;</h4>
-              <p>4 900 руб.</p>
               <span> NEW </span>
-
+              <div>
+                <form  method="post">
+                  <button type="button" name="button">В корзину</button>
+                  <button type="button" name="button">Добавить к сравнению</button>
+                </form>
+              </div>
+            </div>
+            <div>
+              <a href="">
+                <h4>Селфи-палка &laquo;Следуй за мной&raquo;</h4>
+              </a>
+                <p>4 900 руб.</p>
+            </div>
           </li>
         </ul>
       </section>
-
+      <!--pagination numbers - ok-->
       <section>
         <ul>
           <li>
@@ -167,10 +194,9 @@
             <a href="">вперед</a>
           </li>
         </ul>
-        <a href="">вперед</a>
       </section>
     </main>
-
+    <!-- footer with logged in user-->
     <footer>
       <section>
         <span>
@@ -200,20 +226,29 @@
         </ul>
         <ul>
           <li>
-            <img src="" alt="Группа в VK">
+            <a href="">
+              <img src="" alt="Группа в VK">
+            </a>
           </li>
           <li>
-            <img src="" alt="Аккаунт в Instagram">
+            <a href="">
+              <img src="" alt="Аккаунт в Instagram">
+            </a>
           </li>
           <li>
-            <img src="" alt="Аккаунт в Twitter">
+            <a href="">
+              <img src="" alt="Аккаунт в Twitter">
+            </a>
           </li>
         </ul>
       </section>
       <section>
         <ul>
           <li>
-            <a href="">Войти</a>
+            <a href="">Валентин Петхуов</a>
+          </li>
+          <li>
+            <a href="">Выйти</a>
           </li>
           <li>
             <a href="">Сравнить</a>
@@ -224,7 +259,9 @@
         </ul>
 
         <p>Тел:<a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-        <img src="" alt="Логотип HTML Academy">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="" alt="Логотип HTML Academy">
+        </a>
       </section>
     </footer>
   </body>
