@@ -10,8 +10,11 @@
     <header>
       <h1 class="visually-hidden">Главная</h1>
       <a href="index.html" class="logo"> <img src="img/header/logo/deviceLogo.png" height='35' width='163' alt="Device"> </a>
-      <label for="search-on-site" class="visually-hidden">Поиск по сайту</label>
-      <input id="search-on-site" type="search" value="Поиск по сайту">
+      <form method="post">
+        <button type="submit" name="button">Поиск</button>
+        <input id="search-on-site" type="search" placeholder="Поиск по сайту">
+      </form>
+
 
       <ul aria-label="Функции для клиентов">
         <li><a href="" class="login">Войти</a></li>
@@ -218,23 +221,23 @@
       <section aria-label="описание сервисов">
         <ul>
           <li>
-            <a href="">
-              <img src="img/main/companies/static/DJI.png" height="100" width="260"  alt="DJI">
+            <a href="" class="partners">
+              <img src="img/main/companies/logo/DJI.png" height="100" width="260"  alt="DJI">
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="img/main/companies/static/SPGadgets.png" height="100" width="260" alt="SP Gadgets">
+            <a href="" class="partners">
+              <img src="img/main/companies/logo/SPGadgets.png" height="100" width="260" alt="SP Gadgets">
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="img/main/companies/static/GoPro.png" height="100" width="260" alt="GoPro">
+            <a href="" class="partners">
+              <img src="img/main/companies/logo/GoPro.png" height="100" width="260" alt="GoPro">
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="img/main/companies/static/Vive.png" height="100" width="260" alt="Vive">
+            <a href="" class="partners">
+              <img src="img/main/companies/logo/Vive.png" height="100" width="260" alt="Vive">
             </a>
           </li>
         </ul>
@@ -319,17 +322,17 @@
         </ul>
         <ul>
           <li>
-            <a href="" aria-label="Наш фейсбук">
+            <a href="" aria-label="Наш фейсбук" class="social">
               <img src="img/footer/social/facebook.png" height="32" width="32" alt="ссылка на Facebook">
             </a>
           </li>
           <li>
-            <a href="" aria-label="Наш инстаграм">
+            <a href="" aria-label="Наш инстаграм" class="social">
               <img src="img/footer/social/insta.png" height="32" width="32" alt="ссылка на Instagram">
             </a>
           </li>
           <li>
-            <a href="" aria-label="Наш твиттер">
+            <a href="" aria-label="Наш твиттер" class="social">
               <img src="img/footer/social/twitter.png" height="32" width="32" alt="ссылка на Twitter">
             </a>
           </li>
