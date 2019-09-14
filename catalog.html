@@ -3,30 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/master.css">
   </head>
 
   <body>
     <!--header with logged in user-->
     <header>
-      <a href="index.html"> <img src="img/header/logo/deviceLogo.png" height='35' width='163' alt="Device"> </a>
-      <h1>Главная</h1>
-      <input type="search" value="Поиск по сайту">
-      <ul>
-        <li><a href="">Валентин Петухов</a></li>
+      <h1 class="visually-hidden">Каталог</h1>
+      <a href="index.html" class="logo"> <img src="img/header/logo/deviceLogo.png" height='35' width='163' alt="Device"> </a>
+      <h1 class="visually-hidden">Каталог</h1>
+      <label for="search-on-site" class="visually-hidden">Поиск по сайту</label>
+      <input id="search-on-site" type="search" value="Поиск по сайту">
+      <ul aria-label="Функции для клиентов">
+        <li><a href="" class="login logo">Валентин Петухов</a></li>
         <li><a href="">Выйти</a></li>
-        <li><a hef="">Сравнить</a></li>
-        <li><a hef="">Корзина</a></li>
+        <li><a href="" class="compare logo">Сравнить</a></li>
+        <li><a href="" class="cart logo">Корзина</a></li>
       </ul>
 
-      <div> Каталог товаров
-          <ul>
-            <li><a>Виртуальная реальность</a></li>
-            <li><a>Монопод для селфи</a></li>
-            <li><a>Экшн-камеры</a></li>
-            <li><a>Фитнес-браслеты</a></li>
-            <li><a>Умные часы</a></li>
-            <li><a>Квадрокоптеры</a></li>
-          </ul>
+      <div tabindex="0" aria-label="Каталог товаров"> Каталог товаров
+        <nav>
+          <ol aria-label="категории">
+            <li><a href="">Виртуальная реальность</a></li>
+            <li><a href="">Монопод для селфи</a></li>
+            <li><a href="">Экшн-камеры</a></li>
+            <li><a href="">Фитнес-браслеты</a></li>
+            <li><a href="">Умные часы</a></li>
+            <li><a href="">Квадрокоптеры</a></li>
+          </ol>
+        </nav>
       </div>
 
       <ul>
@@ -40,7 +45,7 @@
     <!--catalog-->
     <main>
 
-        <h1>Моноподы для селфи</h1>
+        <h2>Моноподы для селфи</h2>
       <!--text pagination - ok -->
       <section>
         <ul>
@@ -64,9 +69,10 @@
       <!--дополнительное задание первого раздела-->
       <!--секция с фильтрами - сделана-->
       <section>
-        <h2>Фильтр:</h2>
+        <h3>Фильтр:</h3>
         <form method="post">
-          <input type="range" min="0" max="10000" step="1" value="5000">
+          <label for="item-range visually-hidden">Диапазон цен</label>
+          <input id="item-range" type="range" min="0" max="10000" step="1" value="5000">
           <h3>Цвет</h3>
           <input type="checkbox"  value="" id="black" checked>
           <label for="black">Черный</label>
@@ -88,7 +94,7 @@
       </section>
       <!--секция с методом сортировки -ok-->
       <section>
-        <h2>Сортировка</h2>
+        <h3>Сортировка</h3>
         <button type="button" name="button">По цене</button>
         <button type="button" name="button">По типу</button>
         <button type="button" name="button">По популярности</button>
@@ -100,11 +106,11 @@
         <ul>
           <!--любительская селфи-палка -ok-->
           <li>
-            <div>
+            <div tabindex="0">
               <img src="img/catalog/items/firstItem.jpg" height='380' width='360' alt="Любительская селфи-палка">
               <div>
-                  <a>В корзину</a>
-                  <a>Добавить к сравнению</a>
+                  <a href="">В корзину</a>
+                  <a href="">Добавить к сравнению</a>
               </div>
             </div>
             <div>
@@ -116,11 +122,11 @@
           </li>
           <!--Профессиональная селфи-палка -ok -->
           <li>
-            <div>
-              <img src="img/catalog/items/secondItem.jpg" height='380' width='360' alt="Профессиональная селфи-палка">
+            <div tabindex="0">
+              <img src="img/catalog/items/secondItem.jpg" height='380' width='360' alt="Профессиональная селфи-палка" >
               <div>
-                  <a>В корзину</a>
-                  <a>Добавить к сравнению</a>
+                  <a href="">В корзину</a>
+                  <a href="">Добавить к сравнению</a>
               </div>
             </div>
             <div>
@@ -135,11 +141,11 @@
           </li>
           <!--непотопляемая селфи-палка - ok-->
           <li>
-            <div>
-              <img src="img/catalog/items/thirdItem.jpg" height='380' width='360' alt="Непотопляемая селфи-палка">
+            <div tabindex="0">
+              <img src="img/catalog/items/thirdItem.jpg" height='380' width='360' alt="Непотопляемая селфи-палка" >
               <div>
-                  <a>В корзину</a>
-                  <a>Добавить к сравнению</a>
+                  <a href="">В корзину</a>
+                  <a href="">Добавить к сравнению</a>
               </div>
             </div>
             <div>
@@ -151,12 +157,12 @@
           </li>
           <!--селфи-палка следуй за мной -ok -->
           <li>
-            <div>
-              <img src="img/catalog/items/fourthItem.jpg" height='380' width='360' alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+            <div tabindex="0">
+              <img src="img/catalog/items/fourthItem.jpg" height='380' width='360' alt="Селфи-палка &laquo;Следуй за мной&raquo;" >
               <span> NEW </span>
               <div>
-                  <a>В корзину</a>
-                  <a>Добавить к сравнению</a>
+                  <a href="">В корзину</a>
+                  <a href="">Добавить к сравнению</a>
               </div>
             </div>
             <div>
@@ -193,7 +199,7 @@
     <footer>
       <section>
         <span>
-          <a href="index.html">
+          <a href="index.html" class="logo">
             <img src="img/footer/logo/deviceLogoFooter.png" height="35" width="163" alt="DEVICE">
           </a>
         </span>
@@ -219,43 +225,44 @@
         </ul>
         <ul>
           <li>
-            <a>
-              <img src="img/footer/social/facebook.png" height="32" width="32" alt="Facebook">
+            <a href="" aria-label="Наш фейсбук">
+              <img src="img/footer/social/facebook.png" height="32" width="32" alt="ссылка на Facebook">
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="img/footer/social/insta.png" height="32" width="32" alt="Instagram">
+            <a href="" aria-label="Наш инстаграм">
+              <img src="img/footer/social/insta.png" height="32" width="32" alt="ссылка на Instagram">
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="img/footer/social/twitter.png" height="32" width="32" alt="Twitter">
+            <a href="" aria-label="Наш твиттер">
+              <img src="img/footer/social/twitter.png" height="32" width="32" alt="ссылка на Twitter">
             </a>
           </li>
         </ul>
       </section>
       <section>
         <ul>
-          <li>
-            <a href="">Валентин Петхуов</a>
+          <li aria-label="Функции для клиентов">
+            <a href="" class="footer-login logo">Валентин Петхуов</a>
           </li>
           <li>
             <a href="">Выйти</a>
           </li>
           <li>
-            <a href="">Сравнить</a>
+            <a href="" class="footer-compare logo">Сравнить</a>
           </li>
           <li>
-            <a href="">Корзина</a>
+            <a href="" class="footer-cart logo">Корзина</a>
           </li>
         </ul>
 
         <p>Тел:<a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo">
           <img src="img/footer/htmlAcademy/logoHTMLAcademy.png" height="35" width="27" alt="Логотип HTML Academy">
         </a>
       </section>
     </footer>
+
   </body>
 </html>
