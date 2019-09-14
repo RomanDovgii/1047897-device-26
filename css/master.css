@@ -12,6 +12,10 @@ a {
   opacity: 0.6;
   transition: 0.5s;
 }
+.logo:focus img{
+  opacity: 0.6;
+  transition: 0.5s;
+}
 .logo:active img{
   opacity: 0.3;
   transition: 0.5s;
@@ -30,6 +34,10 @@ a {
   transition: 0.5s;
 }
 .popular:hover .wrapper-background{
+  background: #f0c52e;
+  transition: 0.5s;
+}
+.popular:focus .wrapper-background{
   background: #f0c52e;
   transition: 0.5s;
 }
@@ -84,12 +92,20 @@ footer{
   opacity: 1;
   transition: 0.5s;
 }
+.partners:focus {
+  filter:grayscale(0%);
+  opacity: 1;
+  transition: 0.5s;
+}
 /*social block*/
 .social{
   opacity: 0.3;
 }
 .social:hover{
   opacity: 0.6;
+}
+.social:focus{
+  opacity: 0.6;  
 }
 .social:active{
   opacity: 0.1;
