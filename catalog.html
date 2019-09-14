@@ -12,8 +12,10 @@
       <h1 class="visually-hidden">Каталог</h1>
       <a href="index.html" class="logo"> <img src="img/header/logo/deviceLogo.png" height='35' width='163' alt="Device"> </a>
       <h1 class="visually-hidden">Каталог</h1>
-      <label for="search-on-site" class="visually-hidden">Поиск по сайту</label>
-      <input id="search-on-site" type="search" value="Поиск по сайту">
+      <form method="post" aria-label="поиск по сайту">
+        <button type="submit" name="button">Поиск</button>
+        <input id="search-on-site" type="search" placeholder="Поиск по сайту">
+      </form>
       <ul aria-label="Функции для клиентов">
         <li><a href="" class="login logo">Валентин Петухов</a></li>
         <li><a href="">Выйти</a></li>
@@ -225,17 +227,17 @@
         </ul>
         <ul>
           <li>
-            <a href="" aria-label="Наш фейсбук">
+            <a href="" aria-label="Наш фейсбук" class="social">
               <img src="img/footer/social/facebook.png" height="32" width="32" alt="ссылка на Facebook">
             </a>
           </li>
           <li>
-            <a href="" aria-label="Наш инстаграм">
+            <a href="" aria-label="Наш инстаграм" class="social">
               <img src="img/footer/social/insta.png" height="32" width="32" alt="ссылка на Instagram">
             </a>
           </li>
           <li>
-            <a href="" aria-label="Наш твиттер">
+            <a href="" aria-label="Наш твиттер" class="social">
               <img src="img/footer/social/twitter.png" height="32" width="32" alt="ссылка на Twitter">
             </a>
           </li>
