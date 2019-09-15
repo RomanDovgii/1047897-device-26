@@ -7,46 +7,46 @@
   </head>
 
   <body>
-    <header>
+    <header class='header'>
       <h1 class="visually-hidden">Главная</h1>
-      <a href="index.html" class="logo"> <img src="img/header/logo/deviceLogo.png" height='35' width='163' alt="Device"> </a>
-      <form method="post" aria-label="поиск по сайту">
-        <button type="submit" name="button">Поиск</button>
-        <input id="search-on-site" type="search" placeholder="Поиск по сайту">
+      <a href="index.html" class="header_logo"> <img class="header_logo_image" src="img/header/logo/deviceLogo.png" height='35' width='163' alt="Device"> </a>
+      <form class="header_search-form" method="post" aria-label="поиск по сайту">
+        <button class="header_search-form_button" type="submit" name="button">Поиск</button>
+        <input class="header_search-form_input" id="input" type="search" placeholder="Поиск по сайту">
       </form>
 
 
-      <ul aria-label="Функции для клиентов">
-        <li><a href="" class="login">Войти</a></li>
-        <li><a href="" class="compare">Сравнить</a></li>
-        <li><a href="" class="cart">Корзина</a></li>
+      <ul class="header_list-function" aria-label="Функции для клиентов">
+        <li><a href="" class="header_list-function_login">Войти</a></li>
+        <li><a href="" class="header_list-function_compare">Сравнить</a></li>
+        <li><a href="" class="header_list-function_cart">Корзина</a></li>
       </ul>
 
-      <div tabindex="0" aria-label="Каталог товаров"> <span>Каталог товаров</span>
-        <nav>
-          <ol aria-label="категории">
-            <li><a href="">Виртуальная реальность</a></li>
-            <li><a href="">Монопод для селфи</a></li>
-            <li><a href="">Экшн-камеры</a></li>
-            <li><a href="">Фитнес-браслеты</a></li>
-            <li><a href="">Умные часы</a></li>
-            <li><a href="">Квадрокоптеры</a></li>
+      <div class="header_block" tabindex="0" aria-label="Каталог товаров"> <span>Каталог товаров</span>
+        <nav class="header_block_navigation">
+          <ol class="header_block_navigation_list" aria-label="категории">
+            <li class="header_block_navigation_list-category_element-1"><a href="">Виртуальная реальность</a></li>
+            <li class="header_block_navigation_list-category_element-2"><a href="">Монопод для селфи</a></li>
+            <li class="header_block_navigation_list-category_element-3"><a href="">Экшн-камеры</a></li>
+            <li class="header_block_navigation_list-category_element-4"><a href="">Фитнес-браслеты</a></li>
+            <li class="header_block_navigation_list-category_element-5"><a href="">Умные часы</a></li>
+            <li class="header_block_navigation_list-category_element-6"><a href="">Квадрокоптеры</a></li>
           </ol>
         </nav>
       </div>
-      <ul>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
+      <ul class="header_list-services">
+        <li class="header_list-services_list-element-1"><a href="">Доставка</a></li>
+        <li class="header_list-services_list-element-2"><a href="">Гарантия</a></li>
+        <li class="header_list-services_list-element-3"><a href="">Контакты</a></li>
       </ul>
 
 
     </header>
 
-    <main>
+    <main class="main">
       <!--slider //впоследствии переделать под radio button//-->
-      <section aria-label="слайдер с избранными товарами">
-        <div class="firstSlide" aria-label="Селфи палка" tabindex="0">
+      <section class="main_section-slider-items"aria-label="слайдер с избранными товарами">
+        <div class="main_slider-items_block-slide-1" aria-label="Селфи палка" tabindex="0">
           <img src="img/main/firstSlider/deviceFirstSliderFirstSlide.png" alt="Селфи монопод">
           <img src="" alt="1">
           <h3>
@@ -72,7 +72,7 @@
             Материал
           </p>
         </div>
-        <div class="secondSlide" aria-label="Фитнес-браслет" tabindex="0">
+        <div class="main_slider-items_block-slide-2" aria-label="Фитнес-браслет" tabindex="0">
           <img src="img/main/firstSlider/deviceFirstSliderSecondSlide.png" alt="Фитнес-браслет">
           <img src="" alt="2">
           <h3>
@@ -90,7 +90,7 @@
             Без подзарядки
           </p>
         </div>
-        <div class="thirdSlider" aria-label="Квадрокоптер" tabindex="0">
+        <div class="main_slider-items_block-slide-3" aria-label="Квадрокоптер" tabindex="0">
           <img src="img/main/firstSlider/deviceFirstSliderThirdSlide.png" alt="Квадрокоптер">
           <img src="" alt="3">
           <h3>
@@ -115,53 +115,53 @@
       </section>
       <!--the end of the slider-->
       <!--popular-->
-      <section aria-label="популярные товары">
-        <ul>
-          <li>
-            <a href="" class="popular">
-              <div class="wrapper-background">
-                <img src="img/main/popular/static/vr.png" height="55" width='97' alt="Очки виртуальной реальности">
+      <section class="main_section-popular" aria-label="популярные товары">
+        <ul class="main_section-popular_list-popular">
+          <li class="main_section-popular_list-popular_list-item-1">
+            <a href="" class="main_section-popular_list-popular_list-item-1_link main_section-popular_list-popular_list-item_link">
+              <div class="main_section-popular_list-popular_list-item-1_link_block-item-background main_section-popular_list-popular_list-item_link_block-item-background">
+                <img class="main_section-popular_list-popular_list-item-1_link_block-item-background_image-item main_section-popular_list-popular_list-item_link_block-item-background_image-item" src="img/main/popular/static/vr.png" height="55" width='97' alt="Очки виртуальной реальности">
               </div>
-              <p>Виртуальная реальность</p>
+              <p class="main_section-popular_list-popular_list-item-1_link_header-1">Виртуальная реальность</p>
             </a>
           </li>
-          <li>
-            <a href="" class="popular">
-              <div class="wrapper-background">
-                <img src="img/main/popular/static/ss.png" height="117" width="86" alt="Монопод для селфи">
+          <li class="main_section-popular_list-popular_list-item-2">
+            <a href="" class="main_section-popular_list-popular_list-item-2_link main_section-popular_list-popular_list-item_link">
+              <div class="main_section-popular_list-popular_list-item-2_link_block-item-background main_section-popular_list-popular_list-item_link_block-item-background">
+                <img class="main_section-popular_list-popular_list-item-2_link_block-item-background_image-item main_section-popular_list-popular_list-item_link_block-item-background_image-item" src="img/main/popular/static/ss.png" height="117" width="86" alt="Монопод для селфи">
               </div>
               <p>Моноподы для селфи</p>
             </a>
           </li>
-          <li>
-            <a href="" class="popular">
-              <div class="wrapper-background">
-                <img src="img/main/popular/static/ac.png" height="87" width="71" alt="Экшн-камера">
+          <li class="main_section-popular_list-popular_list-item-3">
+            <a href="" class="main_section-popular_list-popular_list-item-3_link main_section-popular_list-popular_list-item_link">
+              <div class="main_section-popular_list-popular_list-item-3_link_block-item-background main_section-popular_list-popular_list-item_link_block-item-background">
+                <img class="main_section-popular_list-popular_list-item-3_link_block-item-background_image-item main_section-popular_list-popular_list-item_link_block-item-background_image-item" src="img/main/popular/static/ac.png" height="87" width="71" alt="Экшн-камера">
               </div>
               <p>Экшн-камеры</p>
             </a>
           </li>
-          <li>
-            <a href="" class="popular">
-              <div class="wrapper-background">
-                <img src="img/main/popular/static/ft.png" height="65" width="107" alt="Фитнес-браслет">
+          <li class="main_section-popular_list-popular_list-item-4">
+            <a href="" class="main_section-popular_list-popular_list-item-4_link main_section-popular_list-popular_list-item_link">
+              <div class="main_section-popular_list-popular_list-item-4_link_block-item-background main_section-popular_list-popular_list-item_link_block-item-background">
+                <img class="main_section-popular_list-popular_list-item-4_link_block-item-background_image-item main_section-popular_list-popular_list-item_link_block-item-background_image-item" src="img/main/popular/static/ft.png" height="65" width="107" alt="Фитнес-браслет">
               </div>
               <p>Фитнес-браслеты</p>
             </a>
           </li>
-          <li>
-            <a href="" class="popular">
-              <div class="wrapper-background">
-                <img src="img/main/popular/static/sw.png" height="98" width="56" alt="Умные часы">
+          <li class="main_section-popular_list-popular_list-item-5">
+            <a href="" class="main_section-popular_list-popular_list-item-5_link main_section-popular_list-popular_list-item_link">
+              <div class="main_section-popular_list-popular_list-item-5_link_block-item-background main_section-popular_list-popular_list-item_link_block-item-background">
+                <img class="main_section-popular_list-popular_list-item-5_link_block-item-background_image-item main_section-popular_list-popular_list-item_link_block-item-background_image-item" src="img/main/popular/static/sw.png" height="98" width="56" alt="Умные часы">
               </div>
 
               <p>Умные часы</p>
             </a>
           </li>
-          <li>
-            <a href="" class="popular">
-              <div class="wrapper-background">
-                <img src="img/main/popular/static/d.png" height="69" width="132" alt="квадрокоптер">
+          <li class="main_section-popular_list-popular_list-item-6">
+            <a href="" class="main_section-popular_list-popular_list-item-6_link main_section-popular_list-popular_list-item_link">
+              <div class="main_section-popular_list-popular_list-item-6_link_block-item-background main_section-popular_list-popular_list-item_link_block-item-background">
+                <img class="main_section-popular_list-popular_list-item-6_link_block-item-background_image-item main_section-popular_list-popular_list-item_link_block-item-background_image-item" src="img/main/popular/static/d.png" height="69" width="132" alt="квадрокоптер">
               </div>
               <p>Квадрокоптеры</p>
             </a>
@@ -296,8 +296,8 @@
     <footer>
       <section>
         <span>
-          <a href="index.html" class="logo">
-            <img src="img/footer/logo/deviceLogoFooter.png" height="35" width="163" alt="DEVICE">
+          <a href="index.html" class="footer_logo">
+            <img class="footer_logo_image-logo" src="img/footer/logo/deviceLogoFooter.png" height="35" width="163" alt="DEVICE">
           </a>
         </span>
         <p>г.Москва, ул.Строителей, 15</p>
