@@ -47,40 +47,89 @@ header {
   width: 160px;
   height: 160px;
   background: #f7e296;
-  line-height: 160px;
-  text-align: center;
+  position: relative;
 }
-.main_section-popular_list-popular_list-item-1_link_block-item-background_block-item-image-1 {
-  height: 160px;
-  width: 160px;
+.main_section-popular_list-popular_list-item-1_link_block-item-background::after  {
+  content: "";
   background: url("../img/main/popular/popular-1.svg") no-repeat 50% 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
 }
-.main_section-popular_list-popular_list-item-2_link_block-item-background_block-item-image-2 {
-  height: 160px;
-  width: 160px;
+.main_section-popular_list-popular_list-item-2_link_block-item-background::after  {
+  content: "";
   background: url("../img/main/popular/popular-2.svg") no-repeat 50% 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
 }
-.main_section-popular_list-popular_list-item-3_link_block-item-background_block-item-image-3 {
-  height: 160px;
-  width: 160px;
+.main_section-popular_list-popular_list-item-3_link_block-item-background::after  {
+  content: "";
   background: url("../img/main/popular/popular-3.svg") no-repeat 50% 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
 }
-.main_section-popular_list-popular_list-item-4_link_block-item-background_block-item-image-4 {
-  height: 160px;
-  width: 160px;
+.main_section-popular_list-popular_list-item-4_link_block-item-background::after {
+  content: "";
   background: url("../img/main/popular/popular-4.svg") no-repeat 50% 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
 }
-.main_section-popular_list-popular_list-item-5_link_block-item-background_block-item-image-5 {
-  height: 160px;
-  width: 160px;
+.main_section-popular_list-popular_list-item-5_link_block-item-background::after  {
+  content: "";
   background: url("../img/main/popular/popular-5.svg") no-repeat 50% 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
 }
-.main_section-popular_list-popular_list-item-6_link_block-item-background_block-item-image-6 {
-  height: 160px;
-  width: 160px;
+.main_section-popular_list-popular_list-item-6_link_block-item-background::after  {
+  content: "";
   background: url("../img/main/popular/popular-6.svg") no-repeat 50% 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
 }
-.main_section-popular_list-popular_list-item_link:active .main_section-popular_list-popular_list-item_link_block-item-background_block-item-image {
+.main_section-popular_list-popular_list-item-1_link_block-item-background:active::after {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+.main_section-popular_list-popular_list-item-2_link_block-item-background:active::after {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+.main_section-popular_list-popular_list-item-3_link_block-item-background:active::after {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+.main_section-popular_list-popular_list-item-4_link_block-item-background:active::after {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+.main_section-popular_list-popular_list-item-5_link_block-item-background:active::after {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+.main_section-popular_list-popular_list-item-6_link_block-item-background:active::after {
   opacity: 0.3;
   transition: 0.5s;
 }
