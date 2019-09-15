@@ -23,6 +23,11 @@ header {
 /*main section*/
 
 /*popular*/
+.main_section-popular_list-popular {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
 .main_section-popular_list-popular_list-item_link:active .main_section-popular_list-popular_list-item_link_block-item-background .main_section-popular_list-popular_list-item_link_block-item-background_image-item{
   opacity: 0.3;
   transition: 0.5s;
@@ -133,6 +138,7 @@ header {
   opacity: 0.3;
   transition: 0.5s;
 }
+
 /*end of the popular section*/
 .header_list-function_login::before{
   content: url("../img/header/icons/png/user.png");
