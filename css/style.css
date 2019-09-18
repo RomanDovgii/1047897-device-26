@@ -38,6 +38,11 @@ header {
   text-decoration: none;
   color: black;
 }
+.functions__login-exit {
+  text-decoration: none;
+  color: black;
+  opacity: 0.3;
+}
 .functions__login::before{
   content: url("../img/header/icons/png/user.png");
   position: relative;
@@ -59,7 +64,7 @@ header {
 }
 /*the end of functions*/
 /*catalog*/
-.b-catalog_name {
+.catalog_name {
   font-family: "Gilroy Extra Bold";
   cursor: pointer;
 }
@@ -419,3 +424,86 @@ footer{
   white-space: nowrap;
 }
 /*the end of the additional section*/
+
+/*catalog styles*/
+.page-header {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+}
+.bread-crumbs {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+.bread-crumbs__link {
+  text-decoration: none;
+  color: black;
+  opacity: 0.3;
+}
+.filter {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+}
+.filter-form__heading {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+}
+.filter-form__label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  color: black;
+}
+.filter-form__button {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+}
+.sort-heading {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+}
+.catalog-with-images {
+  list-style: none;
+}
+.hidden-functions__to-cart {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+
+  text-decoration: none;
+}
+.hidden-functions__to-compare {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  color: black;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.item-name-price__name-link {
+  text-decoration: none;
+    color: black;
+}
+.name-link_heading {
+  font-family: "Gilroy Extra Bold";
+}
+.item-name-price__name-price {
+    font-family: "Gilroy Light";
+    color: #464646;
+}
+.new {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+  opacity: 0.2;
+}
+.catalog-navigation {
+  list-style: none;
+}
+.catalog-navigation__link {
+  font-family: "Gilroy Extra Bold";
+  text-decoration: none;
+  color: black;
+}
+.functions-footer__link-login-exit {
+  opacity: 0.3;
+}
+/*the end of catalog styles*/
