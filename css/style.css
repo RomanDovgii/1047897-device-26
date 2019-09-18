@@ -1,20 +1,21 @@
 @font-face {
-  font-family: gilroy-extra-bold;
-  src: url("fonts/gilroyextrabold.woff");
+  font-family: "Gilroy Extra Bold";
+  src: url("fonts/gilroyextrabold.woff2") format("woff2"),
+       url("fonts/gilroyextrabold.woff") format("woff");
+  font-weight: bold;
 }
 @font-face {
-  font-family: gilroy-light;
-  src: url("fonts/gilroylight.woff");
+  font-family: "Gilroy Light";
+  src: url("fonts/gilroylight.woff2") format("woff2"),
+       url("fonts/gilroylight.woff") format("woff");
 }
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-}
 header {
   background: #f7e296;
 }
 /*header section*/
+/*logo*/
 .header_logo:hover .header_logo_image{
   opacity: 0.6;
   transition: 0.5s;
@@ -27,43 +28,149 @@ header {
   opacity: 0.3;
   transition: 0.5s;
 }
+/*the end of the logo*/
+/*functions*/
+.functions {
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+}
+.functions__login {
+  text-decoration: none;
+  color: black;
+}
+.functions__login::before{
+  content: url("../img/header/icons/png/user.png");
+  position: relative;
+}
+.functions__compare {
+  text-decoration: none;
+  color: black;
+}
+.functions__compare::before{
+  content: url("../img/header/icons/png/compare.png");
+  position: relative;
+}
+.functions__cart {
+  text-decoration: none;
+  color: black;
+}
+.functions__cart::before{
+  content: url("../img/header/icons/png/cart.png");
+}
+/*the end of functions*/
+/*catalog*/
+.b-catalog_name {
+  font-family: "Gilroy Extra Bold";
+  cursor: pointer;
+}
+.navigation-list {
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+}
+.navigation-list a {
+  text-decoration: none;
+  color: black;
+}
+.navigation-list__item:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.navigation-list__item:active {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+/*the end of the catalog*/
+/*services*/
+.services {
+  font-family: "Gilroy Extra Bold";
+  list-style: none;
+}
+.services__item a {
+  text-decoration: none;
+  color: black;
+}
+.services__item:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.services__item:active {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+/*the end of the services*/
 /*the end of the header block*/
 
 /*main section*/
 
+/*slider-1*/
+/*shared font settings*/
+.slide-number {
+  font-family: "Gilroy Extra Bold";
+}
+.slide-heading {
+  font-family: "Gilroy Extra Bold";
+}
+.slide-description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+.slide-link-more {
+  font-family: "Gilroy Extra Bold";
+}
+.slide-big-text {
+  font-family: "Gilroy Light";
+}
+.slide-small-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+/*the end of the shared font settings*/
+/*1st-slide*/
+
+/*the end of the 1st-slide*/
+/*the end of the slider-1*/
 /*popular*/
-.main_section-popular_list-popular {
+/*popular shared font settings*/
+.list-item__text {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+}
+.list-item__link {
+  text-decoration: none;
+}
+/*the end of the popular shared font settings*/
+.popular-navigation {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
 }
-.main_section-popular_list-popular_list-item_link:active .main_section-popular_list-popular_list-item_link_block-item-background .main_section-popular_list-popular_list-item_link_block-item-background_image-item{
+.list-item__link:active .popular-navigation_list-item__background-image .popular-navigation_list-item__background-image_image-item{
   opacity: 0.3;
   transition: 0.5s;
 }
-.main_section-popular_list-popular_list-item_link:active .main_section-popular_list-popular_list-item_link_block-item-background {
+.list-item__link:active .popular-navigation_list-item__background-image {
   background: #f0c52e;
   transition: 0.5s;
 }
-.main_section-popular_list-popular_list-item_link:active p {
+.list-item__link:active p {
   color: #cacaca;
   transition: 0.5s;
 }
-.main_section-popular_list-popular_list-item_link:hover .main_section-popular_list-popular_list-item_link_block-item-background{
+.list-item__link:hover .popular-navigation_list-item__background-image{
   background: #f0c52e;
   transition: 0.5s;
 }
-.main_section-popular_list-popular_list-item_link:focus .main_section-popular_list-popular_list-item_link_block-item-background{
+.list-item__link:focus .popular-navigation_list-item__background-image{
   background: #f0c52e;
   transition: 0.5s;
 }
-.main_section-popular_list-popular_list-item_link_block-item-background {
+.popular-navigation_list-item__background-image {
   width: 160px;
   height: 160px;
   background: #f7e296;
   position: relative;
 }
-.main_section-popular_list-popular_list-item-1_link_block-item-background::after  {
+.list-item-1__background-image::after  {
   content: "";
   background: url("../img/main/popular/popular-1.svg") no-repeat 50% 50%;
   top: 0;
@@ -73,7 +180,7 @@ header {
   position: absolute;
   z-index: 1;
 }
-.main_section-popular_list-popular_list-item-2_link_block-item-background::after  {
+.list-item-2__background-image::after  {
   content: "";
   background: url("../img/main/popular/popular-2.svg") no-repeat 50% 100%;
   top: 0;
@@ -83,7 +190,7 @@ header {
   position: absolute;
   z-index: 1;
 }
-.main_section-popular_list-popular_list-item-3_link_block-item-background::after  {
+.list-item-3__background-image::after  {
   content: "";
   background: url("../img/main/popular/popular-3.svg") no-repeat 50% 50%;
   top: 0;
@@ -93,7 +200,7 @@ header {
   position: absolute;
   z-index: 1;
 }
-.main_section-popular_list-popular_list-item-4_link_block-item-background::after {
+.list-item-4__background-image::after {
   content: "";
   background: url("../img/main/popular/popular-4.svg") no-repeat 50% 50%;
   top: 0;
@@ -103,7 +210,7 @@ header {
   position: absolute;
   z-index: 1;
 }
-.main_section-popular_list-popular_list-item-5_link_block-item-background::after  {
+.list-item-5__background-image::after  {
   content: "";
   background: url("../img/main/popular/popular-5.svg") no-repeat 50% 50%;
   top: 0;
@@ -113,7 +220,7 @@ header {
   position: absolute;
   z-index: 1;
 }
-.main_section-popular_list-popular_list-item-6_link_block-item-background::after  {
+.list-item-6__background-image::after  {
   content: "";
   background: url("../img/main/popular/popular-6.svg") no-repeat 50% 50%;
   top: 0;
@@ -123,69 +230,55 @@ header {
   position: absolute;
   z-index: 1;
 }
-.main_section-popular_list-popular_list-item-1_link_block-item-background:active::after {
+.list-item-1__background-image:active::after {
   opacity: 0.3;
   transition: 0.5s;
 }
-.main_section-popular_list-popular_list-item-2_link_block-item-background:active::after {
+.list-item-2__background-image:active::after {
   opacity: 0.3;
   transition: 0.5s;
 }
-.main_section-popular_list-popular_list-item-3_link_block-item-background:active::after {
+.list-item-3__background-image:active::after {
   opacity: 0.3;
   transition: 0.5s;
 }
-.main_section-popular_list-popular_list-item-4_link_block-item-background:active::after {
+.list-item-4__background-image:active::after {
   opacity: 0.3;
   transition: 0.5s;
 }
-.main_section-popular_list-popular_list-item-5_link_block-item-background:active::after {
+.list-item-5__background-image:active::after {
   opacity: 0.3;
   transition: 0.5s;
 }
-.main_section-popular_list-popular_list-item-6_link_block-item-background:active::after {
+.list-item-6__background-image:active::after {
   opacity: 0.3;
   transition: 0.5s;
 }
-
 /*end of the popular section*/
-.header_list-function_login::before{
-  content: url("../img/header/icons/png/user.png");
-  position: relative;
+/*slider-2*/
+/*shared font settings*/
+.slider-2-buttons {
+  font-family: "Gilroy Extra Bold";
+  color: black;
 }
-.header_list-function_compare::before{
-  content: url("../img/header/icons/png/compare.png");
-  position: relative;
+.slider-2__heading {
+  font-family: "Gilroy Extra Bold";
+  color: black;
 }
-.header_list-function_cart::before{
-  content: url("../img/header/icons/png/cart.png");
+.slider-2__text {
+  ont-family: "Open Sans", sans-serif;
+  font-weight: lighter;
 }
-/*the end of the main section*/
-
-/*footer section*/
-footer{
-  background: #464646;
+/*the end of the shared font settings*/
+.slider-buttons, .slider-services-list {
+  list-style: none;
 }
-.footer_logo:hover .footer_logo_image-logo{
-  opacity: 0.6;
-  transition: 0.5s;
-}
-.footer_logo:focus .footer_logo_image-logo{
-  opacity: 0.6;
-  transition: 0.5s;
-}
-.footer_logo:active .footer_logo_image-logo{
-  opacity: 0.3;
-  transition: 0.5s;
-}
-.footer-login::before{
-  content: url("../img/footer/icons/userYellow.png")
-}
-.footer-compare::before{
-  content: url("../img/footer/icons/compareYellow.png")
-}
-.footer-cart::before{
-  content: url("../img/footer/icons/cartYellow.png")
+/*the end of the slider-2*/
+/*partners*/
+.partners-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 .partners {
   filter: grayscale(100%);
@@ -201,17 +294,115 @@ footer{
   opacity: 1;
   transition: 0.5s;
 }
+/*the end of the partners section*/
+/*about us*/
+.about-us__heading {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+}
+.about-us__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+.about-us__list {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+}
+.about-us__link {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+  text-decoration: none;
+}
+/*the end od the about us section*/
+/*contacts*/
+.contacts__heading {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+}
+.contacts__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+.contacts__write-us {
+  font-family: "Gilroy Extra Bold";
+  color: black;
+  text-decoration: none;
+}
+/*the end of the contacts*/
+/*the end of the main section*/
+
+/*footer section*/
+footer{
+  background: #464646;
+}
+/*text-deco*/
+.services-footer {
+  font-family: "Gilroy Extra Bold";
+  list-style: none;
+}
+.services-footer__items-link {
+  color: white;
+  text-decoration: none;
+}
+.social-footer {
+  list-style: none;
+}
+/*the end of the text-deco*/
+.address {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  color: white;
+}
+.footer_logo:hover .footer_logo_image-logo{
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.footer_logo:focus .footer_logo_image-logo{
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.footer_logo:active .footer_logo_image-logo{
+  opacity: 0.3;
+  transition: 0.5s;
+}
+.functions-footer {
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+.functions-footer__link-login::before {
+  content: url("../img/footer/icons/userYellow.png")
+}
+.functions-footer__link-compare::before {
+  content: url("../img/footer/icons/compareYellow.png")
+}
+.functions-footer__link-cart::before {
+  content: url("../img/footer/icons/cartYellow.png")
+}
+.functions-footer__link {
+  color: white;
+  text-decoration: none;
+}
+.phone {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+.phone_link {
+  text-decoration: none;
+  color: white;
+}
 /*social block*/
-.social{
+.social-footer__link{
   opacity: 0.3;
 }
-.social:hover{
+.social-footer__link:hover{
   opacity: 0.6;
 }
-.social:focus{
+.social-footer__link:focus{
   opacity: 0.6;
 }
-.social:active{
+.social-footer__link:active{
   opacity: 0.1;
 }
 /*social block the end*/
