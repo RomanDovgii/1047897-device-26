@@ -10,7 +10,7 @@
     <!--header with logged in user-->
     <header>
       <h1 class="visually-hidden">Каталог</h1>
-      <a href="index.html" class="logo"> <img src="img/header/logo/deviceLogo.png" height='35' width='163' alt="Device"> </a>
+      <a href="index.html" class="header-logo"> <img class="header-logo__image" src="img/header/logo/deviceLogo.png" height='35' width='163' alt="Device"> </a>
       <h1 class="visually-hidden">Каталог</h1>
       <form method="post" aria-label="поиск по сайту">
         <button type="submit" name="button">Поиск</button>
@@ -32,7 +32,7 @@
         </li>
       </ul>
 
-      <div class="catalog" tabindex="0" aria-label="Каталог товаров"> <span class="catalog_name">Каталог товаров</span>
+      <div class="catalog" tabindex="0" aria-label="Каталог товаров"> <span class="catalog__name">Каталог товаров</span>
         <nav class="catalog-navigation">
           <ul class="catalog-navigation__navigation-list navigation-list" aria-label="категории">
             <li class="navigation-list__item"><a href="">Виртуальная реальность</a></li>
@@ -59,19 +59,19 @@
         <h2 class="page-header">Моноподы для селфи</h2>
       <!--text pagination - ok -->
       <section>
-        <ul class="bread-crumbs">
+        <ul class="breadcrumbs">
           <li>
-            <a class="bread-crumbs__link" href="index.html">
+            <a class="breadcrumbs__link" href="index.html">
               Главная
             </a>
           </li>
           <li>
-            <a class="bread-crumbs__link" href="">
+            <a class="breadcrumbs__link" href="">
               Каталог товаров
             </a>
           </li>
           <li>
-            <a class="bread-crumbs__link" href="">
+            <a class="breadcrumbs__link" href="">
               Моноподы для селфи
             </a>
           </li>
@@ -115,9 +115,9 @@
       </section>
       <!--дополнительное задание первого раздела-->
       <section>
-        <ul class="catalog-with-images">
+        <ul class="catalog-images">
           <!--любительская селфи-палка -ok-->
-          <li class="catalog-with-images__item-1">
+          <li class="catalog-images__item-1">
             <div tabindex="0" class="item-wrapper">
               <img class="item-image-1" src="img/catalog/items/firstItem.jpg" height='380' width='360' alt="Любительская селфи-палка">
               <div class="hidden-functions visually-hidden">
@@ -126,14 +126,14 @@
               </div>
             </div>
             <div class="item-name-price item-1-name-price">
-              <a class="item-name-price__name-link item-1-name-price_name-link" href=''>
+              <a class="item-name-price__name-link item-1-name-price__name-link" href=''>
                 <h4 class="name-link__heading">Любительская селфи-палка</h4>
               </a>
               <span class="item-name-price__name-price"> 500 руб.</span>
             </div>
           </li>
           <!--Профессиональная селфи-палка -ok -->
-          <li class="catalog-with-images__item-2">
+          <li class="catalog-images__item-2">
             <div tabindex="0" class="item-wrapper">
               <img class="item-image-2" src="img/catalog/items/secondItem.jpg" height='380' width='360' alt="Профессиональная селфи-палка" >
               <div class="hidden-functions visually-hidden">
@@ -142,7 +142,7 @@
               </div>
             </div>
             <div class="item-name-price item-2-name-price">
-              <a class="item-name-price__name-link item-2-name-price_name-link" href="">
+              <a class="item-name-price__name-link item-2-name-price__name-link" href="">
                 <h4 class="name-link__heading">
                   Профессиональная <br>
                   селфи-палка
@@ -152,7 +152,7 @@
             </div>
           </li>
           <!--непотопляемая селфи-палка - ok-->
-          <li class="catalog-with-images__item-3">
+          <li class="catalog-images__item-3">
             <div tabindex="0" class="item-wrapper">
               <img class="item-image-3" src="img/catalog/items/thirdItem.jpg" height='380' width='360' alt="Непотопляемая селфи-палка" >
               <div class="hidden-functions visually-hidden">
@@ -161,14 +161,14 @@
               </div>
             </div>
             <div class="item-name-price item-3-name-price">
-              <a class="item-name-price__name-link item-3-name-price_name-link" href="">
+              <a class="item-name-price__name-link item-3-name-price__name-link" href="">
                 <h4 class="name-link__heading">Непотопляемая селфи-палка</h4>
               </a>
                 <span class="item-name-price__name-price">2 500 руб.</span>
             </div>
           </li>
           <!--селфи-палка следуй за мной -ok -->
-          <li class="catalog-with-images__item-4">
+          <li class="catalog-images__item-4">
             <div tabindex="0" class="item-wrapper">
               <img class="item-image-4" src="img/catalog/items/fourthItem.jpg" height='380' width='360' alt="Селфи-палка &laquo;Следуй за мной&raquo;" >
               <span class="new"> NEW </span>
@@ -178,7 +178,7 @@
               </div>
             </div>
             <div class="item-name-price item-4-name-price">
-              <a class="item-name-price__name-link item-4-name-price_name-link" href="">
+              <a class="item-name-price__name-link item-4-name-price__name-link" href="">
                 <h4 class="name-link__heading">Селфи-палка &laquo;Следуй за мной&raquo;</h4>
               </a>
                 <span class="item-name-price__name-price">4 900 руб.</span>
@@ -269,8 +269,8 @@
           </li>
         </ul>
 
-        <p class="phone">Тел:<a class="phone_link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy_logo">
+        <p class="phone">Тел:<a class="phone__link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo">
           <img src="img/footer/htmlAcademy/logoHTMLAcademy.png" height="35" width="27" alt="Логотип HTML Academy">
         </a>
       </section>
