@@ -37,11 +37,17 @@ header {
 .functions__login {
   text-decoration: none;
   color: black;
+  font-size: 21px;
+  line-height: 40px;
+  letter-spacing: 0.21px;
 }
 .functions__login-exit {
   text-decoration: none;
   color: black;
   opacity: 0.3;
+  font-size: 21px;
+  line-height: 40px;
+  letter-spacing: 0.21px;
 }
 .functions__login::before{
   content: url("../img/header/icons/png/user.png");
@@ -50,6 +56,9 @@ header {
 .functions__compare {
   text-decoration: none;
   color: black;
+  font-size: 21px;
+  line-height: 40px;
+  letter-spacing: 0.21px;
 }
 .functions__compare::before{
   content: url("../img/header/icons/png/compare.png");
@@ -58,6 +67,9 @@ header {
 .functions__cart {
   text-decoration: none;
   color: black;
+  font-size: 21px;
+  line-height: 40px;
+  letter-spacing: 0.21px;
 }
 .functions__cart::before{
   content: url("../img/header/icons/png/cart.png");
@@ -67,6 +79,9 @@ header {
 .catalog_name {
   font-family: "Gilroy Extra Bold";
   cursor: pointer;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 4.8px;
 }
 .navigation-list {
   font-family: "Open Sans", sans-serif;
@@ -75,6 +90,9 @@ header {
 .navigation-list a {
   text-decoration: none;
   color: black;
+  font-size: 21px;
+  line-height: 48px;
+  letter-spacing: 0.21px;
 }
 .navigation-list__item:hover {
   opacity: 0.6;
@@ -93,6 +111,9 @@ header {
 .services__item a {
   text-decoration: none;
   color: black;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 4.8px;
 }
 .services__item:hover {
   opacity: 0.6;
@@ -111,23 +132,41 @@ header {
 /*shared font settings*/
 .slide-number {
   font-family: "Gilroy Extra Bold";
+  font-size: 239px;
+  line-height: 239px;
+  letter-spacing: 1.8px;
 }
 .slide-heading {
   font-family: "Gilroy Extra Bold";
+  font-size: 62.6px;
+  line-height: 74.7px;
+  letter-spacing: 0.62px;
 }
 .slide-description {
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
 }
 .slide-link-more {
   font-family: "Gilroy Extra Bold";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 4.8px;
 }
 .slide-big-text {
   font-family: "Gilroy Light";
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.48px;
 }
 .slide-small-text {
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.17px;
 }
 /*the end of the shared font settings*/
 /*1st-slide*/
@@ -139,6 +178,9 @@ header {
 .list-item__text {
   font-family: "Gilroy Extra Bold";
   color: black;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.24px;
 }
 .list-item__link {
   text-decoration: none;
@@ -235,27 +277,27 @@ header {
   position: absolute;
   z-index: 1;
 }
-.list-item-1__background-image:active::after {
+.list-item__link:active .list-item-1__background-image::after {
   opacity: 0.3;
   transition: 0.5s;
 }
-.list-item-2__background-image:active::after {
+.list-item__link:active .list-item-2__background-image::after {
   opacity: 0.3;
   transition: 0.5s;
 }
-.list-item-3__background-image:active::after {
+.list-item__link:active .list-item-3__background-image::after {
   opacity: 0.3;
   transition: 0.5s;
 }
-.list-item-4__background-image:active::after {
+.list-item__link:active .list-item-4__background-image::after {
   opacity: 0.3;
   transition: 0.5s;
 }
-.list-item-5__background-image:active::after {
+.list-item__link:active .list-item-5__background-image::after {
   opacity: 0.3;
   transition: 0.5s;
 }
-.list-item-6__background-image:active::after {
+.list-item__link:active .list-item-6__background-image::after {
   opacity: 0.3;
   transition: 0.5s;
 }
@@ -265,14 +307,23 @@ header {
 .slider-2-buttons {
   font-family: "Gilroy Extra Bold";
   color: black;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 4.8px;
 }
 .slider-2__heading {
   font-family: "Gilroy Extra Bold";
   color: black;
+  font-size: 62.7px;
+  line-height: 64px;
+  letter-spacing: 0.62px;
 }
 .slider-2__text {
-  ont-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: lighter;
+  font-size: 21px;
+  line-height: 40px;
+  letter-spacing: 0.21px;
 }
 /*the end of the shared font settings*/
 .slider-buttons, .slider-services-list {
@@ -304,34 +355,58 @@ header {
 .about-us__heading {
   font-family: "Gilroy Extra Bold";
   color: black;
+  font-size: 62.7px;
+  line-height: 64px;
+  letter-spacing: 0.62px;
+
 }
 .about-us__text {
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
+  font-size: 21px;
+  line-height: 40px;
+  letter-spacing: 0px;
 }
 .about-us__list {
   font-family: "Gilroy Extra Bold";
   color: black;
+  font-size: 22px;
+  line-height: 53.3px;
+  letter-spacing: 0px;
 }
 .about-us__link {
   font-family: "Gilroy Extra Bold";
   color: black;
   text-decoration: none;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
 }
 /*the end od the about us section*/
 /*contacts*/
 .contacts__heading {
   font-family: "Gilroy Extra Bold";
   color: black;
+  font-size: 62.7px;
+  line-height: 64px;
+  letter-spacing: 0.62px;
 }
 .contacts__text {
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
+  font-size: 21px;
+  line-height: 40px;
+  letter-spacing: 0px;
 }
 .contacts__write-us {
   font-family: "Gilroy Extra Bold";
   color: black;
   text-decoration: none;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
 }
 /*the end of the contacts*/
 /*the end of the main section*/
@@ -348,6 +423,10 @@ footer{
 .services-footer__items-link {
   color: white;
   text-decoration: none;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
 }
 .social-footer {
   list-style: none;
@@ -375,6 +454,9 @@ footer{
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
 }
+.functions-footer__link-login-exit {
+  opacity: 0.3;
+}
 .functions-footer__link-login::before {
   content: url("../img/footer/icons/userYellow.png")
 }
@@ -385,13 +467,19 @@ footer{
   content: url("../img/footer/icons/cartYellow.png")
 }
 .functions-footer__link {
-  color: white;
+  color: rgba(255,255,255,0.7);
   text-decoration: none;
+  font-size: 21px;
+  line-height: 45px;
+  letter-spacing: 0.21px;
 }
 .phone {
   color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
+  font-size: 21px;
+  line-height: 40px;
+  letter-spacing: 0px;
 }
 .phone_link {
   text-decoration: none;
@@ -429,6 +517,9 @@ footer{
 .page-header {
   font-family: "Gilroy Extra Bold";
   color: black;
+  font-size: 62.7px;
+  line-height: 64px;
+  letter-spacing: 0.62px;
 }
 .bread-crumbs {
   font-family: "Open Sans", sans-serif;
@@ -441,27 +532,45 @@ footer{
   text-decoration: none;
   color: black;
   opacity: 0.3;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.19px;
 }
 .filter {
   font-family: "Gilroy Extra Bold";
   color: black;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 4.4px;
 }
 .filter-form__heading {
   font-family: "Gilroy Extra Bold";
   color: black;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.24px;
 }
 .filter-form__label {
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
   color: black;
+  font-size: 19px;
+  line-height: 53.3px;
+  letter-spacing: 0.19px;
 }
 .filter-form__button {
   font-family: "Gilroy Extra Bold";
   color: black;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 4.8px;
 }
 .sort-heading {
   font-family: "Gilroy Extra Bold";
   color: black;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 4.4px;
 }
 .catalog-with-images {
   list-style: none;
@@ -482,18 +591,28 @@ footer{
 .item-name-price__name-link {
   text-decoration: none;
     color: black;
+
 }
-.name-link_heading {
+.name-link__heading {
   font-family: "Gilroy Extra Bold";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.24px;
 }
 .item-name-price__name-price {
     font-family: "Gilroy Light";
     color: #464646;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.22px;
 }
 .new {
   font-family: "Gilroy Extra Bold";
   color: black;
   opacity: 0.2;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.95px;
 }
 .catalog-navigation {
   list-style: none;
@@ -502,8 +621,8 @@ footer{
   font-family: "Gilroy Extra Bold";
   text-decoration: none;
   color: black;
-}
-.functions-footer__link-login-exit {
-  opacity: 0.3;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 4.4px;
 }
 /*the end of catalog styles*/
