@@ -46,6 +46,8 @@ header {
   line-height: 30px;
   letter-spacing: 0.15px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
+  margin-right: 0;
+  min-width: 356px;
 }
 .search-form__input::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
@@ -63,6 +65,18 @@ header {
   color: rgba(0, 0, 0, 1);
   border-bottom: 2px solid rgba(0, 0, 0, 1);
   outline: none;
+}
+.search-form__button {
+  border: none;
+  background-color: transparent;
+  border: 2px solid #000000;
+  padding: 0 19px 0 19px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  margin-left: -4px;
 }
 /*the end of the search form*/
 /*functions*/
@@ -204,12 +218,43 @@ header {
   letter-spacing: 0.15px;
 }
 .slide-link-more {
+  text-decoration: none;
+  display: block;
+  width: 220px;
+  height: 40px;
+  color: #000000;
   font-family: "Gilroy";
   font-weight: bold;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 40px;
   letter-spacing: 3.6px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
 }
+.slide-link-more::after {
+  content: "";
+  background-color: #f0c52e;
+  display: block;
+  width: inherit;
+  height: 8px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin: auto 0 auto 0;
+  z-index: -1;
+}
+.slide-link-more:hover::after {
+  height: 40px;
+  transition: 0.5s;
+}
+.slide-link-more:active {
+  color: rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
 .slide-big-text {
   font-family: "Gilroy";
   font-weight: lighter;
@@ -390,6 +435,10 @@ header {
   letter-spacing: 0.15px;
 }
 /*the end of the shared font settings*/
+.main_section-services {
+  display: flex;
+  width: 1160px;
+}
 .slider-buttons, .slider-services-list {
   list-style: none;
 }
@@ -399,6 +448,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  width: 1160px;
 }
 .partners {
   filter: grayscale(100%);
