@@ -78,6 +78,9 @@ header {
   letter-spacing: 0.15px;
   margin-left: -4px;
 }
+.search-form__button {
+
+}
 /*the end of the search form*/
 /*functions*/
 .functions {
@@ -494,11 +497,16 @@ header {
   font-family: "Gilroy";
   font-weight: bold;
   color: #000000;
-  text-decoration: none;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 40px;
   letter-spacing: 3.6px;
+  text-decoration: none;
   text-transform: uppercase;
+  display: block;
+  width: 260px;
+  height: 40px;
+  text-align: center;
+  position: relative;
 }
 /*the end od the about us section*/
 /*contacts*/
@@ -524,8 +532,15 @@ header {
   text-decoration: none;
   font-size: 18px;
   line-height: 24px;
+  line-height: 40px;
   letter-spacing: 3.6px;
+  text-decoration: none;
   text-transform: uppercase;
+  display: block;
+  width: 260px;
+  height: 40px;
+  text-align: center;
+  position: relative;
 }
 /*the end of the contacts*/
 /*the end of the main section*/
@@ -640,6 +655,28 @@ footer {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
 }
+.link-animation::after {
+  content: "";
+  background-color: #f0c52e;
+  display: block;
+  width: inherit;
+  height: 8px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin: auto 0 auto 0;
+  z-index: -1;
+}
+.link-animation:hover::after {
+  height: 40px;
+  transition: 0.5s;
+}
+.link-animation:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /*the end of the additional section*/
 
 /*catalog styles*/
