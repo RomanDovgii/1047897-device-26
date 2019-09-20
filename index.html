@@ -10,19 +10,19 @@
     <header>
       <h1 class="visually-hidden">Главная</h1>
       <a href="index.html" class="header-logo"> <img class="header-logo__image" src="img/header/logo/deviceLogo.png" height='35' width='163' alt="Device"> </a>
-      <form class="header_search-form" method="post" aria-label="поиск по сайту">
-        <button class="header_search-form_button" type="submit" name="button">Поиск</button>
-        <input class="header_search-form_input" id="input" type="search" placeholder="Поиск по сайту">
+      <form class="search-form" method="post" aria-label="поиск по сайту">
+        <input class="search-form__input" id="search-on-site" type="search" placeholder="Поиск по сайту">
+        <button class="search-form__button" type="submit" name="button">Поиск</button>
       </form>
 
 
       <ul class="functions" aria-label="Функции для клиентов">
-        <li><a href="" class="functions__login">Войти</a></li>
-        <li><a href="" class="functions__compare">Сравнить</a></li>
-        <li><a href="" class="functions__cart">Корзина</a></li>
+        <li><a href="" class="functions__login functions__style">Войти</a></li>
+        <li><a href="" class="functions__compare functions__style">Сравнить</a></li>
+        <li><a href="" class="functions__cart functions__style">Корзина</a></li>
       </ul>
 
-      <div class="catalog" tabindex="0" aria-label="Каталог товаров"> <span class="catalog_name">Каталог товаров</span>
+      <div class="catalog" tabindex="0" aria-label="Каталог товаров"> <span class="catalog__name" tabindex="0">Каталог товаров</span>
         <nav class="catalog-navigation">
           <ul class="catalog-navigation__navigation-list navigation-list" aria-label="категории">
             <li class="navigation-list__item"><a href="">Виртуальная реальность</a></li>
@@ -117,7 +117,7 @@
       <!--popular-->
       <section aria-label="популярные товары">
         <ul class="popular-navigation">
-          <li class="list-item-1">
+          <li class="list-item-1 list-item">
             <a href="" class="list-item-1__link list-item__link">
               <div class="list-item-1__background-image popular-navigation_list-item__background-image">
 
@@ -125,15 +125,15 @@
               <p class="list-item-1__text list-item__text">Виртуальная реальность</p>
             </a>
           </li>
-          <li class="list-item-2">
+          <li class="list-item-2 list-item">
             <a href="" class="list-item-2__link list-item__link">
               <div class="list-item-2__background-image popular-navigation_list-item__background-image">
 
               </div>
-              <p class="list-item-2__text list-item__text">Моноподы для селфи</p>
+              <p class="list-item-2__text list-item__text">Моноподы <br> для селфи</p>
             </a>
           </li>
-          <li class="list-item-3">
+          <li class="list-item-3 list-item">
             <a href="" class="list-item-3__link list-item__link">
               <div class="list-item-3__background-image popular-navigation_list-item__background-image">
 
@@ -141,13 +141,13 @@
               <p class="list-item-3__text list-item__text">Экшн-камеры</p>
             </a>
           </li>
-          <li class="list-item-4">
+          <li class="list-item-4 list-item">
             <a href="" class="list-item-4__link list-item__link">
               <div class="list-item-4__background-image popular-navigation_list-item__background-image"></div>
               <p class="list-item-4__text list-item__text">Фитнес-браслеты</p>
             </a>
           </li>
-          <li class="list-item-5">
+          <li class="list-item-5 list-item">
             <a href="" class="list-item-5__link list-item__link">
               <div class="list-item-5__background-image popular-navigation_list-item__background-image">
 
@@ -155,7 +155,7 @@
               <p class="list-item-5__text list-item__text">Умные часы</p>
             </a>
           </li>
-          <li class="list-item-6">
+          <li class="list-item-6 list-item">
             <a href="" class="list-item-6__link list-item__link">
               <div class="list-item-6__background-image popular-navigation_list-item__background-image">
 
