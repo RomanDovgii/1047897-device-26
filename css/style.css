@@ -26,6 +26,8 @@ header {
   margin: 0 auto;
   position: relative;
   margin-top: 40px;
+  margin-bottom: -129px;
+  position: relative;
 }
 /*header section*/
 /*logo*/
@@ -246,11 +248,14 @@ header {
 
 /*main section*/
 main {
-  width: 1160px;
   margin: 0 auto;
 }
 /*slider-1*/
 /*shared font settings*/
+.slider-items {
+  position: relative;
+  z-index: 1;
+}
 .slide-number {
   font-family: "Gilroy";
   font-weight: bold;
@@ -490,9 +495,8 @@ main {
   letter-spacing: 0.15px;
 }
 /*the end of the shared font settings*/
-.main_section-services {
-  display: flex;
-  width: 1160px;
+.section-services {
+
 }
 .slider-buttons, .slider-services-list {
   list-style: none;
@@ -521,6 +525,9 @@ main {
 }
 /*the end of the partners section*/
 /*about us*/
+.about-us {
+  width: 50%;
+}
 .about-us__heading {
   font-family: "Gilroy";
   font-weight: bold;
@@ -562,6 +569,9 @@ main {
 }
 /*the end od the about us section*/
 /*contacts*/
+.contacts {
+  width: 50%;
+}
 .contacts__heading {
   font-family: "Gilroy";
   font-weight: bold;
@@ -600,6 +610,22 @@ main {
 /*footer section*/
 footer {
   background: #464646;
+  display: flex;
+  margin: 0 auto;
+}
+.info-section-footer {
+  padding-top: 65px;
+  padding-left: 140px;
+  padding-bottom: 79px;
+}
+.services-social-section-footer {
+  padding-top: 142px;
+  padding-bottom: 67px;
+}
+.functions-section-footer {
+  padding-top: 72px;
+  padding-right: 140px;
+  padding-bottom: 66px;
 }
 /*text-deco*/
 .services-footer {
@@ -739,7 +765,17 @@ footer {
 .link-animation:active {
   color: rgba(0, 0, 0, 0.3);
 }
-
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.container-sections {
+  justify-content: space-between;
+}
 /*the end of the additional section*/
 
 /*catalog styles*/
