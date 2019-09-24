@@ -33,7 +33,7 @@ header {
 /*logo*/
 .header-logo {
   position: absolute;
-  top: -18px;
+  top: -19px;
   left: 60px;
 
 }
@@ -510,17 +510,31 @@ main {
   width: 100%;
 }
 .partners {
-  filter: grayscale(100%);
-  opacity: 0.2;
+  position:relative;
 }
-.partners:hover {
-  filter:grayscale(0%);
-  opacity: 1;
-  transition: 0.5s;
+.partners a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
 }
-.partners:focus {
-  filter:grayscale(0%);
-  opacity: 1;
+a.partners__DJI::after  {
+  background-image: url("../img/main/partners/hover/DJI.png");
+}
+a.partners__SPGadgets::after {
+  background-image: url("../img/main/partners/hover/SPGadgets.png");
+}
+a.partners__GoPro::after {
+  background-image: url("../img/main/partners/hover/GoPro.png");
+}
+a.partners__Vive::after {
+  background-image: url("../img/main/partners/hover/Vive.png");
+}
+a.partners__link:hover::after {
+  opacity: 1.0;
   transition: 0.5s;
 }
 /*the end of the partners section*/
