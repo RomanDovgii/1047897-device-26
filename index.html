@@ -17,16 +17,16 @@
         </form>
 
 
-        <ul class="functions" aria-label="Функции для клиентов">
-          <li><a href="" class="functions__login functions__style">Войти</a></li>
-          <li><a href="" class="functions__compare functions__style">Сравнить</a></li>
-          <li><a href="" class="functions__cart functions__style">Корзина</a></li>
+        <ul class="functions-list" aria-label="Функции для клиентов">
+          <li class="functions-list__item item-login"><a href="" class="functions__login functions__style">Войти</a></li>
+          <li class="functions-list__item item-compare"><a href="" class="functions__compare functions__style">Сравнить</a></li>
+          <li class="functions-list__item item-cart"><a href="" class="functions__cart functions__style">Корзина</a></li>
         </ul>
       </section>
       <section class="navigation-section">
         <div class="catalog" tabindex="0" aria-label="Каталог товаров"> <span class="catalog__name" tabindex="0">Каталог товаров</span>
           <nav class="catalog-navigation">
-            <ul class="catalog-navigation__navigation-list navigation-list visually-hidden" aria-label="категории">
+            <ul class="catalog-navigation__navigation-list navigation-list" aria-label="категории">
               <li class="navigation-list__item"><a href="">Виртуальная реальность</a></li>
               <li class="navigation-list__item"><a href="">Монопод для селфи</a></li>
               <li class="navigation-list__item"><a href="">Экшн-камеры</a></li>
@@ -47,36 +47,42 @@
 
     <main class="main">
       <!--slider //впоследствии переделать под radio button//-->
-      <section class="slider-items" aria-label="слайдер с избранными товарами">
+      <section class="slider-popular" aria-label="слайдер с избранными товарами">
         <div class="container">
-          <div class="slide-1-1" aria-label="Селфи палка" tabindex="0">
-            <img class="slide-1-1__image" src="img/main/firstSlider/deviceFirstSliderFirstSlide.png" alt="Селфи монопод">
-            <span class="slide-1-1__number slide-number">01</span>
-            <h3 class="slide-1-1__heading slide-heading">
-              Делай селфи, <br>
-              как Бен Стиллер!
-            </h3>
-            <p class="slide-1-1__description slide-description">
-              Самая длинная палка для селфи доступна в нашем магазине. <br>
-              Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
-            </p>
-            <a class="slide-1-1__link-more slide-link-more link-animation" href="">Подробнее</a>
-            <img src="" alt="индикатор положения слайдера">
-            <div class="additional-information-1">
-              <span class="additional-information-1__big-text slide-big-text">8,5 М</span>
-              <span class="additional-information-1__small-text slide-small-text">Длина палки</span>
+          <div class="slider-popular popular-first-slide popular-slide" aria-label="Селфи палка" tabindex="0">
+            <div class="slider-image">
+              <img class="first-slide__image" src="img/main/firstSlider/deviceFirstSliderFirstSlide.png" alt="Селфи монопод">
             </div>
-            <div class="additional-information-2">
-              <span class="additional-information-2__big-text slide-big-text">5 КГ</span>
-              <span class="additional-information-2__small-text slide-small-text">Вес палки</span>
-            </div>
-            <div class="additional-information-3">
-              <span class="additional-information-3__big-text slide-big-text">Карбон</span>
-              <span class="additional-information-3__small-text slide-small-text">Материал</span>
+            <div class="slider-information">
+              <span class="slide-number first-slide__number ">01</span>
+              <h3 class="slide-heading first-slide__heading ">
+                Делай селфи, <br>
+                как Бен Стиллер!
+              </h3>
+              <p class="slide-description first-slide__description ">
+                Самая длинная палка для селфи доступна в нашем магазине. <br>
+                Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
+              </p>
+              <div class="flex-shrink-normalize">
+                <a class="slide-link-more link-animation first-slide__link-more" href="">Подробнее</a>
+              </div>
+              <img class="slide-label" src="" alt="индикатор положения слайдера">
+              <div class="additional-information additional-information-first">
+                <span class="additional-information-first__big-text slide-big-text">8,5 м</span>
+                <span class="additional-information-first__small-text slide-small-text">Длина палки</span>
+              </div>
+              <div class="additional-information additional-information-second">
+                <span class="additional-information-second__big-text slide-big-text">5 кг</span>
+                <span class="additional-information-second__small-text slide-small-text">Вес палки</span>
+              </div>
+              <div class="additional-information additional-information-third">
+                <span class="additional-information-third__big-text slide-big-text">Карбон</span>
+                <span class="additional-information-third__small-text slide-small-text">Материал</span>
+              </div>
             </div>
           </div>
           <!--marker-->
-          <div  class="slide-1-2 visually-hidden" aria-label="Фитнес-браслет" tabindex="0">
+          <div  class="slide-1-2 popular-slide visually-hidden" aria-label="Фитнес-браслет" tabindex="0">
             <img class="slide-1-2__image" src="img/main/firstSlider/deviceFirstSliderSecondSlide.png" alt="Фитнес-браслет">
             <span class="slide-1-2__number slide-number">02</span>
             <h3 class="slide-1-2__heading slide-heading">
@@ -89,12 +95,12 @@
             </p>
             <a class="slide-1-2__link-more slide-link-more" href="">подробнее</a>
             <img src="" alt="индикатор положения слайдера">
-            <div class="additional-information-1">
-              <span class="additional-information-1__big-text slide-big-text">48 часов</span> <br>
-              <span class="additional-information-1__small-text slide-small-text">Без подзарядки</span>
+            <div class="additional-information-first">
+              <span class="additional-information-first__big-text slide-big-text">48 часов</span> <br>
+              <span class="additional-information-first__small-text slide-small-text">Без подзарядки</span>
             </div>
           </div>
-          <div class="slide-1-3 visually-hidden" aria-label="Квадрокоптер" tabindex="0">
+          <div class="slide-1-3 popular-slide visually-hidden" aria-label="Квадрокоптер" tabindex="0">
             <img class="slide-1-3__image" src="img/main/firstSlider/deviceFirstSliderThirdSlide.png" alt="Квадрокоптер">
             <span class="slide-1-3__number slide-number">03</span>
             <h3 class="slide-1-3__heading slide-heading">
@@ -107,20 +113,20 @@
             </p>
             <a class="slide-1-3__link-more slide-link-more" href="">Подробнее</a>
             <img src="" alt="индикатор положения слайдера">
-            <div class="additional-information-1">
-              <span class="additional-information-1__big-text slide-big-text">800 М</span>
-              <span class="additional-information-1__small-text slide-small-text">Дальность полета</span>
+            <div class="additional-information-first">
+              <span class="additional-information-first__big-text slide-big-text">800 М</span>
+              <span class="additional-information-first__small-text slide-small-text">Дальность полета</span>
             </div>
-            <div class="additional-information-2">
-              <span class="additional-information-2__big-text slide-big-text">50 М</span>
-              <span class="additional-information-2__small-text slide-small-text">Радиус поражения</span>
+            <div class="additional-information-second">
+              <span class="additional-information-second__big-text slide-big-text">50 М</span>
+              <span class="additional-information-second__small-text slide-small-text">Радиус поражения</span>
             </div>
           </div>
         </div>
       </section>
       <!--the end of the slider-->
       <!--popular-->
-      <section aria-label="популярные товары">
+      <section class="categories" aria-label="популярные товары">
         <div class="container">
           <ul class="popular-navigation">
             <li class="list-item-1 list-item">
@@ -174,36 +180,35 @@
       </section>
       <!--the end of catalog section-->
       <!--second slider //переделать под radio button//-->
-      <section class="section-services" aria-label="сервисы">
-        <div class="container">
-          <div class="leftSide">
+      <section class="section-services-slider" aria-label="сервисы">
+        <div class="container container-services-slider">
+          <div class="buttons-block">
             <ul class="slider-buttons">
               <li class="">
-                <button class="slider-2-buttons__delivery slider-2-buttons" type="button" name="button">Доставка</button>
+                <button class="services-slider-buttons__delivery services-slider-buttons" type="button" name="button">Доставка</button>
               </li>
               <li>
-                <button class="slider-2-buttons__warranty slider-2-buttons" type="button" name="button">Гарантия</button>
+                <button class="services-slider-buttons__warranty services-slider-buttons" type="button" name="button">Гарантия</button>
               </li>
               <li>
-                <button  class="slider-2-buttons__credit slider-2-buttons" type="button" name="button">Кредит</button>
+                <button  class="services-slider-buttons__credit services-slider-buttons" type="button" name="button">Кредит</button>
               </li>
             </ul>
           </div>
-          <div class="rightSide">
+          <div class="information-block">
             <ul class="slider-services-list">
-              <li class="slider-services-list__slide slide-2-1" tabindex="0" aria-label="Доставка">
-                <h3 class="slide-2-1__heading slider-2__heading">Доставка</h3>
-                <p class="slide-2-1__text slider-2__text">
+              <li class="slider-services-list__slide delivery-slide" tabindex="0" aria-label="Доставка">
+                <h3 class="slider-services-list__heading delivery-slide__heading">Доставка</h3>
+                <p class="slider-services-list__text delivery-slide__text">
                   Мы с удовольствием доставим ваш товар прямо к вашему
                   подъезду совершенно бесплатно! Ведь мы неплохо
-                  заработаем, поднимая ео на ваш этаж.
+                  заработаем, поднимая его на ваш этаж.
                 </p>
-                <img src="img/main/secondSlider/secondSliderFirstSlide.png" height="164" width="136" alt="доставка">
               </li>
               <!--marker-->
               <li class="slider-services-list__slide slide-2-2 visually-hidden" tabindex="0" aria-label="Гарантия">
-                <h3 class="slide-2-2__heading slider-2__heading">Гарантия</h3>
-                <p class="slide-2-2__text slider-2__text">
+                <h3 class="slide-2-2__heading services-slider__heading">Гарантия</h3>
+                <p class="slide-2-2__text services-slider__text">
                   Если из-за возгорания купленного у нас товара у вас сгорит
                   дом - не переживайте, мы выдадим вам новый.
                   Товар, не дом, конечно же.
@@ -211,8 +216,8 @@
                 <img src="img/main/secondSlider/secondSliderSecondSlide.png" height="194" width="170" alt="гарантия">
               </li>
               <li class="slider-services-list__slide slide-2-3 visually-hidden" tabindex="0" aria-label="Кредит">
-                <h3 class="slide-2-3__heading slider-2__heading">Кредит</h3>
-                <p class="slide-2-3__text slider-2__text">
+                <h3 class="slide-2-3__heading services-slider__heading">Кредит</h3>
+                <p class="slide-2-3__text services-slider__text">
                   Залезть в долговую яму стало проще! Кредитные
                   консультанты подберут для вас наиболее выгодные
                   условия кредита. Выгодные для нашего банка, разумеется.
@@ -225,7 +230,7 @@
       </section>
       <!--the end of the second slider-->
       <!--brands list-->
-      <section class="main_section-services-description" aria-label="описание сервисов">
+      <section class="partners-section" aria-label="наши партнеры">
         <div class="container">
           <ul class="partners-list">
             <li class="partners">
@@ -253,73 +258,73 @@
       </section>
       <!--the end of the brands list-->
       <!--about us-->
-      <div class="container container-sections">
-      <section class="about-us" aria-label="о нас"  tabindex="0">
-        <div class="container column">
-          <h2 class="about-us__heading">О нас</h2>
-          <p class="about-us__text-1 about-us__text">
-            Огромный выбор гаджетов не оставит равнодушным гика, <br>
-            который есть в каждом из нас.
-          </p>
-          <p class="about-us__text-2 about-us__text">
-            Мы можем доставить ваш товар в самые отдаленные точки <br>
-            России! DEVICE работает со многими транспортными компаниями:
-          </p>
-          <ul class="about-us__list delivery-partners">
-            <li class="delivery-partners__item">Деловые Линии</li>
-            <li class="delivery-partners__item">Автотрейдинг</li>
-            <li class="delivery-partners__item">ЖелДорЭкспедиция</li>
-          </ul>
-          <a class="about-us__link link-animation" href="">Подробнее о нас</a>
-        </div>
-      </section>
-      <!--the end of the about us section-->
-      <!--contacts-->
-
-      <section class="contacts" aria-label="контакты" tabindex="0">
-        <div class="container column">
-          <h2 class="contacts__heading">Контакты</h2>
-          <p class="contacts__text">
-            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
-            проверить работоспособность покупки. Всякое бывает.
-          </p>
-          <a class="contacts__map-link" href="">
-            <img class="contacts__map-image" src="img/main/map/map.jpg" height="222" width="560" alt="город Москва улица Строителей 15" tabindex="0">
-            <div class="contacts__map-big  visually-hidden">
-              <img src="img/main/map/mapBig.png" alt="город Москва улица Строителей 15">
-              <button type="button" name="button">Закрыть</button>
-            </div>
-          </a>
-          <a class="contacts__write-us link-animation" href="">Напишите нам</a>
-          <div class="visually-hidden" aria-label="напишите нам" tabindex="0">
-            <form class="write-us" method="post">
-              <label for="popup-name-field">Ваше имя:</label>
-              <input id="popup-name-field" type="name" name="" placeholder="Имя Фамилия" required>
-              <label for="popup-email-field">Ваш e-mail:</label>
-              <input id="popup-email-field" type="email" name="" placeholder="email@example.com" required>
-              <label for="popup-textarea-field">Текст письма:</label>
-              <textarea id="popup-textarea-field" name="name" rows="8" cols="80" placeholder="В свободной форме"></textarea>
-              <button type="submit" name="button">Отправить</button>
-            </form>
-            <button type="button" name="button">Закрыть</button>
+      <div class="container about-us-container">
+        <section class="about-us" aria-label="о нас"  tabindex="0">
+          <div class="column">
+            <h2 class="about-us__heading">О нас</h2>
+            <p class="about-us__text-1 about-us__text">
+              Огромный выбор гаджетов не оставит равнодушным гика, <br>
+              который есть в каждом из нас.
+            </p>
+            <p class="about-us__text-2 about-us__text">
+              Мы можем доставить ваш товар в самые отдаленные точки <br>
+              России! DEVICE работает со многими транспортными компаниями:
+            </p>
+            <ul class="about-us__list delivery-partners">
+              <li class="delivery-partners__item">Деловые Линии</li>
+              <li class="delivery-partners__item">Автотрейдинг</li>
+              <li class="delivery-partners__item">ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="about-us__link link-animation" href="">Подробнее о нас</a>
           </div>
+        </section>
+        <!--the end of the about us section-->
+        <!--contacts-->
+
+        <section class="contacts" aria-label="контакты" tabindex="0">
+          <div class="column contacts-column">
+              <h2 class="contacts__heading">Контакты</h2>
+              <p class="contacts__text">
+                Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
+                проверить работоспособность покупки. Всякое бывает.
+              </p>
+              <a class="contacts__map-link" href="">
+                <img class="contacts__map-image" src="img/main/map/map.jpg" height="222" width="560" alt="город Москва улица Строителей 15" tabindex="0">
+                <div class="contacts__map-big  visually-hidden">
+                  <img src="img/main/map/mapBig.png" alt="город Москва улица Строителей 15">
+                  <button type="button" name="button">Закрыть</button>
+                </div>
+              </a>
+              <a class="contacts__write-us link-animation" href="">Напишите нам</a>
+              <div class="visually-hidden" aria-label="напишите нам" tabindex="0">
+                <form class="write-us" method="post">
+                  <label for="popup-name-field">Ваше имя:</label>
+                  <input id="popup-name-field" type="name" name="" placeholder="Имя Фамилия" required>
+                  <label for="popup-email-field">Ваш e-mail:</label>
+                  <input id="popup-email-field" type="email" name="" placeholder="email@example.com" required>
+                  <label for="popup-textarea-field">Текст письма:</label>
+                  <textarea id="popup-textarea-field" name="name" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+                  <button type="submit" name="button">Отправить</button>
+                </form>
+                <button type="button" name="button">Закрыть</button>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-    </div>
       <!--the end of the contacts-->
     </main>
 
     <footer>
-      <div class="container">
-        <section class="info-section-footer">
+      <div class="container container-footer">
+        <section class="footer-section info-section-footer">
           <span>
             <a href="index.html" class="footer_logo">
               <img class="footer_logo_image-logo" src="img/footer/logo/deviceLogoFooter.png" height="35" width="163" alt="DEVICE">
             </a>
           </span>
-          <p class="address">г.Москва, ул.Строителей, 15</p>
+          <p class="address">г. Москва, ул. Строителей, 15</p>
         </section>
-        <section class="services-social-section-footer" aria-label="сервисы и социальные сети">
+        <section class="footer-section services-social-section-footer" aria-label="сервисы и социальные сети">
           <ul class="services-footer">
             <li>
               <a class="services-footer__delivery services-footer__items-link" href="">
@@ -343,7 +348,7 @@
                 <img src="img/footer/social/fb.svg" height="32" width="32" alt="ссылка на Facebook">
               </a>
             </li>
-            <li>
+            <li class=" instagram">
               <a class="social-footer__link" href="" aria-label="Наш инстаграм" class="social">
                 <img src="img/footer/social/Instagram.svg" height="32" width="32" alt="ссылка на Instagram">
               </a>
@@ -355,7 +360,7 @@
             </li>
           </ul>
         </section>
-        <section class="functions-section-footer">
+        <section class="footer-section functions-section-footer">
           <ul class="functions-footer" aria-label="Функции для клиентов">
             <li>
               <a class="functions-footer__link-login functions-footer__link" href="">Войти</a>
@@ -368,7 +373,7 @@
             </li>
           </ul>
 
-          <p class="phone">Тел:<a class="phone__link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+          <p class="phone">Тел: <a class="phone__link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo">
             <img src="img/footer/htmlAcademy/logoHTMLAcademy.png" height="35" width="27" alt="Логотип HTML Academy">
           </a>
