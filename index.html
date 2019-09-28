@@ -47,9 +47,17 @@
 
     <main class="main">
       <!--slider //впоследствии переделать под radio button//-->
-      <section class="slider-popular" aria-label="слайдер с избранными товарами">
-        <div class="container">
-          <div class="slider-popular popular-first-slide popular-slide" aria-label="Селфи палка" tabindex="0">
+      <section class="slider-popular-section" aria-label="слайдер с избранными товарами">
+        <div class="container popular-slider">
+          <input type="radio" name="slide" value="" checked id="popular-01" class="visually-hidden">
+          <input type="radio" name="slide" value="" id="popular-02" class="visually-hidden">
+          <input type="radio" name="slide" value="" id="popular-03" class="visually-hidden">
+          <div class="slider-controls">
+            <label for="popular-01"></label>
+            <label for="popular-02"></label>
+            <label for="popular-03"></label>
+          </div>
+          <div class="popular-slide popular-first-slide" aria-label="Селфи палка" tabindex="0">
             <div class="slider-image">
               <img class="first-slide__image" src="img/main/firstSlider/deviceFirstSliderFirstSlide.png" alt="Селфи монопод">
             </div>
@@ -66,7 +74,6 @@
               <div class="flex-shrink-normalize">
                 <a class="slide-link-more link-animation first-slide__link-more" href="">Подробнее</a>
               </div>
-              <img class="slide-label" src="" alt="индикатор положения слайдера">
               <div class="additional-information additional-information-first">
                 <span class="additional-information-first__big-text slide-big-text">8,5 м</span>
                 <span class="additional-information-first__small-text slide-small-text">Длина палки</span>
@@ -82,44 +89,55 @@
             </div>
           </div>
           <!--marker-->
-          <div  class="slide-1-2 popular-slide visually-hidden" aria-label="Фитнес-браслет" tabindex="0">
-            <img class="slide-1-2__image" src="img/main/firstSlider/deviceFirstSliderSecondSlide.png" alt="Фитнес-браслет">
-            <span class="slide-1-2__number slide-number">02</span>
-            <h3 class="slide-1-2__heading slide-heading">
-              Худеем <br>
-              правильно!
-            </h3>
-            <p class="slide-1-2__description slide-description">
-              Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
-              не пропускать занятия и соблюдать диету.
-            </p>
-            <a class="slide-1-2__link-more slide-link-more" href="">подробнее</a>
-            <img src="" alt="индикатор положения слайдера">
-            <div class="additional-information-first">
-              <span class="additional-information-first__big-text slide-big-text">48 часов</span> <br>
-              <span class="additional-information-first__small-text slide-small-text">Без подзарядки</span>
+          <div  class="popular-slide popular-second-slide" aria-label="Фитнес-браслет" tabindex="0">
+            <div class="slider-image">
+              <img class="second-slide__image" src="img/main/firstSlider/deviceFirstSliderSecondSlide.png" alt="Фитнес-браслет">
+            </div>
+            <div class="slider-information">
+              <span class="second-slide__number slide-number">02</span>
+              <h3 class="slide-heading second-slide__heading ">
+                Худеем <br>
+                правильно!
+              </h3>
+              <p class="slide-description second-slide__description">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+                не пропускать занятия и соблюдать диету.
+              </p>
+              <div class="flex-shrink-normalize">
+                <a class="second-slide__link-more slide-link-more link-animation" href="">подробнее</a>
+              </div>
+              <div class="additional-information additional-information-first">
+                <span class="additional-information-first__big-text slide-big-text">48 часов</span>
+                <span class="additional-information-first__small-text slide-small-text">Без подзарядки</span>
+              </div>
             </div>
           </div>
-          <div class="slide-1-3 popular-slide visually-hidden" aria-label="Квадрокоптер" tabindex="0">
-            <img class="slide-1-3__image" src="img/main/firstSlider/deviceFirstSliderThirdSlide.png" alt="Квадрокоптер">
-            <span class="slide-1-3__number slide-number">03</span>
-            <h3 class="slide-1-3__heading slide-heading">
-              Порхает как бабочка, <br>
-              жалит как пчела!
-            </h3>
-            <p class="slide-1-3__description slide-description">
-              Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
-              мощным лазером, замаскированным под станддартную камеру.
-            </p>
-            <a class="slide-1-3__link-more slide-link-more" href="">Подробнее</a>
-            <img src="" alt="индикатор положения слайдера">
-            <div class="additional-information-first">
-              <span class="additional-information-first__big-text slide-big-text">800 М</span>
-              <span class="additional-information-first__small-text slide-small-text">Дальность полета</span>
+
+          <div class="popular-slide popular-third-slide" aria-label="Квадрокоптер" tabindex="0">
+            <div class="slider-image">
+              <img class="third-slide__image" src="img/main/firstSlider/deviceFirstSliderThirdSlide.png" alt="Квадрокоптер">
             </div>
-            <div class="additional-information-second">
-              <span class="additional-information-second__big-text slide-big-text">50 М</span>
-              <span class="additional-information-second__small-text slide-small-text">Радиус поражения</span>
+            <div class="slider-information">
+              <span class="third-slide__number slide-number">03</span>
+              <h3 class="slide-heading third-slide__heading ">
+                Порхает как бабочка, <br>
+                жалит как пчела!
+              </h3>
+              <p class="slide-description third-slide__description">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
+                мощным лазером, замаскированным под станддартную камеру.
+              </p>
+              <div class="flex-shrink-normalize">
+                <a class="third-slide__link-more slide-link-more link-animation" href="">Подробнее</a>
+              </div>
+              <div class="additional-information additional-information-first">
+                <span class="additional-information-first__big-text slide-big-text">800 м</span>
+                <span class="additional-information-first__small-text slide-small-text">Дальность полета</span>
+              </div>
+              <div class="additional-information additional-information-second">
+                <span class="additional-information-second__big-text slide-big-text">50 м</span>
+                <span class="additional-information-second__small-text slide-small-text">Радиус поражения</span>
+              </div>
             </div>
           </div>
         </div>
@@ -182,18 +200,13 @@
       <!--second slider //переделать под radio button//-->
       <section class="section-services-slider" aria-label="сервисы">
         <div class="container container-services-slider">
-          <div class="buttons-block">
-            <ul class="slider-buttons">
-              <li class="">
-                <button class="services-slider-buttons__delivery services-slider-buttons" type="button" name="button">Доставка</button>
-              </li>
-              <li>
-                <button class="services-slider-buttons__warranty services-slider-buttons" type="button" name="button">Гарантия</button>
-              </li>
-              <li>
-                <button  class="services-slider-buttons__credit services-slider-buttons" type="button" name="button">Кредит</button>
-              </li>
-            </ul>
+          <input type="radio" name="services-slider" value="" id="first-services-slide" checked class="visually-hidden">
+          <input type="radio" name="services-slider" value="" id="second-services-slide" class="visually-hidden">
+          <input type="radio" name="services-slider" value="" id="third-services-slide" class="visually-hidden">
+          <div class="services-slider-control">
+            <label for="first-services-slide" class="services-slider-buttons control-deliver link-animation">Доставка</label>
+            <label for="second-services-slide" class="services-slider-buttons control-warranty link-animation">Гарантия</label>
+            <label for="third-services-slide" class="services-slider-buttons control-credit link-animation">Кредит</label>
           </div>
           <div class="information-block">
             <ul class="slider-services-list">
@@ -206,23 +219,21 @@
                 </p>
               </li>
               <!--marker-->
-              <li class="slider-services-list__slide slide-2-2 visually-hidden" tabindex="0" aria-label="Гарантия">
-                <h3 class="slide-2-2__heading services-slider__heading">Гарантия</h3>
-                <p class="slide-2-2__text services-slider__text">
+              <li class="slider-services-list__slide warranty-slide" tabindex="0" aria-label="Гарантия">
+                <h3 class="slider-services-list__heading services-slider__heading">Гарантия</h3>
+                <p class="slider-services-list__text services-slider__text">
                   Если из-за возгорания купленного у нас товара у вас сгорит
-                  дом - не переживайте, мы выдадим вам новый.
+                  дом - не переживайте, мы выдадим вам новый. <br>
                   Товар, не дом, конечно же.
                 </p>
-                <img src="img/main/secondSlider/secondSliderSecondSlide.png" height="194" width="170" alt="гарантия">
               </li>
-              <li class="slider-services-list__slide slide-2-3 visually-hidden" tabindex="0" aria-label="Кредит">
-                <h3 class="slide-2-3__heading services-slider__heading">Кредит</h3>
-                <p class="slide-2-3__text services-slider__text">
+              <li class="slider-services-list__slide credit-slide" tabindex="0" aria-label="Кредит">
+                <h3 class="slider-services-list__heading services-slider__heading">Кредит</h3>
+                <p class="slider-services-list__text services-slider__text">
                   Залезть в долговую яму стало проще! Кредитные
                   консультанты подберут для вас наиболее выгодные
                   условия кредита. Выгодные для нашего банка, разумеется.
                 </p>
-                <img src="img/main/secondSlider/secondSliderThirdSlide.png" height="186" width="156" alt="Кредит">
               </li>
             </ul>
           </div>
