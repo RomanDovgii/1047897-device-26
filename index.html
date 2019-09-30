@@ -11,22 +11,24 @@
       <h1 class="visually-hidden">Главная</h1>
       <a href="index.html" class="header-logo"> <img class="header-logo__image" src="img/header/logo/deviceLogo.png" height='35' width='163' alt="Device"> </a>
       <section class="functions-section">
+        <h2 class="visually-hidden">Функции</h2>
         <form class="search-form" method="post" aria-label="поиск по сайту">
           <input class="search-form__input" id="search-on-site" type="search" placeholder="Поиск по сайту">
           <button class="search-form__button" type="submit" name="button">Поиск</button>
         </form>
 
 
-        <ul class="functions-list" aria-label="Функции для клиентов">
+        <ul class="functions-list">
           <li class="functions-list__item item-login"><a href="" class="functions__login functions__style">Войти</a></li>
           <li class="functions-list__item item-compare"><a href="" class="functions__compare functions__style">Сравнить</a></li>
           <li class="functions-list__item item-cart"><a href="" class="functions__cart functions__style">Корзина</a></li>
         </ul>
       </section>
       <section class="navigation-section">
-        <div class="catalog" tabindex="0" aria-label="Каталог товаров"> <span class="catalog__name" tabindex="0">Каталог товаров</span>
+        <h2 class="visually-hidden">Навигация</h2>
+        <div class="catalog" tabindex="0"> <span class="catalog__name" tabindex="0">Каталог товаров</span>
           <nav class="catalog-navigation">
-            <ul class="catalog-navigation__navigation-list navigation-list" aria-label="категории">
+            <ul class="catalog-navigation__navigation-list navigation-list">
               <li class="navigation-list__item"><a href="">Виртуальная реальность</a></li>
               <li class="navigation-list__item"><a href="">Монопод для селфи</a></li>
               <li class="navigation-list__item"><a href="">Экшн-камеры</a></li>
@@ -57,7 +59,7 @@
             <label for="popular-02"></label>
             <label for="popular-03"></label>
           </div>
-          <div class="popular-slide popular-slide-1" aria-label="Селфи палка" tabindex="0">
+          <div class="popular-slide popular-slide-1">
             <div class="slider-image">
               <img class="first-slide__image" src="img/main/popular-slider/selfie-monopod.png" alt="Селфи монопод">
             </div>
@@ -89,7 +91,7 @@
             </div>
           </div>
           <!--marker-->
-          <div  class="popular-slide popular-slide-2" aria-label="Фитнес-браслет" tabindex="0">
+          <div  class="popular-slide popular-slide-2">
             <div class="slider-image">
               <img class="second-slide__image" src="img/main/popular-slider/fitness-tracker.png" alt="Фитнес-браслет">
             </div>
@@ -113,7 +115,7 @@
             </div>
           </div>
 
-          <div class="popular-slide popular-slide-3" aria-label="Квадрокоптер" tabindex="0">
+          <div class="popular-slide popular-slide-3">
             <div class="slider-image">
               <img class="third-slide__image" src="img/main/popular-slider/drone.png" alt="Квадрокоптер">
             </div>
@@ -210,7 +212,7 @@
           </div>
           <div class="information-block">
             <ul class="slider-services-list">
-              <li class="slider-services-list__slide delivery-slide" tabindex="0" aria-label="Доставка">
+              <li class="slider-services-list__slide delivery-slide">
                 <h3 class="slider-services-list__heading delivery-slide__heading">Доставка</h3>
                 <p class="slider-services-list__text delivery-slide__text">
                   Мы с удовольствием доставим ваш товар прямо к вашему
@@ -219,7 +221,7 @@
                 </p>
               </li>
               <!--marker-->
-              <li class="slider-services-list__slide warranty-slide" tabindex="0" aria-label="Гарантия">
+              <li class="slider-services-list__slide warranty-slide">
                 <h3 class="slider-services-list__heading services-slider__heading">Гарантия</h3>
                 <p class="slider-services-list__text services-slider__text">
                   Если из-за возгорания купленного у нас товара у вас сгорит
@@ -227,7 +229,7 @@
                   Товар, не дом, конечно же.
                 </p>
               </li>
-              <li class="slider-services-list__slide credit-slide" tabindex="0" aria-label="Кредит">
+              <li class="slider-services-list__slide credit-slide">
                 <h3 class="slider-services-list__heading services-slider__heading">Кредит</h3>
                 <p class="slider-services-list__text services-slider__text">
                   Залезть в долговую яму стало проще! Кредитные
@@ -300,19 +302,18 @@
                 проверить работоспособность покупки. Всякое бывает.
               </p>
               <a class="contacts__map-link" href="">
-                <img class="contacts__map-image" src="img/main/map/map.jpg" height="222" width="560" alt="город Москва улица Строителей 15" tabindex="0">
+                <img class="contacts__map-image" src="img/main/map/map.jpg" height="222" width="560" alt="город Москва улица Строителей 15">
                 <div class="contacts__map-big  visually-hidden">
                   <img src="img/main/map/mapBig.png" alt="город Москва улица Строителей 15">
-                  <button type="button" name="button">Закрыть</button>
                 </div>
               </a>
               <a class="contacts__write-us link-animation" href="">Напишите нам</a>
-              <div class="visually-hidden" aria-label="напишите нам" tabindex="0">
+              <div class="visually-hidden">
                 <form class="write-us" method="post">
                   <label for="popup-name-field">Ваше имя:</label>
-                  <input id="popup-name-field" type="name" name="" placeholder="Имя Фамилия" required>
+                  <input id="popup-name-field" type="text"  placeholder="Имя Фамилия" required>
                   <label for="popup-email-field">Ваш e-mail:</label>
-                  <input id="popup-email-field" type="email" name="" placeholder="email@example.com" required>
+                  <input id="popup-email-field" type="email"  placeholder="email@example.com" required>
                   <label for="popup-textarea-field">Текст письма:</label>
                   <textarea id="popup-textarea-field" name="name" rows="8" cols="80" placeholder="В свободной форме"></textarea>
                   <button type="submit" name="button">Отправить</button>
@@ -328,6 +329,7 @@
     <footer>
       <div class="container container-footer">
         <section class="footer-section info-section-footer">
+          <h2 class="visually-hidden">Наш адрес</h2>
           <span>
             <a href="index.html" class="footer__logo">
               <img class="footer__logo_image-logo" src="img/footer/logo/deviceLogoFooter.png" height="35" width="163" alt="DEVICE">
@@ -355,24 +357,25 @@
           </ul>
           <ul class="social-footer">
             <li>
-              <a class="social-footer__link" href="" aria-label="Наш фейсбук" class="social">
+              <a class="social-footer__link social" href="" aria-label="Наш фейсбук">
                 <img src="img/footer/social/fb.svg" height="32" width="32" alt="ссылка на Facebook">
               </a>
             </li>
             <li class=" instagram">
-              <a class="social-footer__link" href="" aria-label="Наш инстаграм" class="social">
+              <a class="social-footer__link social" href="" aria-label="Наш инстаграм">
                 <img src="img/footer/social/Instagram.svg" height="32" width="32" alt="ссылка на Instagram">
               </a>
             </li>
             <li>
-              <a class="social-footer__link" href="" aria-label="Наш твиттер" class="social">
+              <a class="social-footer__link social" href="" aria-label="Наш твиттер">
                 <img src="img/footer/social/twitter.svg" height="32" width="32" alt="ссылка на Twitter">
               </a>
             </li>
           </ul>
         </section>
         <section class="footer-section functions-section-footer">
-          <ul class="functions-footer" aria-label="Функции для клиентов">
+          <h2 class="visually-hidden">Функции для клиентов</h2>
+          <ul class="functions-footer">
             <li>
               <a class="functions-footer__link-login functions-footer__link" href="">Войти</a>
             </li>
