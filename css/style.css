@@ -331,9 +331,6 @@ input[type="search"]::-webkit-search-results-decoration {
   opacity: 0.3;
   transition: 0.5s;
 }
-.item-delivery {
-
-}
 .item-warranty {
   margin-left: -75px;
 }
@@ -739,7 +736,7 @@ main {
 
 .delivery-slide::after {
   content: "";
-  background: url("../img/main/secondSlider/delivery.svg");
+  background: url("../img/main/services-slider/delivery.svg");
   position: absolute;
   right: -252px;
   top: 85px;
@@ -749,7 +746,7 @@ main {
 }
 .warranty-slide::after {
   content: "";
-  background: url("../img/main/secondSlider/warranty.svg");
+  background: url("../img/main/services-slider/warranty.svg");
   position: absolute;
   right: -272px;
   top: 59px;
@@ -759,7 +756,7 @@ main {
 }
 .credit-slide::after {
   content: "";
-  background: url("../img/main/secondSlider/credit.svg");
+  background: url("../img/main/services-slider/credit.svg");
   position: absolute;
   right: -249px;
   top: 60px;
@@ -859,7 +856,6 @@ main {
 #second-services-slide:checked ~ .services-slider-control label[for="second-services-slide"],
 #third-services-slide:checked ~ .services-slider-control label[for="third-services-slide"] {
   color: #f7e184;
-  margin-left: 2px;
 }
 #first-services-slide:checked ~ .services-slider-control label[for="first-services-slide"]::after,
 #second-services-slide:checked ~ .services-slider-control label[for="second-services-slide"]::after,
@@ -868,7 +864,6 @@ main {
   width: 278px;
   height: 40px;
   top: 0;
-  left: -2px;
 }
 #first-services-slide:checked ~ .information-block > .slider-services-list > .delivery-slide {
   visibility: visible;
@@ -906,16 +901,16 @@ main {
 .partners-list .partners:last-child a {
   margin-left: -3px;
 }
-a.partners__DJI::after  {
+a.partners-1::after  {
   background-image: url("../img/main/partners/hover/DJI.png");
 }
-a.partners__SPGadgets::after {
+a.partners-2::after {
   background-image: url("../img/main/partners/hover/SPGadgets.png");
 }
-a.partners__GoPro::after {
+a.partners-3::after {
   background-image: url("../img/main/partners/hover/GoPro.png");
 }
-a.partners__Vive::after {
+a.partners-4::after {
   background-image: url("../img/main/partners/hover/Vive.png");
   margin-left: -3px;
 }
@@ -1154,15 +1149,15 @@ footer {
   letter-spacing: 0.01px;
   margin-top: 25px;
 }
-.footer_logo:hover .footer_logo_image-logo {
+.footer__logo:hover .footer__logo_image-logo {
   opacity: 0.6;
   transition: 0.5s;
 }
-.footer_logo:focus .footer_logo_image-logo {
+.footer__logo:focus .footer__logo_image-logo {
   opacity: 0.6;
   transition: 0.5s;
 }
-.footer_logo:active .footer_logo_image-logo {
+.footer__logo:active .footer__logo_image-logo {
   opacity: 0.3;
   transition: 0.5s;
 }
@@ -1311,7 +1306,7 @@ label.link-animation:active::after {
   background-color: #000000;
   width: 278px;
   top: 0;
-  left: -2px;
+  left: 0px;
 }
 .container {
   width: 1160px;
