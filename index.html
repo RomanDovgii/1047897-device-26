@@ -304,23 +304,9 @@
           </p>
           <a class="contacts__map-link" href="">
             <img class="contacts__map-image" src="img/main/map/map.jpg" height="222" width="560" alt="город Москва улица Строителей 15">
-            <div class="contacts__map-big  visually-hidden">
-              <img src="img/main/map/mapBig.png" alt="город Москва улица Строителей 15">
-            </div>
+            <!--<iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.5490546173867!2d37.529581408154115!3d55.68728203079524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1570178759039!5m2!1sen!2sru" width="560" height="222" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
           </a>
           <a class="contacts__write-us link-animation" href="">Напишите нам</a>
-          <div class="visually-hidden">
-            <form class="write-us" method="post">
-              <label for="popup-name-field">Ваше имя:</label>
-              <input id="popup-name-field" type="text" placeholder="Имя Фамилия" required>
-              <label for="popup-email-field">Ваш e-mail:</label>
-              <input id="popup-email-field" type="email" placeholder="email@example.com" required>
-              <label for="popup-textarea-field">Текст письма:</label>
-              <textarea id="popup-textarea-field" name="name" rows="8" cols="80" placeholder="В свободной форме"></textarea>
-              <button type="submit" name="button">Отправить</button>
-            </form>
-            <button type="button" name="button">Закрыть</button>
-          </div>
         </div>
       </section>
     </div>
@@ -395,6 +381,39 @@
       </section>
     </div>
   </footer>
+
+  <section class="modal modal-write-us">
+    <h2 class="visually-hidden"> Форма обратной связи</h2>
+    <form class="" action="https://echo.htmlacademy.ru" method="post" class="write-us-form">
+      <div class="input-container container-name">
+        <label class="modal-label__name" for="user-name">Ваше имя:</label>
+        <input type="text" name="name" value="" class="write-us__input input-name" placeholder="Имя Фамилия" id="user-name" required>
+      </div>
+
+      <div class="input-container container-email">
+        <label class="modal-label__email" for='user-email'>Ваш e-mail:</label>
+        <input type="email" name="email" value="" class="write-us__input input-email" placeholder="email@example.com" id="user-email" required>
+      </div>
+
+      <div class="container-letter-text">
+        <label for="letter-text" class="modal-label__textarea"> Текст письма:</label>
+        <textarea id="letter-text" name="letter" rows="8" cols="80" class="input-textarea" placeholder="В свободной форме" required></textarea>
+      </div>
+
+      <button type="submit" name="" class="send-letter link-animation">Отправить</button>
+    </form>
+    <!--marker-->
+    <button type="button" name="" type="modal-close" class="modal-close">
+      <span class="visually-hidden"> Закрыть </span>
+    </button>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Карта</h2>
+    <button type="button" name="" type="modal-close" class="modal-close">
+      <span class="visually-hidden"> Закрыть </span>
+    </button>
+  </section>
 </body>
 
 </html>
