@@ -382,7 +382,7 @@
     </div>
   </footer>
 
-  <section class="modal modal-write-us">
+  <section class="modal modal-write-us visually-hidden">
     <h2 class="visually-hidden"> Форма обратной связи</h2>
     <form class="" action="https://echo.htmlacademy.ru" method="post" class="write-us-form">
       <div class="input-container container-name">
@@ -403,17 +403,21 @@
       <button type="submit" name="" class="send-letter link-animation">Отправить</button>
     </form>
     <!--marker-->
-    <button type="button" name="" type="modal-close" class="modal-close">
+    <button type="button" name="" type="modal-close" class="modal-close form-close">
       <span class="visually-hidden"> Закрыть </span>
     </button>
   </section>
 
-  <section class="modal modal-map">
+  <section class="modal modal-map visually-hidden">
     <h2 class="visually-hidden">Карта</h2>
-    <button type="button" name="" type="modal-close" class="modal-close">
+    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.5490546173867!2d37.529581408154115!3d55.68728203079524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1570178759039!5m2!1sen!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <button type="button" name="" type="modal-close map-close" class="modal-close map-close">
       <span class="visually-hidden"> Закрыть </span>
     </button>
   </section>
+
+  <script src="js/form.js"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>
