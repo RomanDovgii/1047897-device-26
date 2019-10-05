@@ -1163,14 +1163,14 @@ a.partners__link:hover::after {
   height: 40px;
   text-align: center;
   position: relative;
-  margin-top: 53px;
+  margin-top: 54px;
   padding-left: 2px;
 }
 
 .delivery-partners__item {
   position: relative;
   letter-spacing: 0.17px;
-  line-height: 41px;
+  line-height: 40px;
 }
 
 .delivery-partners__item::before {
@@ -1222,9 +1222,7 @@ a.partners__link:hover::after {
   font-family: "Gilroy";
   font-weight: bold;
   color: #000000;
-  text-decoration: none;
   font-size: 18px;
-  line-height: 24px;
   line-height: 40px;
   letter-spacing: 3.6px;
   text-decoration: none;
@@ -1234,7 +1232,7 @@ a.partners__link:hover::after {
   height: 40px;
   text-align: center;
   position: relative;
-  margin-top: 70px;
+  margin-top: 69px;
   padding-left: 2px;
 }
 .modal-map {
@@ -1242,7 +1240,7 @@ a.partners__link:hover::after {
 }
 .contacts__map-link {
   display: block;
-  margin-top: 38px;
+  margin-top: 39px;
   position: relative;
   width: 560px;
   height: 222px
