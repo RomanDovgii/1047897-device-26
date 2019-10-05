@@ -29,13 +29,25 @@
       <h2 class="visually-hidden">Навигация</h2>
       <div class="catalog" tabindex="0"> <span class="catalog__name">Каталог товаров</span>
         <nav class="catalog-navigation">
-          <ul class="catalog-navigation__navigation-list navigation-list">
-            <li class="navigation-list__item"><a href="">Виртуальная реальность</a></li>
-            <li class="navigation-list__item"><a href="">Монопод для селфи</a></li>
-            <li class="navigation-list__item"><a href="">Экшн-камеры</a></li>
-            <li class="navigation-list__item"><a href="">Фитнес-браслеты</a></li>
-            <li class="navigation-list__item"><a href="">Умные часы</a></li>
-            <li class="navigation-list__item"><a href="">Квадрокоптеры</a></li>
+          <ul class="navigation-list">
+            <li class="navigation-list__column-1 navigation-list__column">
+              <ul class="column-1__list column-list">
+                <li><a href="">Виртуальная реальность</a></li>
+                <li><a href="">Монопод для селфи</a></li>
+                <li><a href="">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li class="navigation-list__column-2 navigation-list__column">
+              <ul class="column-2__list column-list">
+                <li><a href="">Фитнес-браслеты</a></li>
+                <li><a href="">Умные часы</a></li>
+              </ul>
+            </li>
+            <li class="navigation-list__column-3 navigation-list__column">
+              <ul class="column-3__list column-list">
+                <li><a href="">Квадрокоптеры</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </div>
@@ -410,7 +422,9 @@
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Карта</h2>
-    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.5490546173867!2d37.529581408154115!3d55.68728203079524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1570178759039!5m2!1sen!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <iframe class="map-iframe"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.5490546173867!2d37.529581408154115!3d55.68728203079524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1570178759039!5m2!1sen!2sru"
+      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     <button type="button" name="" type="modal-close map-close" class="modal-close map-close">
       <span class="visually-hidden"> Закрыть </span>
     </button>
