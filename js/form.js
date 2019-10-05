@@ -2,12 +2,14 @@
     var form = document.querySelector(".modal-write-us");
     var form_show = document.querySelector(".contacts__write-us");
 
-    form_close.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    form.classList.add("visually-hidden");
-    });
-
     form_show.addEventListener("click", function(evt) {
     evt.preventDefault();
-    form.classList.remove("visually-hidden");
+    form.classList.remove("modal-hide");
+    form.classList.add("modal-show");
+    });
+
+    form_close.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    form.classList.add("modal-hide");
+    form.classList.remove("modal-show");
     });

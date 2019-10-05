@@ -81,18 +81,15 @@
         <h3 class="filter">Фильтр:</h3>
         <div class="sort-container">
           <h3 class="sort-heading">Сортировка:</h3>
-          <input type="radio" name="sort-by" id="by-price" class="visually-hidden" checked>
-          <input type="radio" name="sort-by" id="by-type" class="visually-hidden">
-          <input type="radio" name="sort-by" id="by-popularity" class="visually-hidden">
-          <input type="radio" name="to" id="to-top" class="visually-hidden">
-          <input type="radio" name="to" id="to-bottom" class="visually-hidden" checked>
-          <div class="block-sort-by">
-            <label for="by-price">По цене</label>
-            <label for="by-type">По типу</label>
-            <label for="by-popularity">По популярности</label>
-          </div>
-          <label for="to-top"></label>
-          <label for="to-bottom"></label>
+          <ul class="sort-list sort-by">
+            <li><a class="sort-list__item sort-list__item-active">По цене</a></li>
+            <li><a class="sort-list__item">По типу</a></li>
+            <li><a class="sort-list__item">По популярности</a></li>
+          </ul>
+          <ul class="sort-list sort-from-to">
+            <li><a class="from-top sort-list-from-to__item"><span class="visually-hidden">От большего к меньшему</span></a></li>
+            <li><a class="from-bottom sort-list-from-to__item sort-list__item-active"><span class="visually-hidden">От меньшего к большему</span></a></li>
+          </ul>
         </div>
       </div>
     </section>
