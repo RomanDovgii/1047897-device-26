@@ -1396,7 +1396,7 @@ footer {
 .functions-footer__login::before {
   content: "";
   position: relative;
-  background-image: url("../img/footer/icons/userYellow.png");
+  background-image: url("../img/footer/icons/user-footer.png");
   background-position: 50% 100%;
   display: inline-block;
   background-repeat: no-repeat;
@@ -1408,7 +1408,7 @@ footer {
 .functions-footer__logged-in::before {
   content: "";
   position: relative;
-  background-image: url("../img/footer/icons/userYellow.png");
+  background-image: url("../img/footer/icons/user-footer.png");
   background-position: 50% 100%;
   display: inline-block;
   background-repeat: no-repeat;
@@ -1420,7 +1420,7 @@ footer {
 .functions-footer__compare::before {
   content: "";
   position: relative;
-  background-image: url("../img/footer/icons/compareYellow.png");
+  background-image: url("../img/footer/icons/compare-footer.png");
   background-position: 50% 100%;
   display: inline-block;
   background-repeat: no-repeat;
@@ -1433,7 +1433,7 @@ footer {
 .functions-footer__cart::before {
   content: "";
   position: relative;
-  background-image: url("../img/footer/icons/cartYellow.png");
+  background-image: url("../img/footer/icons/cart-footer.png");
   background-position: 50% 100%;
   display: inline-block;
   background-repeat: no-repeat;
