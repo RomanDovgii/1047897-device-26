@@ -1637,7 +1637,9 @@ label.link-animation:active::after {
   background-repeat: no-repeat;
   opacity: 0.5;
 }
-
+.modal-delay {
+  animation-delay: 0.5s;
+}
 .modal-close:hover {
   opacity: 1;
   transition: 0.5s;
@@ -1684,7 +1686,7 @@ label.link-animation:active::after {
   outline: none;
   color: rgba(70,70,70,1);
 }
-.write-us__input__incorrect {
+.write-us__input:invalid:not(input[value=""]):invalid {
   border: 3px solid #f6dada;
   background-color: #f6dada;
 }
