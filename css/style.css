@@ -1684,6 +1684,10 @@ label.link-animation:active::after {
   outline: none;
   color: rgba(70,70,70,1);
 }
+.write-us__input__incorrect {
+  border: 3px solid #f6dada;
+  background-color: #f6dada;
+}
 .input-container {
   display: inline-block;
   min-width: 360px;
@@ -1756,7 +1760,10 @@ label.link-animation:active::after {
   background-color: #ffffff;
   outline: none;
 }
-
+.write-us__input__incorrect {
+  border: 3px solid #f6dada;
+  background-color: #f6dada;
+}
 .send-letter {
   font-family: inherit;
   font-weight: bold;

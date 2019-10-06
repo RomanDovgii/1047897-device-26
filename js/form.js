@@ -1,6 +1,17 @@
     var form_close = document.querySelector(".form-close");
     var form = document.querySelector(".modal-write-us");
     var form_show = document.querySelector(".contacts__write-us");
+    var map_close = document.querySelector(".map-close");
+    var map = document.querySelector(".modal-map");
+    var map_show = document.querySelector(".contacts__map-link");
+
+    map_show.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    if (form.classList.contains("modal-show")){
+      form.classList.remove("modal-show");
+      form.classList.add("modal-hide");
+    };
+    });
 
     form_show.addEventListener("click", function(evt) {
     evt.preventDefault();
