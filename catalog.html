@@ -14,17 +14,20 @@
     <a href="index.html" class="header-logo"> <img class="header-logo__image" src="img/header/logo/logo-device.svg" height='35' width='163' alt="Device"> </a>
     <h1 class="visually-hidden">Каталог</h1>
     <section class="functions-section">
-      <form class="search-form" method="post" aria-label="поиск по сайту">
-        <input class="search-form__input" id="search-on-site" type="search" placeholder="Поиск по сайту">
-        <button class="search-form__button" type="submit" name="button">Поиск</button>
-      </form>
-
-      <ul class="functions-list" aria-label="Функции для клиентов">
-        <li class="functions-list__item item-logged-in"><a href="" class="functions__username functions__style">Валентин Петухов</a></li>
-        <li class="functions-list__item item-exit"><a href="" class="functions__exit functions__style">Выйти</a></li>
-        <li class="functions-list__item item-compare"><a href="" class="functions__compare functions__style">Сравнить</a></li>
-        <li class="functions-list__item item-cart"><a href="" class="functions__cart functions__style">Корзина</a></li>
-      </ul>
+      <div class="search-container">
+        <form class="search-form" method="post" aria-label="поиск по сайту">
+          <input class="search-form__input" id="search-on-site" type="search" placeholder="Поиск по сайту">
+          <button class="search-form__button" type="submit" name="button">Поиск</button>
+        </form>
+      </div>
+      <div class="functions-container">
+        <ul class="functions-list" aria-label="Функции для клиентов">
+          <li class="functions-list__item item-logged-in"><a href="" class="functions__username functions__style">Валентин Петухов</a></li>
+          <li class="functions-list__item item-exit"><a href="" class="functions__exit functions__style">Выйти</a></li>
+          <li class="functions-list__item item-compare"><a href="" class="functions__compare functions__style">Сравнить</a></li>
+          <li class="functions-list__item item-cart"><a href="" class="functions__cart functions__style">Корзина</a></li>
+        </ul>
+      </div>
     </section>
     <section class="navigation-section">
       <h2 class="visually-hidden">Навигация</h2>
@@ -111,7 +114,7 @@
     <div class="container catalog-container">
       <section class="section-filter">
 
-        <form class="filter-form" method="post">
+        <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="fieldset-filter">
             <h4 class="filter-form__heading filter-form__heading-1">Стоимость</h4>
             <div class="range-form">
@@ -123,35 +126,35 @@
             <ul class="color-list">
               <li>
                 <label class="filter-form__label checkbox" for="color-1">
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="" id="color-1" checked>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-1" checked name="black">
                   <span class="checkbox-img"></span>
                   Черный
                 </label>
               </li>
               <li>
                 <label class="filter-form__label checkbox" for="color-2">
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="" id="color-2">
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-2" name="white">
                   <span class="checkbox-img"></span>
                   Белый
                 </label>
               </li>
               <li>
                 <label class="filter-form__label checkbox" for="color-3">
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="" id="color-3" checked>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-3" checked name="blue">
                   <span class="checkbox-img"></span>
                   Синий
                 </label>
               </li>
               <li>
                 <label class="filter-form__label checkbox" for="color-4">
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="" id="color-4" checked>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-4" checked name="red">
                   <span class="checkbox-img"></span>
                   Красный
                 </label>
               </li>
               <li>
                 <label class="filter-form__label checkbox" for="color-5">
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="" id="color-5">
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-5" name="pink">
                   <span class="checkbox-img"></span>
                   Розовый
                 </label>
@@ -163,14 +166,14 @@
             <ul class="bluetooth-list">
               <li>
                 <label class="filter-form__label radio" for="bluetooth-in">
-                  <input class="filter-form__radio visually-hidden" type="radio" name="Bluetooth" value="" id='bluetooth-in' checked>
+                  <input class="filter-form__radio visually-hidden" type="radio" name="Bluetooth" value="on" id='bluetooth-in' checked>
                   <span class="radio-img"></span>
                   Есть
                 </label>
               </li>
               <li>
                 <label class="filter-form__label radio" for="bluetooth-not-in">
-                  <input class="filter-form__radio visually-hidden" type="radio" name="Bluetooth" value="" id="bluetooth-not-in">
+                  <input class="filter-form__radio visually-hidden" type="radio" name="Bluetooth" value="off" id="bluetooth-not-in">
                   <span class="radio-img"></span>
                   Нет
                 </label>
@@ -178,7 +181,7 @@
             </ul>
 
           </fieldset>
-          <button class="filter-form__button link-animation" type="submit" name="button">Показать</button>
+          <button class="filter-form__button link-animation" type="submit">Показать</button>
         </form>
       </section>
 

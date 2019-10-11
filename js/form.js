@@ -11,6 +11,7 @@
       form.classList.remove("modal-show");
       map.classList.add("modal-delay");
       form.classList.add("modal-hide");
+      form.classList.remove("modal-incorrect");
     };
     });
 
@@ -26,4 +27,5 @@
     form.classList.remove("modal-delay");
     form.classList.add("modal-hide");
     form.classList.remove("modal-show");
+    form.classList.remove("modal-incorrect");
     });
