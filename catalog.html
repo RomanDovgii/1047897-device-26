@@ -118,43 +118,59 @@
           <fieldset class="fieldset-filter">
             <h4 class="filter-form__heading filter-form__heading-1">Стоимость</h4>
             <div class="range-form">
+              <div class="range">
+                <div class="range-green">
 
+                </div>
+                <div class="range__min">
+                  <span class="range-img"></span>
+                  <label for="min-price" class="min-price__label">от
+                    <input class="min-price__input" type="text" name="" value="0" id="min-price">
+                  </label>
+                </div>
+                <div class="range__max">
+                  <span class="range-img"></span>
+                  <label for="max-price" class="max-price__label">до
+                    <input class="max-price__input" type="text" name="" value="5000" id="max-price">
+                  </label>
+                </div>
+              </div>
             </div>
           </fieldset>
           <fieldset class="fieldset-filter">
             <h4 class="filter-form__heading filter-form__heading-2">Цвет</h4>
             <ul class="color-list">
               <li>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-1" checked name="black">
                 <label class="filter-form__label checkbox" for="color-1">
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-1" checked name="black">
                   <span class="checkbox-img"></span>
                   Черный
                 </label>
               </li>
               <li>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-2" name="white">
                 <label class="filter-form__label checkbox" for="color-2">
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-2" name="white">
                   <span class="checkbox-img"></span>
                   Белый
                 </label>
               </li>
               <li>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-3" checked name="blue">
                 <label class="filter-form__label checkbox" for="color-3">
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-3" checked name="blue">
                   <span class="checkbox-img"></span>
                   Синий
                 </label>
               </li>
               <li>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-4" checked name="red">
                 <label class="filter-form__label checkbox" for="color-4">
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-4" checked name="red">
                   <span class="checkbox-img"></span>
                   Красный
                 </label>
               </li>
               <li>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-5" name="pink">
                 <label class="filter-form__label checkbox" for="color-5">
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" value="on" id="color-5" name="pink">
                   <span class="checkbox-img"></span>
                   Розовый
                 </label>
@@ -165,15 +181,15 @@
             <h4 class="filter-form__heading filter-form__heading-3">Bluetooth</h4>
             <ul class="bluetooth-list">
               <li>
+                <input class="filter-form__radio visually-hidden" type="radio" name="Bluetooth" value="on" id='bluetooth-in' checked>
                 <label class="filter-form__label radio" for="bluetooth-in">
-                  <input class="filter-form__radio visually-hidden" type="radio" name="Bluetooth" value="on" id='bluetooth-in' checked>
                   <span class="radio-img"></span>
                   Есть
                 </label>
               </li>
               <li>
+                <input class="filter-form__radio visually-hidden" type="radio" name="Bluetooth" value="off" id="bluetooth-not-in">
                 <label class="filter-form__label radio" for="bluetooth-not-in">
-                  <input class="filter-form__radio visually-hidden" type="radio" name="Bluetooth" value="off" id="bluetooth-not-in">
                   <span class="radio-img"></span>
                   Нет
                 </label>
@@ -259,6 +275,7 @@
                 <span class="item-name-price__name-price">4 900 руб.</span>
               </div>
             </li>
+
           </ul>
           <div>
             <ul class="catalog-pagination">
@@ -298,7 +315,22 @@
   </main>
   <!-- footer with logged in user-->
   <footer>
+
     <div class="container container-footer">
+      <ul class="functions-footer">
+        <li class="footer__item-logged-in">
+          <a class="functions-footer__logged-in functions-footer__link" href="">Валентин Петухов</a>
+        </li>
+        <li class="footer__item-exit">
+          <a class="functions-footer__exit functions-footer__link" href="">Выйти</a>
+        </li>
+        <li class="footer__item-compare">
+          <a href="" class="functions-footer__compare functions-footer__link">Сравнить</a>
+        </li>
+        <li class="footer__item-cart">
+          <a href="" class="functions-footer__cart functions-footer__link">Корзина</a>
+        </li>
+      </ul>
       <section class="footer-section info-section-footer">
         <h2 class="visually-hidden">Наш адрес</h2>
         <span>
@@ -345,21 +377,6 @@
         </ul>
       </section>
       <section class="footer-section functions-section-footer">
-        <ul class="functions-footer">
-          <li class="footer__item-logged-in">
-            <a class="functions-footer__logged-in functions-footer__link" href="">Валентин Петухов</a>
-          </li>
-          <li class="footer__item-exit">
-            <a class="functions-footer__exit functions-footer__link" href="">Выйти</a>
-          </li>
-          <li class="footer__item-compare">
-            <a href="" class="functions-footer__compare functions-footer__link">Сравнить</a>
-          </li>
-          <li class="footer__item-cart">
-            <a href="" class="functions-footer__cart functions-footer__link">Корзина</a>
-          </li>
-        </ul>
-
         <p class="phone">Тел.: <a class="phone__link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo">
           <img src="img/footer/htmlAcademy/logo-html.svg" height="35" width="27" alt="Логотип HTML Academy">
