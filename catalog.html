@@ -11,9 +11,12 @@
   <!--header with logged in user-->
   <header>
     <h1 class="visually-hidden">Каталог</h1>
-    <a href="index.html" class="header-logo"> <img class="header-logo__image" src="img/header/logo/logo-device.svg" height='35' width='163' alt="Device"> </a>
+    <a href="index.html" class="header-logo">
+      <img class="header-logo__image" src="img/header/logo/logo-device.svg" height='35' width='163' alt="Device">
+    </a>
     <h1 class="visually-hidden">Каталог</h1>
     <section class="functions-section">
+      <h2 class="visually-hidden">Функции</h2>
       <div class="search-container">
         <form class="search-form" method="post" aria-label="поиск по сайту">
           <input class="search-form__input" id="search-on-site" type="search" placeholder="Поиск по сайту">
@@ -70,6 +73,7 @@
       <h2 class="page-heading">Моноподы для селфи</h2>
       <!--text pagination - ok -->
       <section>
+        <h2 class="visually-hidden">Навигация по посещенным разделам</h2>
         <ul class="breadcrumbs">
           <li>
             <a class="breadcrumbs__link" href="index.html">
@@ -99,13 +103,13 @@
         <div class="sort-container">
           <h3 class="sort-heading">Сортировка:</h3>
           <ul class="sort-list sort-by">
-            <li><a href="" class="sort-list__item sort-list__item-active">По цене</a></li>
+            <li><a href="" class="sort-list__item sort-list__item--active">По цене</a></li>
             <li><a href="" class="sort-list__item">По типу</a></li>
             <li><a href="" class="sort-list__item">По популярности</a></li>
           </ul>
           <ul class="sort-list sort-from-to">
             <li><a href="" class="from-top sort-list-from-to__item"><span class="visually-hidden">От большего к меньшему</span></a></li>
-            <li><a href="" class="from-bottom sort-list-from-to__item sort-list__item-active"><span class="visually-hidden">От меньшего к большему</span></a></li>
+            <li><a href="" class="from-bottom sort-list-from-to__item sort-list__item--active"><span class="visually-hidden">От меньшего к большему</span></a></li>
           </ul>
         </div>
       </div>
@@ -125,13 +129,13 @@
                 <div class="range__min">
                   <span class="range-img"></span>
                   <label for="min-price" class="min-price__label">от
-                    <input class="min-price__input" type="text" name="" value="0" id="min-price">
+                    <input class="min-price__input" type="text" value="0" id="min-price">
                   </label>
                 </div>
                 <div class="range__max">
                   <span class="range-img"></span>
                   <label for="max-price" class="max-price__label">до
-                    <input class="max-price__input" type="text" name="" value="5000" id="max-price">
+                    <input class="max-price__input" type="text" value="5000" id="max-price">
                   </label>
                 </div>
               </div>
@@ -207,7 +211,7 @@
             <!--любительская селфи-палка -ok-->
             <li class="catalog-selfie-sticks__item-1">
               <div tabindex="0" class="item-wrapper">
-                <img class="item-image-1 item-image" src="img/catalog/items/firstItem.jpg" height='380' width='360' alt="Любительская селфи-палка">
+                <img class="item-image" src="img/catalog/items/firstItem.jpg" height='380' width='360' alt="Любительская селфи-палка">
                 <span class="new visually-hidden"> NEW </span>
                 <div class="hidden-functions">
                   <a class="hidden-functions__to-cart link-animation" href="">В корзину</a>
@@ -224,7 +228,7 @@
             <!--Профессиональная селфи-палка -ok -->
             <li class="catalog-selfie-sticks__item-2">
               <div tabindex="0" class="item-wrapper">
-                <img class="item-image-2 item-image" src="img/catalog/items/secondItem.jpg" height='380' width='360' alt="Профессиональная селфи-палка">
+                <img class="item-image" src="img/catalog/items/secondItem.jpg" height='380' width='360' alt="Профессиональная селфи-палка">
                 <span class="new visually-hidden"> NEW </span>
                 <div class="hidden-functions">
                   <a class="hidden-functions__to-cart link-animation" href="">В корзину</a>
@@ -244,7 +248,7 @@
             <!--непотопляемая селфи-палка - ok-->
             <li class="catalog-selfie-sticks__item-3">
               <div tabindex="0" class="item-wrapper">
-                <img class="item-image-3 item-image" src="img/catalog/items/thirdItem.jpg" height='380' width='360' alt="Непотопляемая селфи-палка">
+                <img class="item-image" src="img/catalog/items/thirdItem.jpg" height='380' width='360' alt="Непотопляемая селфи-палка">
                 <span class="new visually-hidden"> NEW </span>
                 <div class="hidden-functions">
                   <a class="hidden-functions__to-cart link-animation" href="">В корзину</a>
@@ -261,7 +265,7 @@
             <!--селфи-палка следуй за мной -ok -->
             <li class="catalog-selfie-sticks__item-4">
               <div tabindex="0" class="item-wrapper">
-                <img class="item-image-4 item-image" src="img/catalog/items/fourthItem.jpg" height='380' width='360' alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+                <img class="item-image" src="img/catalog/items/fourthItem.jpg" height='380' width='360' alt="Селфи-палка &laquo;Следуй за мной&raquo;">
                 <span class="new"> NEW </span>
                 <div class="hidden-functions">
                   <a class="hidden-functions__to-cart link-animation" href="">В корзину</a>
@@ -285,7 +289,7 @@
               <li class="catalog-pagination__item">
                 <ul class="catalog-pagination__numbers">
                   <li>
-                    <a class="catalog-pagination__link catalog-pagination__link-number pagination-active" href="catalog.html">1</a>
+                    <a class="catalog-pagination__link catalog-pagination__link-number pagination--active" href="catalog.html">1</a>
                   </li>
                   <li>
                     <a class="catalog-pagination__link catalog-pagination__link-number" href="">2</a>
@@ -376,7 +380,8 @@
           </li>
         </ul>
       </section>
-      <section class="footer-section functions-section-footer">
+      <section class="footer-section functions-section__footer">
+        <h2 class="visually-hidden">Контакты</h2>
         <p class="phone">Тел.: <a class="phone__link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo">
           <img src="img/footer/htmlAcademy/logo-html.svg" height="35" width="27" alt="Логотип HTML Academy">
