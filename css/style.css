@@ -124,6 +124,12 @@ header {
 .search-form__input:hover::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
+.search-form__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.search-form__input:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
 
 .search-form__input:focus {
   color: rgba(0, 0, 0, 1);
@@ -1078,30 +1084,30 @@ main {
   left: 118px;
 }
 
-#first-services-slide:checked~.services-slider-control label[for="first-services-slide"],
-#second-services-slide:checked~.services-slider-control label[for="second-services-slide"],
-#third-services-slide:checked~.services-slider-control label[for="third-services-slide"] {
+#service-slide-1:checked~.services-slider-control label[for="service-slide-1"],
+#service-slide-2:checked~.services-slider-control label[for="service-slide-2"],
+#service-slide-3:checked~.services-slider-control label[for="service-slide-3"] {
   color: #f7e184;
 }
 
-#first-services-slide:checked~.services-slider-control label[for="first-services-slide"]::after,
-#second-services-slide:checked~.services-slider-control label[for="second-services-slide"]::after,
-#third-services-slide:checked~.services-slider-control label[for="third-services-slide"]::after {
+#service-slide-1:checked~.services-slider-control label[for="service-slide-1"]::after,
+#service-slide-2:checked~.services-slider-control label[for="service-slide-2"]::after,
+#service-slide-3:checked~.services-slider-control label[for="service-slide-3"]::after {
   background-color: #000000;
   width: 278px;
   height: 40px;
   top: 0;
 }
 
-#first-services-slide:checked~.information-block>.slider-services-list>.delivery-slide {
+#service-slide-1:checked~.information-block>.slider-services-list>.delivery-slide {
   visibility: visible;
 }
 
-#second-services-slide:checked~.information-block>.slider-services-list>.warranty-slide {
+#service-slide-2:checked~.information-block>.slider-services-list>.warranty-slide {
   visibility: visible;
 }
 
-#third-services-slide:checked~.information-block>.slider-services-list>.credit-slide {
+#service-slide-3:checked~.information-block>.slider-services-list>.credit-slide {
   visibility: visible;
 }
 
@@ -1557,14 +1563,17 @@ footer {
   height: 12px;
   width: 13px;
   margin-right: 8px;
+  -webkit-backface-visibility:hidden;
 }
 
 .functions-footer__cart:hover::before {
   opacity: 0.6;
+  transition: 0.3s;
 }
 
 .functions-footer__cart:active::before {
   opacity: 0.3;
+  transition: 0.3s;
 }
 
 .functions-footer__compare {
@@ -1597,10 +1606,12 @@ footer {
 
 .functions-footer__link:hover {
   color: rgba(255, 255, 255, 1);
+  transition: 0.3s;
 }
 
 .functions-footer__link:active {
   color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
 }
 
 .phone {
@@ -1821,13 +1832,24 @@ label.link-animation:active::after {
   padding-left: 17px;
 }
 
-.write-us__input::placeholder {
+.write-us__input::-moz-placeholder {
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.14px;
   color: rgba(70, 70, 70, 0.4);
 }
-
+.write-us__input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+  color: rgba(70, 70, 70, 0.4);
+}
+.write-us__input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+  color: rgba(70, 70, 70, 0.4);
+}
 .write-us__input:hover {
   border: 3px solid #ebebeb;
   background-color: #ebebeb;
@@ -1894,12 +1916,32 @@ label.link-animation:active::after {
   border: 3px solid #f2f2f2;
   background-color: #f2f2f2;
   resize: none;
-  min-height: 155px;
+  height: 155px;
   padding-left: 17px;
   padding-top: 10px;
 }
-
 .input-textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  color: rgba(70, 70, 70, 0.4);
+}
+.input-textarea::-moz-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  color: rgba(70, 70, 70, 0.4);
+}
+.input-textarea:-webkit-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  color: rgba(70, 70, 70, 0.4);
+}
+.input-textarea:-ms-input-placeholder {
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
   font-size: 14px;
@@ -1947,8 +1989,6 @@ label.link-animation:active::after {
   width: 100%;
   height: 100%;
   border: 0;
-  width: 600px;
-  height:450px;
 }
 
 /*catalog styles*/
@@ -2546,6 +2586,10 @@ button.link-animation {
   border: 2px solid #000000;
   border-radius: 50%;
   text-align: center;
+}
+
+.new--hidden {
+  display: none;
 }
 
 .hidden-functions__to-cart {
