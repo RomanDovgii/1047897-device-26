@@ -926,6 +926,8 @@ main {
   min-height: 388px;
   background-image: linear-gradient(to top, #e5e5e5 288px, #ffffff 288px);
   display: flex;
+  width: 100%;
+  min-width: 1160px;
 }
 
 /*services-slider*/
@@ -1349,6 +1351,8 @@ footer {
   background: #464646;
   display: flex;
   margin: 0 auto;
+  min-width: 1160px;
+  width: 100%;
 }
 
 .footer-section {
@@ -1993,9 +1997,10 @@ label.link-animation:active::after {
 
 /*catalog styles*/
 .heading-breadcrumbs {
+  box-sizing: border-box;
   flex-direction: column;
-  padding-left: 120px;
   margin-top: 37px;
+  padding-left: 59px;
 }
 
 .page-heading {
@@ -2057,6 +2062,8 @@ label.link-animation:active::after {
   height: 70px;
   margin-top: 46px;
   z-index: 2;
+  width: 100%;
+  min-width: 1160px;
 }
 
 .container-filter-sort {
@@ -2069,7 +2076,9 @@ label.link-animation:active::after {
   height: 100%;
   width: 3000%;
   background-color: #dcdcdc;
+  min-width: 1160px;
   top: 0;
+  right: 0;
   right: 832px;
   z-index: 1;
 }
