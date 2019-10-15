@@ -69,16 +69,9 @@ header {
   margin: 0;
   width: 1040px;
   padding: 44px 55px 0 60px;
-}
-
-.search-container {
-  display: inline-block;
-  float: left;
-}
-
-.functions-container {
-  display: inline-block;
-  float: right;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /*search form*/
@@ -191,26 +184,18 @@ input[type="search"]::-webkit-search-results-decoration {
 .functions-list {
   font-family: "Open Sans", sans-serif;
   list-style: none;
-  display: block;
-  width: 500px;
-}
-
-.functions-list__item {
-  display: inline-block;
-}
-
-.item-login {
-  float: left;
-  width: 285px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+  margin-top: -1px;
+  right: 0;
+  min-width: 480px;
+  z-index: 2;
 }
 
 .item-compare {
-  float: left;
-  margin-left: 2px;
-}
-
-.item-cart {
-  float: right;
+  margin-right: 40px;
 }
 
 .functions__style {
@@ -218,7 +203,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #000000;
   font-size: 15px;
   line-height: 30px;
-  letter-spacing: -0.21px;
+  letter-spacing: -0.15px;
 }
 
 .functions__style:hover, .functions__style:focus {
@@ -230,17 +215,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .item-login {
-  align-self: flex-start;
-  margin-right: auto;
-  margin-left: 0;
-}
-
-.functions__login {
-  text-decoration: none;
-  color: #000000;
-  font-size: 15px;
-  line-height: 30px;
-  letter-spacing: 0.15px;
+  margin-right: 217px;
 }
 
 .functions__login::before {
@@ -268,12 +243,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .functions__compare {
-  text-decoration: none;
-  color: #000000;
-  font-size: 15px;
-  line-height: 30px;
-  letter-spacing: -0.15px;
-  margin-left: auto;
 }
 
 .functions__compare::before {
@@ -290,11 +259,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .functions__cart {
-  text-decoration: none;
-  color: #000000;
-  font-size: 15px;
-  line-height: 30px;
-  letter-spacing: -0.21px;
 }
 
 .functions__cart::before {
@@ -310,14 +274,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .item-logged-in {
-  margin-left: 0;
-  display: inline-block;
-  float: left;
 }
 
 .item-exit {
-  display: inline-block;
-  float: left;
   margin-right: 63px;
   margin-left: 20px;
   opacity: 0.3;
@@ -1608,7 +1567,6 @@ footer {
 }
 
 .functions-footer__item {
-  display: inline-block;
 }
 
 .functions-footer__link {
