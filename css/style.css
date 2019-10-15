@@ -132,9 +132,11 @@ header {
 .search-form__input:focus::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
+
 .search-form__input:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
+
 .search-form__input:hover:-ms-input-placeholder,
 .search-form__input:focus:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
@@ -1107,6 +1109,7 @@ main {
 #service-slide-3:checked~.services-slider-control label[for="service-slide-3"] {
   color: #f7e184;
 }
+
 #service-slide-1:checked~.services-slider-control label[for="service-slide-1"]::after,
 #service-slide-2:checked~.services-slider-control label[for="service-slide-2"]::after,
 #service-slide-3:checked~.services-slider-control label[for="service-slide-3"]::after {
@@ -1858,18 +1861,21 @@ label.link-animation:active::after {
   letter-spacing: 0.14px;
   color: rgba(70, 70, 70, 0.4);
 }
+
 .write-us__input::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.14px;
   color: rgba(70, 70, 70, 0.4);
 }
+
 .write-us__input:-ms-input-placeholder {
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.14px;
   color: rgba(70, 70, 70, 0.4);
 }
+
 .write-us__input:hover,
 .write-us__input:focus {
   border: 3px solid #ebebeb;
@@ -1941,6 +1947,7 @@ label.link-animation:active::after {
   padding-left: 17px;
   padding-top: 10px;
 }
+
 .input-textarea::placeholder {
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
@@ -1948,6 +1955,7 @@ label.link-animation:active::after {
   letter-spacing: 0.14px;
   color: rgba(70, 70, 70, 0.4);
 }
+
 .input-textarea::-moz-placeholder {
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
@@ -1955,6 +1963,7 @@ label.link-animation:active::after {
   letter-spacing: 0.14px;
   color: rgba(70, 70, 70, 0.4);
 }
+
 .input-textarea:-webkit-input-placeholder {
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
@@ -1962,6 +1971,7 @@ label.link-animation:active::after {
   letter-spacing: 0.14px;
   color: rgba(70, 70, 70, 0.4);
 }
+
 .input-textarea:-ms-input-placeholder {
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
@@ -2068,13 +2078,16 @@ label.link-animation:active::after {
   line-height: 24px;
   letter-spacing: 0.14px;
 }
+
 .breadcrumbs__link:hover,
 .breadcrumbs__link:focus {
   color: rgba(0, 0, 0, 0.6);
 }
+
 .breadcrumbs__link:active {
   color: rgba(0, 0, 0, 0.1);
 }
+
 .section-sort {
   position: relative;
   background-color: rgba(0, 0, 0, 0.08);
@@ -2126,15 +2139,18 @@ label.link-animation:active::after {
   color: rgba(0,0,0,0.3);
   text-decoration: none;
 }
+
 .sort-list__item:hover,
 .sort-list__item:focus {
   color: rgba(0,0,0,0.6);
   text-decoration: none;
 }
+
 .sort-list__item:active {
   color: rgba(0,0,0,1);
   text-decoration: none;
 }
+
 .sort-by {
   width: 283px;
 }
@@ -2148,13 +2164,16 @@ label.link-animation:active::after {
 .sort-list-from-to__item {
   opacity: 0.2;
 }
+
 .sort-list-from-to__item:hover,
 .sort-list-from-to__item:focus {
   opacity: 0.4;
 }
+
 .sort-list-from-to__item:active {
   opacity: 1;
 }
+
 .from-bottom {
   display: block;
   position: relative;
@@ -2311,6 +2330,7 @@ span.checkbox-img {
   background-image: url("../img/catalog/checkbox/checkbox-on.svg");
   background-size: contain;
 }
+
 .filter-form__checkbox:focus ~ .filter-form__label span.checkbox-img,
 .filter-form__checkbox:focus ~ .filter-form__label span.checkbox-img,
 .filter-form__checkbox:focus ~ .filter-form__label span.checkbox-img,
@@ -2357,6 +2377,7 @@ span.radio-img {
   background-image: url("../img/catalog/radio/radio-on.svg");
   background-size: contain;
 }
+
 #bluetooth-in:focus ~ .filter-form__label span.radio-img,
 #bluetooth-not-in:focus ~ .filter-form__label span.radio-img {
   opacity: 0.6;
@@ -2368,6 +2389,7 @@ span.radio-img {
   margin-top: 24px;
   position: relative;
 }
+
 .range {
   display: block;
   width: 196px;
@@ -2380,6 +2402,7 @@ span.radio-img {
   font-weight: lighter;
   color: rgba(0, 0, 0, 0.2);
 }
+
 .range-green {
   display: block;
   width: 110px;
@@ -2389,6 +2412,7 @@ span.radio-img {
   left: 0;
   background-color: #91c92f;
 }
+
 .range__min {
   display: block;
   box-sizing: border-box;
@@ -2398,6 +2422,7 @@ span.radio-img {
   left: -10px;
   top: -10px;
 }
+
 .min-price__input {
   display: flex;
   background: none;
@@ -2475,6 +2500,7 @@ span.radio-img {
   line-height: 40px;
   letter-spacing: 0.14px;
 }
+
 .filter-form__label:hover .checkbox-img,
 .filter-form__label:focus .checkbox-img,
 .filter-form__label:hover .radio-img,
@@ -2523,10 +2549,12 @@ button.link-animation {
   display: flex;
   flex-direction: column;
 }
+
 .filter-form__radio[disabled] ~ .filter-form__label,
 .filter-form__checkbox[disabled] ~ .filter-form__label{
   opacity: 0.25;
 }
+
 .filter-form__radio[disabled] ~ .filter-form__label:hover .radio-img,
 .filter-form__radio[disabled] ~ .filter-form__label:focus .radio-img,
 .filter-form__checkbox[disabled] ~ .filter-form__label:hover .checkbox-img,
@@ -2563,15 +2591,18 @@ button.link-animation {
   margin-top: 12px;
   transition: 0.3s;
 }
+
 .hidden-functions__to-compare:hover,
 .hidden-functions__to-compare:focus {
   color: rgba(0,0,0,1);
   transition: 0.3s;
 }
+
 .hidden-functions__to-compare:active {
   color: rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
+
 .item-name-price {
   display: flex;
   flex-direction: row;
