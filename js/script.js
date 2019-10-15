@@ -24,7 +24,9 @@
     map.classList.remove("modal-delay");
     form.classList.remove("modal-hide");
     form.classList.add("modal-show");
-    name_input.focus();
+    setTimeout(function(){
+      name_input.focus();
+    }, 0.5);
     });
 
     form_close.addEventListener("click", function(evt) {
