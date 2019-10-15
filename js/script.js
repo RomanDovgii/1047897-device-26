@@ -24,6 +24,7 @@
     map.classList.remove("modal-delay");
     form.classList.remove("modal-hide");
     form.classList.add("modal-show");
+    name_input.focus();
     });
 
     form_close.addEventListener("click", function(evt) {
@@ -32,6 +33,7 @@
     form.classList.add("modal-hide");
     form.classList.remove("modal-show");
     form.classList.remove("modal-incorrect");
+    form_show.focus();
     });
 
 
@@ -50,6 +52,7 @@
     map.classList.remove("modal-delay");
     map.classList.add("modal-hide");
     map.classList.remove("modal-show");
+    map_show.focus();
     });
 
     map_show.addEventListener("click", function(evt) {
@@ -57,6 +60,7 @@
     form.classList.remove("modal-delay");
     map.classList.remove("modal-hide");
     map.classList.add("modal-show");
+    map_close.focus();
     });
 
 
