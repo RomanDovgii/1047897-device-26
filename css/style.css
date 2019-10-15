@@ -528,8 +528,7 @@ main {
 
 .slider-information {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   position: relative;
 }
 
@@ -562,8 +561,7 @@ main {
 
 
 .more-wrapper {
-  flex-grow: 1;
-  margin-top: -74px;
+  margin-top: 41px;
 }
 
 
@@ -642,8 +640,7 @@ main {
   font-size: 15px;
   line-height: 30px;
   letter-spacing: -0.3px;
-  margin-top: -78px;
-  flex-grow: 1;
+  margin-top: 19px;
 }
 
 .slide-link-more {
