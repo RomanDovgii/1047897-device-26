@@ -303,6 +303,10 @@ input[type="search"]::-webkit-search-results-decoration {
   display: block;
 }
 
+.catalog-navigation--active {
+  display: block;
+}
+
 .catalog__name {
   display: block;
   font-family: "Gilroy";
@@ -1935,8 +1939,8 @@ label.link-animation:active::after {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.input-textarea:hover
-..input-textarea:focus {
+.input-textarea:hover,
+.input-textarea:focus {
   border: 3px solid #ebebeb;
   background-color: #ebebeb;
 }
