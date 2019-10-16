@@ -1971,6 +1971,7 @@ label.link-animation:active::after {
   border: none;
   background: none;
   margin-top: 41px;
+  cursor: pointer;
 }
 
 .map-iframe {
