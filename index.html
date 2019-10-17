@@ -16,16 +16,16 @@
     </a>
     <section class="functions-section">
       <h2 class="visually-hidden">Функции</h2>
-        <form class="search-form" method="post" aria-label="поиск по сайту">
-          <input class="search-form__input" id="search-on-site" type="search" placeholder="Поиск по сайту">
-          <button class="search-form__button" type="submit" name="button">Поиск</button>
-        </form>
+      <form class="search-form" method="post" aria-label="поиск по сайту">
+        <input class="search-form__input" id="search-on-site" type="search" placeholder="Поиск по сайту">
+        <button class="search-form__button" type="submit" name="button">Поиск</button>
+      </form>
 
-        <ul class="functions-list">
-          <li class="functions-list__item item-login"><a href="">Войти</a></li>
-          <li class="functions-list__item item-compare"><a href="">Сравнить</a></li>
-          <li class="functions-list__item item-cart"><a href="">Корзина</a></li>
-        </ul>
+      <ul class="functions-list">
+        <li class="functions-list__item item-login"><a href="">Войти</a></li>
+        <li class="functions-list__item item-compare"><a href="">Сравнить</a></li>
+        <li class="functions-list__item item-cart"><a href="">Корзина</a></li>
+      </ul>
     </section>
     <section class="navigation-section">
       <h2 class="visually-hidden">Навигация</h2>
@@ -91,19 +91,21 @@
               Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
             </p>
             <div class="more-wrapper">
-              <a class="slide-link-more link-animation first-slide__link-more" href="">Подробнее</a>
+              <a class="slide-link-more link-animation" href="">Подробнее</a>
             </div>
-            <div class="additional-information additional-information-first">
-              <span class="additional-information-first__big-text slide-big-text">8,5 м</span>
-              <span class="additional-information-first__small-text slide-small-text">Длина палки</span>
-            </div>
-            <div class="additional-information additional-information-second">
-              <span class="additional-information-second__big-text slide-big-text">5 кг</span>
-              <span class="additional-information-second__small-text slide-small-text">Вес палки</span>
-            </div>
-            <div class="additional-information additional-information-third">
-              <span class="additional-information-third__big-text slide-big-text">Карбон</span>
-              <span class="additional-information-third__small-text slide-small-text">Материал</span>
+            <div class="additional-information__container">
+              <div class="additional-information">
+                <span class="slide-big-text">8,5 м</span>
+                <span class="slide-small-text">Длина палки</span>
+              </div>
+              <div class="additional-information additional-information-second">
+                <span class="slide-big-text">5 кг</span>
+                <span class="slide-small-text">Вес палки</span>
+              </div>
+              <div class="additional-information">
+                <span class="slide-big-text">Карбон</span>
+                <span class="slide-small-text">Материал</span>
+              </div>
             </div>
           </div>
         </div>
@@ -113,7 +115,7 @@
             <img class="second-slide__image" src="./img/main/popular-slider/fitness-tracker.png" alt="Фитнес-браслет">
           </div>
           <div class="slider-information">
-            <span class="second-slide__number slide-number">02</span>
+            <span class="slide-number second-slide__number">02</span>
             <h3 class="slide-heading second-slide__heading ">
               Худеем <br>
               правильно!
@@ -123,11 +125,13 @@
               не пропускать занятия и соблюдать диету.
             </p>
             <div class="more-wrapper">
-              <a class="second-slide__link-more slide-link-more link-animation" href="">подробнее</a>
+              <a class="slide-link-more link-animation" href="">подробнее</a>
             </div>
-            <div class="additional-information additional-information-first">
-              <span class="additional-information-first__big-text slide-big-text">48 часов</span>
-              <span class="additional-information-first__small-text slide-small-text">Без подзарядки</span>
+            <div class="additional-information__container">
+              <div class="additional-information">
+                <span class=" slide-big-text">48 часов</span>
+                <span class="slide-small-text">Без подзарядки</span>
+              </div>
             </div>
           </div>
         </div>
@@ -137,7 +141,7 @@
             <img class="third-slide__image" src="./img/main/popular-slider/drone.png" alt="Квадрокоптер">
           </div>
           <div class="slider-information">
-            <span class="third-slide__number slide-number">03</span>
+            <span class="slide-number third-slide__number">03</span>
             <h3 class="slide-heading third-slide__heading ">
               Порхает как бабочка, <br>
               жалит как пчела!
@@ -147,15 +151,17 @@
               мощным лазером, замаскированным под станддартную камеру.
             </p>
             <div class="more-wrapper">
-              <a class="third-slide__link-more slide-link-more link-animation" href="">Подробнее</a>
+              <a class="slide-link-more link-animation" href="">Подробнее</a>
             </div>
-            <div class="additional-information additional-information-first">
-              <span class="additional-information-first__big-text slide-big-text">800 м</span>
-              <span class="additional-information-first__small-text slide-small-text">Дальность полета</span>
-            </div>
-            <div class="additional-information additional-information-second">
-              <span class="additional-information-second__big-text slide-big-text">50 м</span>
-              <span class="additional-information-second__small-text slide-small-text">Радиус поражения</span>
+            <div class="additional-information__container">
+              <div class="additional-information">
+                <span class="slide-big-text">800 м</span>
+                <span class="slide-small-text">Дальность полета</span>
+              </div>
+              <div class="additional-information additional-information-second">
+                <span class="slide-big-text">50 м</span>
+                <span class="slide-small-text">Радиус поражения</span>
+              </div>
             </div>
           </div>
         </div>
@@ -168,7 +174,7 @@
         <ul class="popular-navigation">
           <li class="list-item">
             <a href="" class="list-item-1__link list-item__link">
-              <div class="list-item-1__background-image popular-navigation_list-item__background-image">
+              <div class="list-item-1__background-img list-item__background-img">
 
               </div>
               <p class="list-item-1__text list-item__text">Виртуальная реальность</p>
@@ -176,7 +182,7 @@
           </li>
           <li class="list-item">
             <a href="catalog.html" class="list-item-2__link list-item__link">
-              <div class="list-item-2__background-image popular-navigation_list-item__background-image">
+              <div class="list-item-2__background-img list-item__background-img">
 
               </div>
               <p class="list-item-2__text list-item__text">Моноподы <br> для селфи</p>
@@ -184,7 +190,7 @@
           </li>
           <li class="list-item">
             <a href="" class="list-item__link">
-              <div class="list-item-3__background-image popular-navigation_list-item__background-image">
+              <div class="list-item-3__background-img list-item__background-img">
 
               </div>
               <p class="list-item-3__text list-item__text">Экшн-камеры</p>
@@ -192,13 +198,13 @@
           </li>
           <li class="list-item">
             <a href="" class="list-item__link">
-              <div class="list-item-4__background-image popular-navigation_list-item__background-image"></div>
+              <div class="list-item-4__background-img list-item__background-img"></div>
               <p class="list-item-4__text list-item__text">Фитнес-браслеты</p>
             </a>
           </li>
           <li class="list-item">
             <a href="" class="list-item-5__link list-item__link">
-              <div class="list-item-5__background-image popular-navigation_list-item__background-image">
+              <div class="list-item-5__background-img list-item__background-img">
 
               </div>
               <p class="list-item-5__text list-item__text">Умные часы</p>
@@ -206,7 +212,7 @@
           </li>
           <li class="list-item">
             <a href="" class="list-item-6__link list-item__link">
-              <div class="list-item-6__background-image popular-navigation_list-item__background-image">
+              <div class="list-item-6__background-img list-item__background-img">
 
               </div>
               <p class="list-item-6__text list-item__text">Квадрокоптеры</p>
@@ -230,7 +236,7 @@
         <div class="information-block">
           <ul class="slider-services-list">
             <li class="slider-services-list__slide delivery-slide">
-              <h3 class="slider-services-list__heading delivery-slide__heading">Доставка</h3>
+              <h3 class="slider-services-list__heading">Доставка</h3>
               <p class="slider-services-list__text delivery-slide__text">
                 Мы с удовольствием доставим ваш товар прямо к вашему
                 подъезду совершенно бесплатно! Ведь мы неплохо
@@ -239,7 +245,7 @@
             </li>
             <!--marker-->
             <li class="slider-services-list__slide warranty-slide">
-              <h3 class="slider-services-list__heading services-slider__heading">Гарантия</h3>
+              <h3 class="slider-services-list__heading ">Гарантия</h3>
               <p class="slider-services-list__text services-slider__text">
                 Если из-за возгорания купленного у нас товара у вас сгорит
                 дом - не переживайте, мы выдадим вам новый. <br>
@@ -247,7 +253,7 @@
               </p>
             </li>
             <li class="slider-services-list__slide credit-slide">
-              <h3 class="slider-services-list__heading services-slider__heading">Кредит</h3>
+              <h3 class="slider-services-list__heading ">Кредит</h3>
               <p class="slider-services-list__text services-slider__text">
                 Залезть в долговую яму стало проще! Кредитные
                 консультанты подберут для вас наиболее выгодные
@@ -300,7 +306,7 @@
             Мы можем доставить ваш товар в самые отдаленные точки <br>
             России! DEVICE работает со многими транспортными компаниями:
           </p>
-          <ul class="about-us__list delivery-partners">
+          <ul class="delivery-partners">
             <li class="delivery-partners__item">Деловые Линии</li>
             <li class="delivery-partners__item">Автотрейдинг</li>
             <li class="delivery-partners__item">ЖелДорЭкспедиция</li>

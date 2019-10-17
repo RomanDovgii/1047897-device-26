@@ -527,21 +527,20 @@ main {
   margin-top: -61px;
   flex-grow: 1;
 }
+.additional-information__container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 54px;
+}
 
 .additional-information {
-  position: absolute;
   display: flex;
   flex-direction: column;
-  bottom: 5px;
-  left: 0;
+  width: 160px;
 }
 
 .additional-information-second {
-  left: 160px;
-}
-
-.additional-information-third {
-  left: 299px;
+  width: 139px;
 }
 
 .first-slide__number {
@@ -756,12 +755,12 @@ main {
   display: block;
 }
 
-.list-item__link:active .popular-navigation_list-item__background-image .popular-navigation_list-item__background-image_image-item {
+.list-item__link:active .list-item__background-img .list-item__background-img_image-item {
   opacity: 0.3;
   transition: 0.3s;
 }
 
-.list-item__link:active .popular-navigation_list-item__background-image {
+.list-item__link:active .list-item__background-img {
   background: #f0c52e;
   transition: 0.3s;
 }
@@ -771,18 +770,18 @@ main {
   transition: 0.3s;
 }
 
-.list-item__link:hover .popular-navigation_list-item__background-image,
-.list-item__link:focus .popular-navigation_list-item__background-image {
+.list-item__link:hover .list-item__background-img,
+.list-item__link:focus .list-item__background-img {
   background: #f0c52e;
   transition: 0.3s;
 }
 
-.list-item__link:focus .popular-navigation_list-item__background-image {
+.list-item__link:focus .list-item__background-img {
   background: #f0c52e;
   transition: 0.3s;
 }
 
-.popular-navigation_list-item__background-image {
+.list-item__background-img {
   width: 160px;
   height: 160px;
   background: #f7e296;
@@ -790,7 +789,7 @@ main {
   pointer-events: none;
 }
 
-.list-item-1__background-image::after {
+.list-item-1__background-img::after {
   content: "";
   background: url("../img/main/popular/popular-1.svg") no-repeat 50% 50%;
   top: 0;
@@ -801,7 +800,7 @@ main {
   z-index: 1;
 }
 
-.list-item-2__background-image::after {
+.list-item-2__background-img::after {
   content: "";
   background: url("../img/main/popular/popular-2.svg") no-repeat 50% 100%;
   top: 0;
@@ -812,7 +811,7 @@ main {
   z-index: 1;
 }
 
-.list-item-3__background-image::after {
+.list-item-3__background-img::after {
   content: "";
   background: url("../img/main/popular/popular-3.svg") no-repeat 50% 50%;
   top: 2px;
@@ -823,7 +822,7 @@ main {
   z-index: 1;
 }
 
-.list-item-4__background-image::after {
+.list-item-4__background-img::after {
   content: "";
   background: url("../img/main/popular/popular-4.svg") no-repeat 50% 50%;
   top: 5px;
@@ -834,7 +833,7 @@ main {
   z-index: 1;
 }
 
-.list-item-5__background-image::after {
+.list-item-5__background-img::after {
   content: "";
   background: url("../img/main/popular/popular-5.svg") no-repeat 50% 50%;
   top: 2px;
@@ -845,7 +844,7 @@ main {
   z-index: 1;
 }
 
-.list-item-6__background-image::after {
+.list-item-6__background-img::after {
   content: "";
   background: url("../img/main/popular/popular-6.svg") no-repeat 50% 50%;
   top: 6px;
@@ -856,37 +855,37 @@ main {
   z-index: 1;
 }
 
-.list-item__link:active .list-item-1__background-image::after {
+.list-item__link:active .list-item-1__background-img::after {
   opacity: 0.3;
   transition: 0.3s;
   pointer-events: none;
 }
 
-.list-item__link:active .list-item-2__background-image::after {
+.list-item__link:active .list-item-2__background-img::after {
   opacity: 0.3;
   transition: 0.3s;
   pointer-events: none;
 }
 
-.list-item__link:active .list-item-3__background-image::after {
+.list-item__link:active .list-item-3__background-img::after {
   opacity: 0.3;
   transition: 0.3s;
   pointer-events: none;
 }
 
-.list-item__link:active .list-item-4__background-image::after {
+.list-item__link:active .list-item-4__background-img::after {
   opacity: 0.3;
   transition: 0.3s;
   pointer-events: none;
 }
 
-.list-item__link:active .list-item-5__background-image::after {
+.list-item__link:active .list-item-5__background-img::after {
   opacity: 0.3;
   transition: 0.3s;
   pointer-events: none;
 }
 
-.list-item__link:active .list-item-6__background-image::after {
+.list-item__link:active .list-item-6__background-img::after {
   opacity: 0.3;
   transition: 0.3s;
   pointer-events: none;
@@ -958,11 +957,6 @@ main {
   width: 156px;
   height: 188px;
   z-index: 1;
-}
-
-.delivery-slide__heading {
-  display: block;
-  min-width: 219px;
 }
 
 .delivery-slide__text {
@@ -1182,7 +1176,7 @@ a.partners__link:focus::after {
   margin-top: 30px;
 }
 
-.about-us__list {
+.delivery-partners {
   font-family: "Gilroy";
   font-weight: bold;
   color: #000000;
