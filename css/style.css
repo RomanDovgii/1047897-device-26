@@ -198,7 +198,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-right: 40px;
 }
 
-.functions__style {
+.functions-list__item a {
   text-decoration: none;
   color: #000000;
   font-size: 15px;
@@ -206,11 +206,11 @@ input[type="search"]::-webkit-search-results-decoration {
   letter-spacing: -0.15px;
 }
 
-.functions__style:hover, .functions__style:focus {
+.functions-list__item a:hover, .functions-list__item a:focus {
   opacity: 0.6;
 }
 
-.functions__style:active {
+.functions-list__item a:active {
   opacity: 0.3;
 }
 
@@ -218,7 +218,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-right: 217px;
 }
 
-.functions__login::before {
+.item-login a::before {
   content: "";
   position: relative;
   background-image: url("../img/header/icons/svg/user.svg");
@@ -230,7 +230,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-right: 13px;
 }
 
-.functions__username::before {
+.item-logged-in a::before {
   content: "";
   position: relative;
   background-image: url("../img/header/icons/svg/user.svg");
@@ -242,10 +242,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-right: 13px;
 }
 
-.functions__compare {
-}
-
-.functions__compare::before {
+.item-compare a::before {
   content: "";
   position: relative;
   background-image: url("../img/header/icons/svg/compare.svg");
@@ -258,10 +255,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-right: 10px;
 }
 
-.functions__cart {
-}
-
-.functions__cart::before {
+.item-cart a::before {
   content: "";
   position: relative;
   background-image: url("../img/header/icons/svg/cart.svg");
@@ -1458,20 +1452,20 @@ footer {
   z-index: 2;
 }
 
-.functions-footer__exit {
+.footer__item-exit a {
   opacity: 0.3;
 }
 
-.functions-footer__login:hover::before,
-.functions-footer__login:focus::before {
+.footer__item-login a:hover::before,
+.footer__item-login a:focus::before {
   opacity: 0.6;
 }
 
-.functions-footer__login:active::before {
+.footer__item-login a:active::before {
   opacity: 0.3;
 }
 
-.functions-footer__login::before {
+.footer__item-login a::before {
   content: "";
   position: relative;
   background-image: url("../img/footer/icons/user-footer.png");
@@ -1484,7 +1478,7 @@ footer {
   margin-right: 12px;
 }
 
-.functions-footer__logged-in::before {
+.footer__item-logged-in a::before {
   content: "";
   position: relative;
   background-image: url("../img/footer/icons/user-footer.png");
@@ -1497,16 +1491,16 @@ footer {
   margin-right: 10px;
 }
 
-.functions-footer__logged-in:hover::before,
-.functions-footer__logged-in:focus::before {
+.footer__item-logged-in a:hover::before,
+.footer__item-logged-in a:focus::before {
   opacity: 0.6;
 }
 
-.functions-footer__logged-in:active::before {
+.footer__item-logged-in a:active::before {
   opacity: 0.3;
 }
 
-.functions-footer__compare::before {
+.footer__item-compare a::before {
   content: "";
   position: relative;
   background-image: url("../img/footer/icons/compare-footer.png");
@@ -1520,16 +1514,16 @@ footer {
   margin-right: 8px;
 }
 
-.functions-footer__compare:hover::before,
-.functions-footer__compare:focus::before {
+.footer__item-compare a:hover::before,
+.footer__item-compare a:focus::before {
   opacity: 0.6;
 }
 
-.functions-footer__compare:active::before {
+.footer__item-compare a:active::before {
   opacity: 0.3;
 }
 
-.functions-footer__cart::before {
+.footer__item-cart a::before {
   content: "";
   position: relative;
   background-image: url("../img/footer/icons/cart-footer.png");
@@ -1543,18 +1537,18 @@ footer {
   -webkit-backface-visibility:hidden;
 }
 
-.functions-footer__cart:hover::before,
-.functions-footer__cart:focus::before {
+.footer__item-cart a:hover::before,
+.footer__item-cart a:focus::before {
   opacity: 0.6;
   transition: 0.3s;
 }
 
-.functions-footer__cart:active::before {
+.footer__item-cart a:active::before {
   opacity: 0.3;
   transition: 0.3s;
 }
 
-.functions-footer__compare {
+.footer__item-compare a {
   margin-right: 41px;
 }
 
@@ -1570,10 +1564,7 @@ footer {
   margin-right: 17px;
 }
 
-.functions-footer__item {
-}
-
-.functions-footer__link {
+.functions-footer__item a {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   font-size: 15px;
@@ -1581,13 +1572,13 @@ footer {
   letter-spacing: 0.15px;
 }
 
-.functions-footer__link:hover,
-.functions-footer__link:focus {
+.functions-footer__item a:hover,
+.functions-footer__item a:focus {
   color: rgba(255, 255, 255, 1);
   transition: 0.3s;
 }
 
-.functions-footer__link:active {
+.functions-footer__item a:active {
   color: rgba(255, 255, 255, 0.3);
   transition: 0.3s;
 }
