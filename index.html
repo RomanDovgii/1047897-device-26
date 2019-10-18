@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style-minimized.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <h1 class="visually-hidden">Главная</h1>
     <a href="index.html" class="header-logo">
-      <img class="header-logo__image" src="./img/header/logo/logo-device.svg" height='35' width='163' alt="Device">
+      <img class="header-logo__image" src="./img/header/logo/logo-device.svg" height="35" width="163" alt="Device">
     </a>
     <section class="functions-section">
       <h2 class="visually-hidden">Функции</h2>
@@ -34,20 +34,20 @@
           <ul class="navigation-list">
             <li class="navigation-list__column-1 navigation-list__column">
               <ul class="column-1__list column-list" tabindex="0">
-                <li><a href="" class="navigation__list-item-1">Виртуальная реальность</a></li>
-                <li><a href="catalog.html">Моноподы для селфи</a></li>
-                <li><a href="">Экшн-камеры</a></li>
+                <li><a href="" class="navigation__list-item">Виртуальная реальность</a></li>
+                <li><a href="catalog.html" class="navigation__list-item">Моноподы для селфи</a></li>
+                <li><a href="" class="navigation__list-item">Экшн-камеры</a></li>
               </ul>
             </li>
             <li class="navigation-list__column-2 navigation-list__column">
               <ul class="column-2__list column-list">
-                <li><a href="">Фитнес-браслеты</a></li>
-                <li><a href="">Умные часы</a></li>
+                <li><a href="" class="navigation__list-item">Фитнес-браслеты</a></li>
+                <li><a href="" class="navigation__list-item">Умные часы</a></li>
               </ul>
             </li>
             <li class="navigation-list__column-3 navigation-list__column">
               <ul class="column-3__list column-list">
-                <li><a href="">Квадрокоптеры</a></li>
+                <li><a href="" class="navigation__list-item">Квадрокоптеры</a></li>
               </ul>
             </li>
           </ul>
@@ -78,7 +78,7 @@
         </div>
         <div class="popular-slide popular-slide-1">
           <div class="slider-image">
-            <img class="first-slide__image" src="./img/main/popular-slider/selfie-monopod.png" alt="Селфи монопод">
+            <img class="first-slide__image" width="384" height="486" src="./img/main/popular-slider/selfie-monopod.png" alt="Селфи монопод">
           </div>
           <div class="slider-information">
             <span class="slide-number first-slide__number ">01</span>
@@ -87,7 +87,9 @@
               как Бен Стиллер!
             </h3>
             <p class="slide-description first-slide__description ">
-              Самая длинная палка для селфи доступна в нашем магазине. <br>
+              Самая длинная палка для селфи доступна в нашем магазине.
+            </p>
+            <p class="slide-description first-slide__description ">
               Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
             </p>
             <div class="more-wrapper">
@@ -112,7 +114,7 @@
         <!--marker-->
         <div class="popular-slide popular-slide-2">
           <div class="slider-image">
-            <img class="second-slide__image" src="./img/main/popular-slider/fitness-tracker.png" alt="Фитнес-браслет">
+            <img class="second-slide__image" width="345" height="485" src="./img/main/popular-slider/fitness-tracker.png" alt="Фитнес-браслет">
           </div>
           <div class="slider-information">
             <span class="slide-number second-slide__number">02</span>
@@ -121,7 +123,9 @@
               правильно!
             </h3>
             <p class="slide-description second-slide__description">
-              Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+              Мотивирующие фитнес-браслеты помогут найти в себе силы
+            </p>
+            <p class="slide-description second-slide__description">
               не пропускать занятия и соблюдать диету.
             </p>
             <div class="more-wrapper">
@@ -138,16 +142,18 @@
 
         <div class="popular-slide popular-slide-3">
           <div class="slider-image">
-            <img class="third-slide__image" src="./img/main/popular-slider/drone.png" alt="Квадрокоптер">
+            <img class="third-slide__image" width="526" height="334" src="./img/main/popular-slider/drone.png" alt="Квадрокоптер">
           </div>
           <div class="slider-information">
             <span class="slide-number third-slide__number">03</span>
             <h3 class="slide-heading third-slide__heading ">
-              Порхает как бабочка, <br>
+              Порхает как бабочка,
               жалит как пчела!
             </h3>
             <p class="slide-description third-slide__description">
-              Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
+              Этот обычный, на первый взгляд, квадрокоптер оснащен
+            </p>
+            <p class="slide-description third-slide__description">
               мощным лазером, замаскированным под станддартную камеру.
             </p>
             <div class="more-wrapper">
@@ -185,7 +191,7 @@
               <div class="list-item-2__background-img list-item__background-img">
 
               </div>
-              <p class="list-item-2__text list-item__text">Моноподы <br> для селфи</p>
+              <p class="list-item-2__text list-item__text">Моноподы для селфи</p>
             </a>
           </li>
           <li class="list-item">
@@ -299,11 +305,11 @@
         <div class="column">
           <h2 class="about-us__heading">О нас</h2>
           <p class="about-us__text about-us__text-1">
-            Огромный выбор гаджетов не оставит равнодушным гика, <br>
+            Огромный выбор гаджетов не оставит равнодушным гика,
             который есть в каждом из нас.
           </p>
           <p class="about-us__text about-us__text-2">
-            Мы можем доставить ваш товар в самые отдаленные точки <br>
+            Мы можем доставить ваш товар в самые отдаленные точки
             России! DEVICE работает со многими транспортными компаниями:
           </p>
           <ul class="delivery-partners">
@@ -321,27 +327,27 @@
         <div class="column contacts-column">
           <h2 class="contacts__heading">Контакты</h2>
           <p class="contacts__text">
-            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
-          <a class="contacts__map-link" href="" aria-label="показать карту, город Москва улица Строителей 15">
+          <a class="contacts__map-link" href="map.html" aria-label="показать карту, город Москва улица Строителей 15">
             <img class="contacts__map-image" src="./img/main/map/map.jpg" height="222" width="560" alt="город Москва улица Строителей 15">
           </a>
-          <a class="contacts__write-us link-animation" href="">Напишите нам</a>
+          <a class="contacts__write-us link-animation" href="writeus.html">Напишите нам</a>
         </div>
       </section>
     </div>
     <!--the end of the contacts-->
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container container-footer">
 
       <section class="footer__logo-and-functions">
         <h2 class="visually-hidden">Функции для клиентов</h2>
-          <a href="index.html" class="footer__logo">
-            <img class="footer__logo_image-logo" src="./img/footer/logo/device-logo-footer.png" height="35" width="163" alt="DEVICE">
-          </a>
+        <a href="index.html" class="footer__logo">
+          <img class="footer__logo_image-logo" src="./img/footer/logo/device-logo-footer.png" height="35" width="163" alt="DEVICE">
+        </a>
 
         <ul class="functions-footer">
           <li class="footer__item-login functions-footer__item">
@@ -385,23 +391,23 @@
 
         <ul class="social-footer">
           <li>
-            <a class="social-footer__link social" href="" aria-label="Наш фейсбук">
-              <img src="./img/footer/social/fb.svg" height="32" width="32" alt="ссылка на Facebook" class="social__links">
+            <a class="social-footer__link social-fb" href="" aria-label="Наш фейсбук">
+              <p class="visually-hidden">Наш фейсбук</p>
             </a>
           </li>
           <li class=" instagram">
-            <a class="social-footer__link social" href="" aria-label="Наш инстаграм">
-              <img src="./img/footer/social/instagram.svg" height="32" width="32" alt="ссылка на Instagram" class="social__links">
+            <a class="social-footer__link social-inst" href="" aria-label="Наш инстаграм">
+              <p class="visually-hidden">Наш инстаграм</p>
             </a>
           </li>
           <li>
-            <a class="social-footer__link social" href="" aria-label="Наш твиттер">
-              <img src="./img/footer/social/twitter.svg" height="32" width="32" alt="ссылка на Twitter" class="social__links">
+            <a class="social-footer__link social-tw" href="" aria-label="Наш твиттер">
+              <p class="visually-hidden">Наш твиттер</p>
             </a>
           </li>
         </ul>
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo">
-          <img src="./img/footer/htmlAcademy/logo-html.svg" height="35" width="27" alt="Логотип HTML Academy" class="html-academy__img">
+          <img src="./img/footer/htmlacademy/logo-html.svg" height="35" width="27" alt="Логотип HTML Academy" class="html-academy__img">
         </a>
       </section>
     </div>
@@ -410,14 +416,16 @@
   <section class="modal modal-write-us">
     <h2 class="visually-hidden"> Форма обратной связи</h2>
     <form class="modal__form write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="input-container container-name">
-        <label class="modal-label__name" for="user-name">Ваше имя:</label>
-        <input type="text" name="name" value="" class="write-us__input input-name" placeholder="Имя Фамилия" id="user-name">
-      </div>
+      <div class="input-main-container">
+        <div class="input-container container-name">
+          <label class="modal-label__name" for="user-name">Ваше имя:</label>
+          <input type="text" name="name" value="" class="write-us__input input-name" placeholder="Имя Фамилия" id="user-name">
+        </div>
 
-      <div class="input-container container-email">
-        <label class="modal-label__email" for='user-email'>Ваш e-mail:</label>
-        <input type="email" name="email" value="" class="write-us__input input-email" placeholder="email@example.com" id="user-email">
+        <div class="input-container container-email">
+          <label class="modal-label__email" for="user-email">Ваш e-mail:</label>
+          <input type="email" name="email" value="" class="write-us__input input-email" placeholder="email@example.com" id="user-email">
+        </div>
       </div>
 
       <div class="container-letter-text">

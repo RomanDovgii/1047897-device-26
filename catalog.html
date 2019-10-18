@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style-minimized.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <!--header with logged in user-->
-  <header>
+  <header class="header">
     <h1 class="visually-hidden">Каталог</h1>
     <a href="index.html" class="header-logo">
       <img class="header-logo__image" src="img/header/logo/logo-device.svg" height='35' width='163' alt="Device">
@@ -35,21 +35,21 @@
         <nav class="catalog-navigation">
           <ul class="navigation-list">
             <li class="navigation-list__column-1 navigation-list__column">
-              <ul class="column-1__list column-list">
-                <li><a href="">Виртуальная реальность</a></li>
-                <li><a href="">Монопод для селфи</a></li>
-                <li><a href="">Экшн-камеры</a></li>
+              <ul class="column-1__list column-list" tabindex="0">
+                <li><a href="" class="navigation__list-item">Виртуальная реальность</a></li>
+                <li><a href="catalog.html" class="navigation__list-item">Моноподы для селфи</a></li>
+                <li><a href="" class="navigation__list-item">Экшн-камеры</a></li>
               </ul>
             </li>
             <li class="navigation-list__column-2 navigation-list__column">
               <ul class="column-2__list column-list">
-                <li><a href="">Фитнес-браслеты</a></li>
-                <li><a href="">Умные часы</a></li>
+                <li><a href="" class="navigation__list-item">Фитнес-браслеты</a></li>
+                <li><a href="" class="navigation__list-item">Умные часы</a></li>
               </ul>
             </li>
             <li class="navigation-list__column-3 navigation-list__column">
               <ul class="column-3__list column-list">
-                <li><a href="">Квадрокоптеры</a></li>
+                <li><a href="" class="navigation__list-item">Квадрокоптеры</a></li>
               </ul>
             </li>
           </ul>
@@ -315,7 +315,7 @@
 
   </main>
   <!-- footer with logged in user-->
-  <footer>
+  <footer class="footer">
 
     <div class="container container-footer">
 
@@ -370,23 +370,23 @@
 
         <ul class="social-footer">
           <li>
-            <a class="social-footer__link social" href="" aria-label="Наш фейсбук">
-              <img src="./img/footer/social/fb.svg" height="32" width="32" alt="ссылка на Facebook" class="social__links">
+            <a class="social-footer__link social-fb" href="" aria-label="Наш фейсбук">
+              <p class="visually-hidden">Наш фейсбук</p>
             </a>
           </li>
           <li class=" instagram">
-            <a class="social-footer__link social" href="" aria-label="Наш инстаграм">
-              <img src="./img/footer/social/instagram.svg" height="32" width="32" alt="ссылка на Instagram" class="social__links">
+            <a class="social-footer__link social-inst" href="" aria-label="Наш инстаграм">
+              <p class="visually-hidden">Наш инстаграм</p>
             </a>
           </li>
           <li>
-            <a class="social-footer__link social" href="" aria-label="Наш твиттер">
-              <img src="./img/footer/social/twitter.svg" height="32" width="32" alt="ссылка на Twitter" class="social__links">
+            <a class="social-footer__link social-tw" href="" aria-label="Наш твиттер">
+              <p class="visually-hidden">Наш твиттер</p>
             </a>
           </li>
         </ul>
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo">
-          <img src="./img/footer/htmlAcademy/logo-html.svg" height="35" width="27" alt="Логотип HTML Academy" class="html-academy__img">
+          <img src="./img/footer/htmlacademy/logo-html.svg" height="35" width="27" alt="Логотип HTML Academy" class="html-academy__img">
         </a>
       </section>
     </div>
