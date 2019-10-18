@@ -48,6 +48,10 @@ header {
   left: 60px;
 }
 
+.header-logo__image {
+  pointer-events: none;
+}
+
 .header-logo:hover .header-logo__image,
 .header-logo:focus .header-logo__image {
   opacity: 0.6;
@@ -78,6 +82,8 @@ header {
 .search-form {
   display: flex;
   position: relative;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .search-form::after {
@@ -1403,9 +1409,12 @@ footer {
   margin-right: auto;
 }
 
-.footer__logo-span {
+.footer__logo {
   margin-left: 0;
   margin-right: auto;
+}
+.footer__logo_image-logo {
+  pointer-events: none;
 }
 
 .footer__logo:hover .footer__logo_image-logo,
