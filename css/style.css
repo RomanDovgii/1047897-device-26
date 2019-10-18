@@ -690,10 +690,6 @@ main {
   background-image: url("../img/main/sliderCommon/slider-button.svg");
 }
 
-.popular-slider input[type="radio"]:focus~.slider-controls label {
-  outline: thin dotted;
-}
-
 #popular-01:checked~.popular-slide-1 {
   visibility: visible;
 }
