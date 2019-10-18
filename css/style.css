@@ -2421,6 +2421,7 @@ span.radio-img {
   width: 20px;
   height: 23px;
   background-image: url("../img/catalog/filter/filter-button.svg");
+  background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -2428,6 +2429,7 @@ span.radio-img {
 .range-img:active {
   width: 22px;
   height: 25px;
+  top: -1px;
 }
 
 .filter-form__heading {
