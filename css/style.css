@@ -1361,6 +1361,7 @@ footer {
   justify-content: center;
   margin-top: 5px;
   margin-left: -33px;
+  margin-right: auto;
 }
 
 .services-footer__items-link {
@@ -1390,7 +1391,8 @@ footer {
   width: 144PX;
   display: flex;
   justify-content: space-around;
-  margin-right: 54px;
+  margin-right: auto;
+  margin-left: 428px;
 }
 
 /*the end of the text-deco*/
@@ -1401,6 +1403,13 @@ footer {
   font-size: 15px;
   line-height: 30px;
   letter-spacing: -0.3px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.footer__logo-span {
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .footer__logo:hover .footer__logo_image-logo,
@@ -1584,6 +1593,10 @@ footer {
   margin-bottom: 63px;
 }
 
+.html-academy__img {
+  pointer-events: none;
+}
+
 .html-academy-logo:hover,
 .html-academy-logo:focus {
   opacity: 0.6;
@@ -1600,19 +1613,22 @@ footer {
 
 .social-footer__link {
   opacity: 0.3;
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
-.social-footer__link:hover
-.social-footer__link:focus {
-  opacity: 0.6;
-}
-
+.social-footer__link:hover,
 .social-footer__link:focus {
   opacity: 0.6;
 }
 
 .social-footer__link:active {
   opacity: 0.1;
+}
+
+.social__links {
+  pointer-events: none;
 }
 
 /*social block the end*/
