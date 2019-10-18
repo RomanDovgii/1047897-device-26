@@ -2550,6 +2550,7 @@ span.radio-img {
   font-size: 13px;
   line-height: 36px;
   letter-spacing: 0.13px;
+  margin-top: 28px;
 }
 
 .name-link__heading {
@@ -2558,7 +2559,6 @@ span.radio-img {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.1px;
-  margin-top: 28px;
   width: 254px;
   color: #000000;
 }
@@ -2677,22 +2677,17 @@ span.radio-img {
   color: rgba(0, 0, 0, 0.3);
 }
 
-a.pagination--active {
-  color: rgba(0, 0, 0, 1);
-}
 
-.catalog-pagination__numbers .catalog-pagination__item .catalog-pagination__link {
-  color: rgba(0, 0, 0, 0.3);
-}
+
 
 .catalog-pagination__link:hover,
 .catalog-pagination__link:focus {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 1);
   transition: 0.3s;
 }
 
 .catalog-pagination__link:active {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.3);
   transition: 0.3s;
 }
 
@@ -2718,7 +2713,7 @@ a.pagination--active {
   height: 70px;
   line-height: 70px;
   margin-right: auto;
-  padding: 1px 30px 0 30px;
+  padding: 0 30px 0 30px;
 }
 
 .catalog-pagination__next:hover .catalog-pagination__link,
@@ -2731,7 +2726,7 @@ a.pagination--active {
 
 .catalog-pagination__next:active .catalog-pagination__link,
 .catalog-pagination__back:active .catalog-pagination__link {
-  color: rgba(0, 0, 0, 0.3);
+  background-color: #d9d9d9;
   transition: 0.3s;
 }
 
@@ -2744,14 +2739,17 @@ a.pagination--active {
   margin-right: 0;
 }
 
-.catalog-pagination__next>.catalog-pagination__link {
+.catalog-pagination__next .catalog-pagination__link {
   display: block;
   height: 70px;
   line-height: 70px;
   margin-right: auto;
-  padding: 1px 32px 0 32px;
+  padding: 0 32px 0 32px;
 }
 
+.pagination--active {
+  color: rgba(0, 0, 0, 1);
+}
 /*the end of catalog styles*/
 /*animations*/
 @keyframes bounce {
