@@ -38,8 +38,6 @@
     form_show.focus();
     });
 
-
-
     form_show.addEventListener("click", function(evt) {
     evt.preventDefault();
     if (map.classList.contains("modal-show")) {
@@ -64,8 +62,6 @@
     map.classList.add("modal-show");
     map_close.focus();
     });
-
-
 
     modal_form.addEventListener("submit", function (evt) {
       if (!email_input.value) {
@@ -99,7 +95,6 @@
         }, 0.3);
       }
     })
-
 
     email_input.addEventListener("keyup", function (evt) {
       email_input.classList.remove("error");
