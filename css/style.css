@@ -1374,11 +1374,17 @@ a.partners__link:focus::after {
   font-weight: 800;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 527px;
+  padding-right: 52px;
+  padding-left: 18px;
   flex-wrap: wrap;
   margin-top: 5px;
-  margin-left: -33px;
   margin-right: auto;
+}
+.services-footer li{
+  margin: 0 auto;
 }
 
 .services-footer__items-link {
@@ -1388,10 +1394,6 @@ a.partners__link:focus::after {
   line-height: 24px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-}
-
-.services-footer__warranty {
-  margin: 0 34px;
 }
 
 .services-footer__items-link:hover, .services-footer__items-link:focus {
@@ -1781,7 +1783,7 @@ label.link-animation:active::after {
   cursor: pointer;
   transition: 0.3s;
   position: absolute;
-  top: 22px;
+  top: 23px;
   right: 21.5px;
   display: block;
   border: none;
@@ -1823,13 +1825,15 @@ label.link-animation:active::after {
 }
 
 .write-us__input {
-  display: block;
   font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
   font-weight: 400;
   color: #000000;
   box-sizing: border-box;
   width: 100%;
-  line-height: 44px;
+  line-height: 50px;
+  padding-bottom: 3px;
+  height: 50px;
   border: none;
   border: 3px solid #f2f2f2;
   background-color: #f2f2f2;
@@ -1839,13 +1843,15 @@ label.link-animation:active::after {
 .write-us__input::-moz-placeholder {
   font-size: 14px;
   line-height: 44px;
+  padding-bottom: 3px;
   letter-spacing: 0.14px;
   color: rgba(70, 70, 70, 0.4);
 }
 
 .write-us__input::-webkit-input-placeholder {
   font-size: 14px;
-  line-height: 44px;
+  line-height: 50px;
+  padding-bottom: 3px;
   letter-spacing: 0.14px;
   color: rgba(70, 70, 70, 0.4);
 }
@@ -1853,6 +1859,7 @@ label.link-animation:active::after {
 .write-us__input:-ms-input-placeholder {
   font-size: 14px;
   line-height: 44px;
+  padding-bottom: 3px;
   letter-spacing: 0.14px;
   color: rgba(70, 70, 70, 0.4);
 }
@@ -1894,7 +1901,7 @@ label.link-animation:active::after {
 }
 
 .input-container label {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .container-letter-text {
@@ -1915,6 +1922,7 @@ label.link-animation:active::after {
 
 .input-textarea {
   font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
   font-weight: 400;
   color: #000000;
   box-sizing: border-box;
@@ -1923,9 +1931,10 @@ label.link-animation:active::after {
   border: 3px solid #f2f2f2;
   background-color: #f2f2f2;
   resize: none;
-  height: 155px;
+  height: 156px;
   padding-left: 17px;
-  padding-top: 10px;
+  padding-right: 17px;
+  padding-top: 13px;
 }
 
 .input-textarea::placeholder {
@@ -1953,6 +1962,14 @@ label.link-animation:active::after {
 }
 
 .input-textarea:-ms-input-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.input-textarea::-ms-input-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
