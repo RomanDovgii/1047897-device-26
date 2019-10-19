@@ -297,6 +297,8 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   display: inline-block;
   vertical-align: baseline;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .catalog:hover .catalog-navigation,
@@ -427,7 +429,7 @@ input[type="search"]::-webkit-search-results-decoration {
   list-style: none;
   width: 500px;
   display:flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .services__item {
@@ -435,12 +437,16 @@ input[type="search"]::-webkit-search-results-decoration {
   vertical-align: baseline;
 }
 
+.item-delivery {
+  margin-left: 0;
+}
+
 .item-warranty {
   margin-left: 35px;
 }
 
 .item-contacts {
-  margin-right: -5px;
+  margin-right: -4px;
   margin-left: auto;
 }
 
@@ -536,6 +542,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .additional-information__container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 54px;
   margin-bottom: 25px;
 }
@@ -566,7 +573,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .first-slide__image {
-  margin-top: 18px;
+  margin-top: 2px;
   margin-left: 4px;
 }
 
