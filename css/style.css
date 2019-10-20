@@ -899,7 +899,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .section-services-slider {
   margin-top: 46px;
   min-height: 388px;
-  background-image: linear-gradient(to top, #e5e5e5 288px, #ffffff 288px);
+  background-image: linear-gradient(to bottom, #ffffff 100px, #e5e5e5 100px);
   display: flex;
   width: 100%;
   min-width: 1160px;
@@ -1006,7 +1006,6 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-bottom: 69px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border-right: 7px solid #000000;
   padding: 75px 0 75px 0;
 }
@@ -1025,12 +1024,20 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-left: 2px;
 }
 
+
 .services-slider-control label.control-warranty {
   margin-top: 4px;
 }
 
+
+
+.services-slider-control label:not(:first-child) {
+  margin-top: 24px;
+}
+
 .services-slider-control label.control-credit {
   margin-bottom: -5px;
+  margin-top: 25px;
 }
 
 .services-slider-control,
@@ -1043,12 +1050,14 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .slider-services-list__slide {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
   position: relative;
   width: 440px;
+  padding-bottom: 30px;
 }
 
 .slider-services-list .slider-services-list__slide {
@@ -1069,7 +1078,7 @@ input[type="search"]::-webkit-search-results-decoration {
 #service-slide-3:checked ~ .services-slider-control label[for="service-slide-3"]::after {
   background-color: #000000;
   width: 278px;
-  height: 40px;
+  height: 100%;
   top: 0;
 }
 
@@ -2571,12 +2580,16 @@ span.radio-img {
   flex-direction: column;
 }
 
-.catalog-selfie-sticks {
+.catalog-list {
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.catalog__item {
+  width: 360px;
 }
 
 .hidden-functions__to-compare {
@@ -2614,7 +2627,7 @@ span.radio-img {
   font-size: 13px;
   line-height: 36px;
   letter-spacing: 0.13px;
-  margin-top: 28px;
+  margin-top: 32px;
 }
 
 .name-link__heading {
@@ -2634,11 +2647,13 @@ span.radio-img {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.16px;
-  margin-top: 28px;
+  margin-top: 32px;
 }
 
 .item-wrapper {
   position: relative;
+  background-color: #eeeeee;
+  height: 380px;
 }
 
 .hidden-functions {
