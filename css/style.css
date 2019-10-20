@@ -160,12 +160,12 @@ fieldset.fieldset-filter {
   visibility: hidden;
 }
 
-.search-form__input:focus ~ .search-form__button {
+.search-form__input:focus~.search-form__button {
   visibility: visible;
 }
 
-.search-form__input:focus ~ .search-form__button:hover,
-.search-form__input:focus ~ .search-form__button:focus {
+.search-form__input:focus~.search-form__button:hover,
+.search-form__input:focus~.search-form__button:focus {
   background-color: #000000;
   color: #ffffff;
 }
@@ -303,8 +303,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .catalog:hover .catalog-navigation,
 .catalog:focus .catalog-navigation,
-.catalog__name:hover ~ .catalog-navigation,
-.catalog__name:focus ~ .catalog-navigation {
+.catalog__name:hover~.catalog-navigation,
+.catalog__name:focus~.catalog-navigation {
   display: block;
 }
 
@@ -428,7 +428,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 800;
   list-style: none;
   width: 500px;
-  display:flex;
+  display: flex;
   justify-content: flex-start;
 }
 
@@ -669,7 +669,6 @@ input[type="search"]::-webkit-search-results-decoration {
 /*1st-slide*/
 /*the end of the 1st-slide*/
 /*popular-slider technical part*/
-
 .slider-controls {
   position: absolute;
   z-index: 2;
@@ -691,21 +690,21 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-right: 14px;
 }
 
-#popular-01:checked ~ .slider-controls label[for="popular-01"],
-#popular-02:checked ~ .slider-controls label[for="popular-02"],
-#popular-03:checked ~ .slider-controls label[for="popular-03"] {
+#popular-01:checked~.slider-controls label[for="popular-01"],
+#popular-02:checked~.slider-controls label[for="popular-02"],
+#popular-03:checked~.slider-controls label[for="popular-03"] {
   background-image: url("../img/main/slider-common/slider-button.svg");
 }
 
-#popular-01:checked ~ .popular-slide-1 {
+#popular-01:checked~.popular-slide-1 {
   display: flex;
 }
 
-#popular-02:checked ~ .popular-slide-2 {
+#popular-02:checked~.popular-slide-2 {
   display: flex;
 }
 
-#popular-03:checked ~ .popular-slide-3 {
+#popular-03:checked~.popular-slide-3 {
   display: flex;
 }
 
@@ -1025,12 +1024,9 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-left: 2px;
 }
 
-
 .services-slider-control label.control-warranty {
   margin-top: 4px;
 }
-
-
 
 .services-slider-control label:not(:first-child) {
   margin-top: 24px;
@@ -1068,30 +1064,30 @@ input[type="search"]::-webkit-search-results-decoration {
   left: -1px;
 }
 
-#service-slide-1:checked ~ .services-slider-control label[for="service-slide-1"],
-#service-slide-2:checked ~ .services-slider-control label[for="service-slide-2"],
-#service-slide-3:checked ~ .services-slider-control label[for="service-slide-3"] {
+#service-slide-1:checked~.services-slider-control label[for="service-slide-1"],
+#service-slide-2:checked~.services-slider-control label[for="service-slide-2"],
+#service-slide-3:checked~.services-slider-control label[for="service-slide-3"] {
   color: #f7e184;
 }
 
-#service-slide-1:checked ~ .services-slider-control label[for="service-slide-1"]::after,
-#service-slide-2:checked ~ .services-slider-control label[for="service-slide-2"]::after,
-#service-slide-3:checked ~ .services-slider-control label[for="service-slide-3"]::after {
+#service-slide-1:checked~.services-slider-control label[for="service-slide-1"]::after,
+#service-slide-2:checked~.services-slider-control label[for="service-slide-2"]::after,
+#service-slide-3:checked~.services-slider-control label[for="service-slide-3"]::after {
   background-color: #000000;
   width: 278px;
   height: 100%;
   top: 0;
 }
 
-#service-slide-1:checked ~ .information-block .slider-services-list .delivery-slide {
+#service-slide-1:checked~.information-block .slider-services-list .delivery-slide {
   display: flex;
 }
 
-#service-slide-2:checked ~ .information-block .slider-services-list .warranty-slide {
+#service-slide-2:checked~.information-block .slider-services-list .warranty-slide {
   display: flex;
 }
 
-#service-slide-3:checked ~ .information-block .slider-services-list .credit-slide {
+#service-slide-3:checked~.information-block .slider-services-list .credit-slide {
   display: flex;
 }
 
@@ -1335,7 +1331,6 @@ a.partners__link:focus::after {
 /*the end of /*about-us and contacts shared properties*/
 /*the end of the main section*/
 /*footer section*/
-
 .footer {
   background: #464646;
 }
@@ -1393,7 +1388,8 @@ a.partners__link:focus::after {
   margin-top: 5px;
   margin-right: auto;
 }
-.services-footer li{
+
+.services-footer li {
   margin: 0 auto;
 }
 
@@ -1442,6 +1438,7 @@ a.partners__link:focus::after {
   margin-left: 0;
   margin-right: auto;
 }
+
 .footer__logo_image-logo {
   pointer-events: none;
 }
@@ -1659,10 +1656,12 @@ a.partners__link:focus::after {
   background-image: url("../img/footer/social/fb.svg");
   background-repeat: no-repeat;
 }
+
 .social-inst {
   background-image: url("../img/footer/social/instagram.svg");
   background-repeat: no-repeat;
 }
+
 .social-tw {
   background-image: url("../img/footer/social/twitter.svg");
   background-repeat: no-repeat;
@@ -2333,20 +2332,20 @@ span.checkbox-img {
   background-repeat: no-repeat;
 }
 
-#color-1:checked ~ .filter-form__label span.checkbox-img,
-#color-2:checked ~ .filter-form__label span.checkbox-img,
-#color-3:checked ~ .filter-form__label span.checkbox-img,
-#color-4:checked ~ .filter-form__label span.checkbox-img,
-#color-5:checked ~ .filter-form__label span.checkbox-img {
+#color-1:checked~.filter-form__label span.checkbox-img,
+#color-2:checked~.filter-form__label span.checkbox-img,
+#color-3:checked~.filter-form__label span.checkbox-img,
+#color-4:checked~.filter-form__label span.checkbox-img,
+#color-5:checked~.filter-form__label span.checkbox-img {
   background-image: url("../img/catalog/checkbox/checkbox-on.svg");
   background-size: contain;
 }
 
-.filter-form__checkbox:focus ~ .filter-form__label span.checkbox-img,
-.filter-form__checkbox:focus ~ .filter-form__label span.checkbox-img,
-.filter-form__checkbox:focus ~ .filter-form__label span.checkbox-img,
-.filter-form__checkbox:focus ~ .filter-form__label span.checkbox-img,
-.filter-form__checkbox:focus ~ .filter-form__label span.checkbox-img {
+.filter-form__checkbox:focus~.filter-form__label span.checkbox-img,
+.filter-form__checkbox:focus~.filter-form__label span.checkbox-img,
+.filter-form__checkbox:focus~.filter-form__label span.checkbox-img,
+.filter-form__checkbox:focus~.filter-form__label span.checkbox-img,
+.filter-form__checkbox:focus~.filter-form__label span.checkbox-img {
   opacity: 0.6;
 }
 
@@ -2383,14 +2382,14 @@ span.radio-img {
   background-repeat: no-repeat;
 }
 
-#bluetooth-in:checked ~ .filter-form__label span.radio-img,
-#bluetooth-not-in:checked ~ .filter-form__label span.radio-img {
+#bluetooth-in:checked~.filter-form__label span.radio-img,
+#bluetooth-not-in:checked~.filter-form__label span.radio-img {
   background-image: url("../img/catalog/radio/radio-on.svg");
   background-size: contain;
 }
 
-#bluetooth-in:focus ~ .filter-form__label span.radio-img,
-#bluetooth-not-in:focus ~ .filter-form__label span.radio-img {
+#bluetooth-in:focus~.filter-form__label span.radio-img,
+#bluetooth-not-in:focus~.filter-form__label span.radio-img {
   opacity: 0.6;
 }
 
@@ -2559,15 +2558,15 @@ span.radio-img {
   flex-direction: column;
 }
 
-.filter-form__radio[disabled] ~ .filter-form__label,
-.filter-form__checkbox[disabled] ~ .filter-form__label {
+.filter-form__radio[disabled]~.filter-form__label,
+.filter-form__checkbox[disabled]~.filter-form__label {
   opacity: 0.25;
 }
 
-.filter-form__radio[disabled] ~ .filter-form__label:hover .radio-img,
-.filter-form__radio[disabled] ~ .filter-form__label:focus .radio-img,
-.filter-form__checkbox[disabled] ~ .filter-form__label:hover .checkbox-img,
-.filter-form__checkbox[disabled] ~ .filter-form__label:focus .checkbox-img {
+.filter-form__radio[disabled]~.filter-form__label:hover .radio-img,
+.filter-form__radio[disabled]~.filter-form__label:focus .radio-img,
+.filter-form__checkbox[disabled]~.filter-form__label:hover .checkbox-img,
+.filter-form__checkbox[disabled]~.filter-form__label:focus .checkbox-img {
   opacity: 1;
 }
 
@@ -2758,9 +2757,6 @@ span.radio-img {
   color: rgba(0, 0, 0, 0.3);
 }
 
-
-
-
 .catalog-pagination__link:hover,
 .catalog-pagination__link:focus {
   color: rgba(0, 0, 0, 1);
@@ -2831,6 +2827,7 @@ span.radio-img {
 .pagination--active {
   color: rgba(0, 0, 0, 1);
 }
+
 /*the end of catalog styles*/
 /*animations*/
 @keyframes bounce {
