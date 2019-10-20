@@ -752,9 +752,9 @@ input[type="search"]::-webkit-search-results-decoration {
 /*the end of the popular shared font settings*/
 .popular-navigation {
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
-  width: 100%;
+  width: 1200px;
+  margin-left: -40px;
   flex-wrap: wrap;
 }
 
@@ -762,6 +762,7 @@ input[type="search"]::-webkit-search-results-decoration {
   min-height: 276px;
   max-width: 160px;
   display: block;
+  margin-left: 40px;
 }
 
 .list-item__link:active .list-item__background-img {
