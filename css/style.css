@@ -160,12 +160,12 @@ fieldset.fieldset-filter {
   visibility: hidden;
 }
 
-.search-form__input:focus  ~  .search-form__button {
+.search-form__input:focus ~ .search-form__button {
   visibility: visible;
 }
 
-.search-form__input:focus  ~  .search-form__button:hover,
-.search-form__input:focus  ~  .search-form__button:focus {
+.search-form__input:focus ~ .search-form__button:hover,
+.search-form__input:focus ~ .search-form__button:focus {
   background-color: #000000;
   color: #ffffff;
 }
@@ -303,8 +303,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .catalog:hover .catalog-navigation,
 .catalog:focus .catalog-navigation,
-.catalog__name:hover  ~  .catalog-navigation,
-.catalog__name:focus  ~  .catalog-navigation {
+.catalog__name:hover ~ .catalog-navigation,
+.catalog__name:focus ~ .catalog-navigation {
   display: block;
 }
 
@@ -691,9 +691,9 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-right: 14px;
 }
 
-#popular-01:checked  ~  .slider-controls label[for="popular-01"],
-#popular-02:checked  ~  .slider-controls label[for="popular-02"],
-#popular-03:checked  ~  .slider-controls label[for="popular-03"] {
+#popular-01:checked ~ .slider-controls label[for="popular-01"],
+#popular-02:checked ~ .slider-controls label[for="popular-02"],
+#popular-03:checked ~ .slider-controls label[for="popular-03"] {
   background-image: url("../img/main/slider-common/slider-button.svg");
 }
 
