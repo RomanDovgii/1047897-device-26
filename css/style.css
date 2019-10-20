@@ -1103,13 +1103,14 @@ input[type="search"]::-webkit-search-results-decoration {
 .partners-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
+  width: 1200px;
+  margin-left: -40px;
 }
 
 .partners {
   position: relative;
+  margin-left: 40px;
 }
 
 .partners a:after {
@@ -1120,10 +1121,6 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 100%;
   width: 100%;
   opacity: 0;
-}
-
-.partners-list .partners:last-child a {
-  margin-left: -3px;
 }
 
 a.partners-1::after {
@@ -1144,7 +1141,11 @@ a.partners-3::after {
 a.partners-4::after {
   background-image: url("../img/main/partners/hover/vive.png");
   background-size: contain;
-  margin-left: -3px;
+}
+
+.partners__link {
+  display: block;
+  height: 100px;
 }
 
 a.partners__link:hover::after,
@@ -1748,7 +1749,7 @@ label.link-animation:active::after {
 }
 
 .about-us-container {
-  margin-top: 89px;
+  margin-top: 93px;
   margin-bottom: 82px;
 }
 
